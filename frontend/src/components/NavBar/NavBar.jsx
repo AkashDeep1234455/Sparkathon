@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./navBar.css";
 function NavBar() {
     return ( 
@@ -11,7 +12,9 @@ function NavBar() {
             </div>
             <div className="navBar-notiNewStock">
                 <div className="navBar-newStock">
-                    <button className="newStock-button">New Stock</button>
+                    <Link to="/form">
+                        <button className="newStock-button">New Stock</button>
+                    </Link>
                 </div>
                 <div className="navBar-notificaton">
                 <i className="fa-regular fa-bell"></i>
