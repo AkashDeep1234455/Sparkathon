@@ -1,0 +1,54 @@
+.InternalCard_parent{
+    border: 1px solid black;
+    width: 45vw;
+    height: 30vh;
+    display: flex;
+    gap: 2rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.InternalCard_img{
+    width: 40%;
+    height: 100%;
+}
+
+.IMAGE{
+    width: auto;
+    height: 90%;
+    background-color: aqua;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.InternalCard_mid{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.InternalCard_mid span{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.InternalCard_TotalItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.InternalCard_button{
+    width: 100px;
+    height: 30px;
+    border-radius: 1rem;
+    background-color: #0fa4af;
+    border: none;
+    color: white;
+}
