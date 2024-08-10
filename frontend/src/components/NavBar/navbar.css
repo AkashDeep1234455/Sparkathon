@@ -24,7 +24,6 @@
     align-items: center;
     cursor: pointer;
     transition: 0.8s;
-    
 }
 .search-input{
     width: 0px;

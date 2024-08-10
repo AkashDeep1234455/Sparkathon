@@ -1,4 +1,4 @@
-import categoryData from "../Category"
+import categoryData from "./Category"
 import ExternalCard from "./ExternalCard"
 import "./Home.css"
 

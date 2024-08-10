@@ -1,21 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-// <<<<<<< externalcard
-// import Home from './components/Home'
-
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-//     <Home />
-=======
-// <<<<<<< internalCard
-// import InternalCard from "./InternalCard.jsx"
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-//     <InternalCard/>
-// =======
-import NavBar from './NavBar'
+import Cards from './components/ExternalCard/Cards.jsx';
+import InternalCard from './components/InternalCard/InternalCard.jsx';
+import Home from './LandingPage/Home.jsx';
 import "./style.css";
 import {
   createBrowserRouter,
@@ -25,7 +12,17 @@ import {
 const router = createBrowserRouter([
   {
     path:"/",
-    element:<NavBar/>,
+    element:<Home/>,
+    children:[
+      {
+        path:"/",
+        element:<Cards/>
+      },
+      {
+        path:"/internal",
+        element:<InternalCard/>
+      }
+    ]
   },
 ])
 
@@ -33,7 +30,5 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
      <RouterProvider router={router}/>
-// >>>>>>> main
-// >>>>>>> main
-  </StrictMode>,
+  </StrictMode>
 )
