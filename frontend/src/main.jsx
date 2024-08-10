@@ -1,5 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+// <<<<<<< externalcard
+// import Home from './components/Home'
+
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+//     <Home />
+=======
 // <<<<<<< internalCard
 // import InternalCard from "./InternalCard.jsx"
 
@@ -25,6 +33,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
      <RouterProvider router={router}/>
+// >>>>>>> main
 // >>>>>>> main
   </StrictMode>,
 )

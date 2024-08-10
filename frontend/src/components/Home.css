@@ -1,0 +1,28 @@
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.category-heading{
+    font-size: 1em;
+    margin-bottom: 1em;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.category-heading h2{
+    width:max-content;
+    border: 2px solid #0fa4af;
+    border-radius: 40px;
+    padding: 5px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.category-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    gap:30px
+}
