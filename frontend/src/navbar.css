@@ -1,0 +1,88 @@
+.navBar{
+    background-color: #0fa4af;
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+.navbar-spacer{
+    height: 100px;
+}
+.search-container{
+    width: 0px;
+    background: #fff;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    
+}
+.search-input{
+    width: 0px;
+}
+
+.search-container:hover > .search-input{
+    width: 300px;
+}
+.search-container:hover{
+    width: 300px;
+}
+
+.search-container .search-input{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+
+}
+
+.search-container .search-btn .fas{
+    color: #5cbdbb;
+}
+.navBar-notificaton{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+transition: all 0.2s linear;
+}
+.navBar-notiNewStock{
+    display: flex;
+    gap: 2rem;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newStock-button{
+    width: 100px;
+    height: 35px;
+    border-radius: 1rem;
+    background-color: white;
+    color: black;
+    border: none;
+    transition: all 0.2s linear;
+}
+.newStock-button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.navBar-notificaton:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
