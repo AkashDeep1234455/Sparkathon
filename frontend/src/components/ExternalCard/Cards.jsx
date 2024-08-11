@@ -10,7 +10,7 @@ function Home() {
       </div>
         <div className="category-box">
             {categoryData.map((category) => (
-                <ExternalCard key={category.id} category={category.category} image={category.category_image} />
+                <ExternalCard key={category.id} category={category.category} image={category.category_image}/>
             ))}
         </div>
   

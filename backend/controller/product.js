@@ -47,7 +47,8 @@ exports.dataEntry = async (req, res) => {
             productId:currProductId,
             productName:element.product_name,
             image:element.product_image,
-            category :element.category,
+            main_category :element.main_category,
+            category: element.category,
             brand:element.brand,
             supplierId:supplierData._id,
             stockDescription:stockDescriptionData._id,
@@ -65,4 +66,12 @@ exports.dataEntry = async (req, res) => {
     console.error("Error processing data entry:", error);
     res.status(500).send('Error processing data entry');
   }
+};
+
+
+
+exports.itemData = async (req, res) => {
+  const { data } = req.body;
+  const productData = await ProductModel.find({main_category:data});      // Should log the received category
+  res.json({productData});
 };
