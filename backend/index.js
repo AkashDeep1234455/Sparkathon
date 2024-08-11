@@ -22,7 +22,7 @@ const corsConfig = {
     allowedHeaders: ['Content-Type', 'Authorization'],
 }
 
-app.use(cors(corsConfig));
+app.use(cors());
 app.use(express.json());
 
 app.use("/",routes);
