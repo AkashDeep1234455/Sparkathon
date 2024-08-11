@@ -51,92 +51,49 @@ export default function InternalCard() {
     console.log(stockData);
   }, [stockData]);
 
+
+
+  const stockDecrementer = (productId)=>{
+    axios.post("http:http://localhost:8080/stockDecrementer",{productId:productId,quantity:1}).then((res)=>{
+        console.log(res);
+    }).catch((err)=>{
+        console.log(err);
+    })
+  }
   return (
     <>
-
-    <div>
+      <div>
         {data.map((d) => {
-            // Find matching stock data
-            const matchingStock = stockData.find((sD) => sD[0]._id === d.stockDescription[0]);
-
-            return matchingStock ? (
+          // Find matching stock data
+          const matchingStock = stockData.find(
+            (sD) => sD[0]._id === d.stockDescription[0]
+          );
+          return matchingStock ? (
             <div className="InternalCard_parent" key={matchingStock[0]._id}>
-                <div className="InternalCard_img">
+              <div className="InternalCard_img">
                 <img src={d.image} alt={d.productName} />
-                </div>
+              </div>
 
-                <div className="InternalCard_mid">
+              <div className="InternalCard_mid">
                 <h3 className="InternalCard_name">{d.productName}</h3>
-                {matchingStock[0].expiryDate ? <span>Expiry Date : {matchingStock[0].expiryDate}</span> : null}
+                {matchingStock[0].expiryDate ? (
+                  <span>Expiry Date : {matchingStock[0].expiryDate}</span>
+                ) : null}
                 <span>ProductId : {matchingStock[0].productId}</span>
                 <button className="InternalCard_button">New Stock</button>
-                </div>
+                <button className="decrementer" onClick={()=>{
+                    stockDecrementer(matchingStock[0].productId);
+                }}>-</button>
+              </div>
 
-                <div className="InternalCard_TotalItems">
+              <div className="InternalCard_TotalItems">
                 <p>Total No. Of Items</p>
                 <h2>{matchingStock[0].stockQuantity}</h2>
-                </div>
+              </div>
             </div>
-            ) : null;
+          ) : null;
         })}
-        </div>
-
-        {/* <div>
-            {data.map((d) => (
-                stockData.map((sD) => 
-
-                sD[0]._id === d.stockDescription[0] && (
-                    <div className="InternalCard_parent" key={sD[0]._id}>
-                        <div className="InternalCard_img">
-                            <img src={d.image} alt="#" />
-                        </div>
-
-                        <div className="InternalCard_mid">
-                            <h3 className="InternalCard_name">{d.productName}</h3>
-                            <span>Expiry Date : {sD[0]._id}</span>
-                            <span>Number of items : {d.stockDescription[0]}</span>
-                            <button className="InternalCard_button">New Stock</button>
-                        </div>
-
-                        <div className="InternalCard_TotalItems">
-                            <p>Total No. Of Items</p>
-                            <h2>50</h2>
-                        </div>
-                    </div>
-                )
-                )
-            ))}
-        </div> */}
-
-      {/* <div>
-        {data.map((d, key) => (
-           <div>
-                {stockData.map(
-                (sD) =>
-                    {sD[0]._id === d.stockDescription[0] && (
-                        <div className="InternalCard_parent">
-                            <div className="InternalCard_img">
-                                <img src={d.image} alt="#" />   
-                            </div>
-
-                            <div className="InternalCard_mid" key={sD[0]._id}>
-                                <h3 className="InternalCard_name">{d.productName}</h3>
-                                <span>Expiry Date : {sD[0].expiryDate}</span>
-                                <span>Number of items</span>
-                                <button className="InternalCard_button">New Stock</button>
-                            </div>
-                
-                            <div className="InternalCard_TotalItems">
-                                <p>Total No. Of Items</p>
-                                <h2>50</h2>
-                            </div>
-            
-                        </div>
-                    )}
-                )}
-           </div>
-        ))}
-      </div> */}
+      </div>
     </>
   );
 }
