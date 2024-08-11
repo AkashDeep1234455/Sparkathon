@@ -12,7 +12,7 @@ const categoryData = [
     },
     {
         "id": "P003",
-        "category": "Electronics",
+        "category": "Electronic",
         "category_image": "https://gqncpetg2pdu-u2278.pressidiumcdn.com/wp-content/uploads/2016/07/AFC-Importing-Electronics-1-7-7-16-300x300.jpg",
     },
     {
