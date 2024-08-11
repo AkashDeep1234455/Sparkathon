@@ -1,9 +1,6 @@
 
 const categoryData = [
- 
-        "id": 1,
-        "category": "Electronic",
-=======
+    {
         "id": "P001",
         "category": "Grocery",
         "category_image": "https://avatars.mds.yandex.net/get-altay/2805836/2a00000171eb302e6caad67e3c7ba7cfbc3e/XXXL"
