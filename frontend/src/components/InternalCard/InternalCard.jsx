@@ -28,9 +28,7 @@ export default function InternalCard(){
         <>
             <div className="InternalCard_parent">
                 <div className="InternalCard_img">
-                    <div className="IMAGE">
-                        
-                    </div>
+                    <img src="https://avatars.mds.yandex.net/i?id=c9bf0ff4f9986229f63ea4630d14afa50bb74c2d-12990625-images-thumbs&n=13" alt="#" />
                 </div>
 
                 <div className='InternalCard_mid'>
