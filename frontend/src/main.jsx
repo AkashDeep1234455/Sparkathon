@@ -4,6 +4,7 @@ import Cards from './components/ExternalCard/Cards.jsx';
 import InternalCard from './components/InternalCard/InternalCard.jsx';
 import Home from './LandingPage/Home.jsx';
 import Form from './components/FormEntry/Form.jsx'
+import Footer from './components/Footer/Footer.jsx';
 
 import "./style.css";
 import {
@@ -18,15 +19,16 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        element:<Cards/>
+        element: <div className='main-container'><Cards/><Footer/></div>
       },
       {
         path:"/internal",
-        element:<InternalCard/>
+        element: <div style={{display:"flex", flexWrap:"wrap", gap: "2rem", justifyContent:"center"}}><InternalCard/><InternalCard/><InternalCard/><InternalCard/></div>
+
       },
       {
         path:"/form",
-        element:<Form/>
+        element:<div className='main-container'><Form/><Footer/></div>
       }
     ]
   },

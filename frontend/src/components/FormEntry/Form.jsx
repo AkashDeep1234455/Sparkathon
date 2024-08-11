@@ -113,14 +113,18 @@ export default function Form(){
 
                 <TextField 
                 id="outlined-basic" 
-                label="Image Link" 
+                label="Image" 
                 variant="outlined" 
                 size='small' 
                 required
+                type='file'
                 onChange={handleInputChange} 
                 value={formData.image}
                 name='image'
                 sx={{ width: 650 }}
+                InputLabelProps={{
+                    shrink: true,
+                }}
                 />
 
                 <TextField 
