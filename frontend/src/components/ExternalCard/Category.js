@@ -1,6 +1,9 @@
 
 const categoryData = [
-    {
+ 
+        "id": 1,
+        "category": "Electronic",
+=======
         "id": "P001",
         "category": "Grocery",
         "category_image": "https://avatars.mds.yandex.net/get-altay/2805836/2a00000171eb302e6caad67e3c7ba7cfbc3e/XXXL"
@@ -12,7 +15,7 @@ const categoryData = [
     },
     {
         "id": "P003",
-        "category": "Electronics",
+        "category": "Electronic",
         "category_image": "https://gqncpetg2pdu-u2278.pressidiumcdn.com/wp-content/uploads/2016/07/AFC-Importing-Electronics-1-7-7-16-300x300.jpg",
     },
     {
