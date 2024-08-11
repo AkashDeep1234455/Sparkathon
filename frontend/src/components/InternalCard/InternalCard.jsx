@@ -4,24 +4,41 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export default function InternalCard(){
-    const [data,setData] = useState([]);
+    const [data, setData] = useState([]);
+    const [stockData, setStockData] = useState([]);
     const query = new URLSearchParams(useLocation().search);
     const category = query.get('category');
+
+    // Fetch product data based on category
     useEffect(() => {
         if (category) {
             axios.post("http://localhost:8080/itemData", { data: category })
                 .then((res) => {
-                    // Check the structure of the response data
-                    const productData = res.data.productData;  // Default to empty array if undefined
-                    setData(productData);  // Log the fetched data directly
+                    const productData = res.data.productData || []; // Fallback to empty array if undefined
+                    setData(productData);
                 })
                 .catch((err) => {
                     console.log("There is an error:", err);
                 });
         }
     }, [category]);
+
+    // Fetch stock data based on product data
     useEffect(() => {
-        console.log("Data state updated:", data); // This will log the updated data when it changes
+        // Only proceed if there is product data
+        if (data.length > 0) {
+            data.forEach((element) => {
+                const productId = element.productId;
+                axios.post("http://localhost:8080/stockData", { data: productId })
+                    .then((res) => {
+                        const stock = res.data.stockData;
+                        setStockData(prevStockData => [...prevStockData, stock]); // Append to existing stock data
+                    })
+                    .catch((err) => {
+                        console.log("There is an error in stock ", err);
+                    });
+            });
+        }
     }, [data]);
 
     return(
@@ -33,7 +50,7 @@ export default function InternalCard(){
 
                 <div className='InternalCard_mid'>
                     <h3 className="InternalCard_name">Portable Projector</h3>
-                    <span>Expirey Date</span>
+                    <span>Expiry Date</span>
                     <span>Number of items</span>
                     <button className='InternalCard_button'>New Stock</button>
                 </div>

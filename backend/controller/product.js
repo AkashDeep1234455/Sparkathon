@@ -80,6 +80,29 @@ exports.itemData = async (req, res) => {
   }
 };
 
+exports.stockData = async (req,res)=>{
+  try{
+    const {data} = req.body;
+    if(data){
+      const productId = data;
+      const stockData = await StockModel.find({productId:productId});
+      res.json({stockData});
+    }else{
+      const stockData = {message:"no data"};
+      res.json({stockData});
+    }
+  }catch(err){
+    console.log(err);
+  }
+}
+
+
+
+
+
+
+
+
 exports.getProduct = async (req, res) => {
   try {
     // fatch product name

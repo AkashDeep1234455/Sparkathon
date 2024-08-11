@@ -21,7 +21,7 @@ function NavBar() {
                 </div>
             </div>
         </div>
-        <div class="navbar-spacer"></div>
+        <div className="navbar-spacer"></div>
         </div>
      );
 }
