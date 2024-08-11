@@ -6,6 +6,11 @@ const express = require("express");
 const app = express();
 const port = 8080||process.env.PORT;
 const dbConnect = require("./config/dbConnect");
+const routes = require("./routes/product");
+
+app.use(express.json());
+
+app.use("/",routes);
 
 
 
