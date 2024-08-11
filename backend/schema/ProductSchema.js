@@ -1,27 +1,34 @@
-const {Schema} = require("mongoose");
+// schema/ProductSchema.js
+const { Schema } = require('mongoose');
 
 const ProductSchema = new Schema({
-    productName:{
-        type:String,
-        required:[true,'product name required'],
+    productId: {
+        type: String,
+        required: true
     },
-    category:{
-        type:String,
-        required:[true],
+    productName: {
+        type: String,
+        required: [true, 'product name required'],
     },
-    brand:{
-        type:String,
-        required:[true],
+    image: {
+        type: String,
     },
-    supplierId:{
-        type:Schema.Types.ObjectId,
-        ref:"SellerModel"
+    category: {
+        type: String,
+        required: [true],
     },
-    stockDescription:[{
-        type:Schema.Types.ObjectId,
-        ref:"StockModel"
+    brand: {
+        type: String,
+        required: [true],
+    },
+    supplierId: {
+        type: Schema.Types.ObjectId,
+        ref: 'SellerModel'
+    },
+    stockDescription: [{
+        type: Schema.Types.ObjectId,
+        ref: 'StockModel'
     }]
+});
 
-})
-
-module.exports = {ProductSchema};
+module.exports = { ProductSchema };

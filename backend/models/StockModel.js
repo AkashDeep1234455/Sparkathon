@@ -1,6 +1,6 @@
-const {Model} = require("mongoose");
-const StockDescription = require("../schema/StockDescription");
+const {model} = require("mongoose");
+const {StockSchema} = require("../schema/StockDescription");
 
-const StockModel = new Model("Stock",StockDescription);
+const StockModel = new model("Stock",StockSchema);
 
 module.exports = {StockModel};

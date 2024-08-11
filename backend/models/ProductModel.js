@@ -1,5 +1,5 @@
-const ProductSchema = require('../schema/ProductSchema');
-const {Model} = require("mongoose");
+const {ProductSchema} = require('../schema/ProductSchema');
+const {model} = require("mongoose");
 
-const ProductModel = new Model("Product",ProductSchema);
+const ProductModel = new model("Product",ProductSchema);
 module.exports = {ProductModel};

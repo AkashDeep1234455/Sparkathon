@@ -2,7 +2,7 @@ const {Schema} = require("mongoose");
 
 const StockSchema = new Schema({
     productId:{
-        type:Schema.Types.ObjectId,
+        type:String,
         required:true,
     },
     stockQuantity:{

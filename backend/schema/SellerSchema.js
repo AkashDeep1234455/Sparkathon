@@ -10,7 +10,7 @@ const SellerSchema = new Schema({
         required:[true,"email required"]
     },
     phoneNumber:{
-        type:NUmber,
+        type:String,
         required:true,
     }
 })
