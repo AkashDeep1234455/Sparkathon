@@ -1,8 +1,9 @@
-.InternalCard_parent{
+/* .InternalCard_parent{
     border: 1px solid black;
-    width: 45vw;
+    width: fit-content;
     height: 30vh;
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -51,4 +52,48 @@
     background-color: #0fa4af;
     border: none;
     color: white;
+} */
+
+
+.InternalCard_parent{
+    border: 1px solid black;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+@media (max-width : 600px){
+    .InternalCard_parent{
+        flex-direction: column;
+    }
+}
+
+.InternalCard_img{
+    border: 1px solid black;
+}
+
+.InternalCard_img img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.InternalCard_mid{
+    border: 1px solid black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.InternalCard_TotalItems{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
 }

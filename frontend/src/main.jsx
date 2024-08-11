@@ -23,7 +23,8 @@ const router = createBrowserRouter([
       },
       {
         path:"/internal",
-        element:<InternalCard/>
+        element: <div style={{display:"flex", flexWrap:"wrap", gap: "2rem", justifyContent:"center"}}><InternalCard/><InternalCard/><InternalCard/><InternalCard/></div>
+
       },
       {
         path:"/form",
