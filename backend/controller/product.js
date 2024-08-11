@@ -79,3 +79,55 @@ exports.itemData = async (req, res) => {
     console.log(err);
   }
 };
+
+exports.getProduct = async (req, res) => {
+  try {
+    // fatch product name
+    const {productName} = req.body;
+
+    // validate product name
+    if (!productName) {
+      return res.status(400).json(
+        {
+          success: false,
+          message: "Product name is required",
+        }
+      )
+    }
+
+    // fetch product details by product name and populate supplier and stock details
+    // populate method is used to fetch related data from another collection
+    // populate("supplierId", "sellerName email phoneNumber") - fetches seller details
+    // populate("stockDescription", "stockQuantity expiryDate minStock") - fetches stock details
+    const product = await ProductModel.find({productName:productName})
+     .populate("supplierId", "sellerName email phoneNumber")
+     .populate("stockDescription", "stockQuantity expiryDate minStock");
+
+    //  validate product
+    if (!product) {
+      return res.status(404).json(
+        {
+          success: false,
+          message: "Product not found",
+        }
+      )
+    }
+
+    // send success
+    res.status(200).json(
+      {
+        success: true,
+        product: product[0],
+      }
+    )
+  }
+  catch (error) {
+    console.error("Error fetching product data:", error);
+    res.status(500).json(
+      {
+        success: false,
+        message: "Error fetching product data",
+      }
+    )
+  }
+}
