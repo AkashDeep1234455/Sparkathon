@@ -6,7 +6,7 @@ const products = [
         "category": "Fruits",
         "main_category": "Grocery",
         "brand": "FreshFarm",
-        "product_image": "https://example.com/images/organic_apple.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=789bf3b0ed5ec70287cd5867ffe51a5d67fd526f482ac063-12731221-images-thumbs&n=13",
         "supplier": {
             "id": "S001",
             "name": "Green Valley Suppliers",
@@ -26,7 +26,7 @@ const products = [
         "category": "Bakery",
         "main_category": "Grocery",
         "brand": "Baker's Delight",
-        "product_image": "https://example.com/images/whole_wheat_bread.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=4651857d28444412613f101bb3afdeaba685bc88-8187788-images-thumbs&n=13",
         "supplier": {
             "id": "S002",
             "name": "Daily Breads Co.",
@@ -46,7 +46,7 @@ const products = [
         "category": "Dairy Alternatives",
         "main_category": "Grocery",
         "brand": "NutriMilk",
-        "product_image": "https://example.com/images/almond_milk.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=207d2617380ab4cc72cea80afc8290c3bc3edde3-3663589-images-thumbs&n=13",
         "supplier": {
             "id": "S003",
             "name": "NutriBev Supplies",
@@ -66,7 +66,7 @@ const products = [
         "category": "Health Foods",
         "main_category": "Grocery",
         "brand": "SuperSeeds",
-        "product_image": "https://example.com/images/chia_seeds.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=1da48e91d27c4c5a3f7d3a212d76098f94e04e8b-4452287-images-thumbs&n=13",
         "supplier": {
             "id": "S004",
             "name": "Healthy Life Goods",
@@ -86,7 +86,7 @@ const products = [
         "category": "Condiments",
         "main_category": "Grocery",
         "brand": "Sauce Masters",
-        "product_image": "https://example.com/images/tomato_sauce.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f83b533e1bfd62b63789fc8a508ddeb860bf7d10-9053088-images-thumbs&n=13",
         "supplier": {
             "id": "S005",
             "name": "Sauce Factory Inc.",
@@ -106,7 +106,7 @@ const products = [
         "category": "Fruits",
         "main_category": "Grocery",
         "brand": "FreshFarm",
-        "product_image": "https://example.com/images/organic_banana.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=26a33c98907d78c18e0b2dc56527f91261968650-9241287-images-thumbs&n=13",
         "supplier": {
             "id": "S006",
             "name": "Green Valley Suppliers",
@@ -126,7 +126,7 @@ const products = [
         "category": "Dairy",
         "main_category": "Grocery",
         "brand": "DairyPure",
-        "product_image": "https://example.com/images/skim_milk.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=c0d4dfcbccf73567f61deb9af5577faf26605a5b-4181939-images-thumbs&n=13",
         "supplier": {
             "id": "S007",
             "name": "Dairy Pure Co.",
@@ -146,7 +146,7 @@ const products = [
         "category": "Snacks",
         "main_category": "Grocery",
         "brand": "SnackTime",
-        "product_image": "https://example.com/images/granola_bars.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=35866257ecd50d28b24e3138215cdf0a06c6be83-10766871-images-thumbs&n=13",
         "supplier": {
             "id": "S008",
             "name": "SnackTime Inc.",
@@ -166,7 +166,7 @@ const products = [
         "category": "Pasta",
         "main_category": "Grocery",
         "brand": "PastaMaster",
-        "product_image": "https://example.com/images/spaghetti_pasta.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f90be607b5e7a362951482b5694f368323446dfd-5232386-images-thumbs&n=13",
         "supplier": {
             "id": "S009",
             "name": "PastaMaster Foods",
@@ -186,7 +186,7 @@ const products = [
         "category": "Oils",
         "main_category": "Grocery",
         "brand": "PureOlive",
-        "product_image": "https://example.com/images/olive_oil.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=3dffc1824c7c0bedb75ef4919f0272867170ac5e-9813974-images-thumbs&n=13",
         "supplier": {
             "id": "S010",
             "name": "Olive Essentials",
@@ -206,7 +206,7 @@ const products = [
         "category": "Grains",
         "main_category": "Grocery",
         "brand": "RiceLand",
-        "product_image": "https://example.com/images/brown_rice.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=a6e9b35efe57b32fcb114456baaa2db639cdf7af24113d19-12503299-images-thumbs&n=13",
         "supplier": {
             "id": "S011",
             "name": "Grain Co.",
@@ -226,7 +226,7 @@ const products = [
         "category": "Dairy",
         "main_category": "Grocery",
         "brand": "YogurtPlus",
-        "product_image": "https://example.com/images/greek_yogurt.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=692f161798f34a160d3c2cb183cfa836e3700293-8287805-images-thumbs&n=13",
         "supplier": {
             "id": "S012",
             "name": "Dairy Delights",
@@ -246,7 +246,7 @@ const products = [
         "category": "Spreads",
         "main_category": "Grocery",
         "brand": "NutSpread",
-        "product_image": "https://example.com/images/peanut_butter.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=87c82c97aac7340f800acb51da1ee6c7-5878137-images-thumbs&n=13",
         "supplier": {
             "id": "S013",
             "name": "NutSpread Co.",
@@ -266,7 +266,7 @@ const products = [
         "category": "Frozen Foods",
         "main_category": "Grocery",
         "brand": "BerryBest",
-        "product_image": "https://example.com/images/frozen_berries.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=082a7c3a15eb009ef902c96591a7057f154c54bb-12398098-images-thumbs&n=13",
         "supplier": {
             "id": "S014",
             "name": "BerryBest Supplies",
@@ -286,7 +286,7 @@ const products = [
         "category": "Condiments",
         "main_category": "Grocery",
         "brand": "SoyDelight",
-        "product_image": "https://example.com/images/soy_sauce.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=5a3e92137b994ba72b6f535ebb14337a5b957699-12011805-images-thumbs&n=13",
         "supplier": {
             "id": "S015",
             "name": "Asian Flavors Inc.",
@@ -306,7 +306,7 @@ const products = [
         "category": "Canned Goods",
         "main_category": "Grocery",
         "brand": "BeanMaster",
-        "product_image": "https://example.com/images/canned_beans.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b040d317038100ebcf8b3f4c86489963292d2aad-10906089-images-thumbs&n=13",
         "supplier": {
             "id": "S016",
             "name": "BeanMaster Co.",
@@ -326,7 +326,7 @@ const products = [
         "category": "Vinegars",
         "main_category": "Grocery",
         "brand": "CiderFarm",
-        "product_image": "https://example.com/images/apple_cider_vinegar.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=681e74396388525f88025c1cd85996b92aa98b044b289c5f-10497918-images-thumbs&n=13",
         "supplier": {
             "id": "S017",
             "name": "CiderFarm Ltd.",
@@ -346,7 +346,7 @@ const products = [
         "category": "Oils",
         "main_category": "Grocery",
         "brand": "CocoPure",
-        "product_image": "https://example.com/images/coconut_oil.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=ceecbedb227e0f2a3c83ad98a56f750a3b91399c-8485406-images-thumbs&n=13",
         "supplier": {
             "id": "S018",
             "name": "CocoPure Essentials",
@@ -366,7 +366,7 @@ const products = [
         "category": "Cereals",
         "main_category": "Grocery",
         "brand": "OatWorld",
-        "product_image": "https://example.com/images/cereal_oats.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=6d0fe580accb7e7c4fa022df3b76b9a893a98e73-13203964-images-thumbs&n=13",
         "supplier": {
             "id": "S019",
             "name": "OatWorld Inc.",
@@ -386,7 +386,7 @@ const products = [
         "category": "Snacks",
         "main_category": "Grocery",
         "brand": "ChocoDelight",
-        "product_image": "https://example.com/images/dark_chocolate.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e970c554bafb78750a3aea2755db72680c34fb7b-4554236-images-thumbs&n=13",
         "supplier": {
             "id": "S020",
             "name": "ChocoDelight Co.",
@@ -406,7 +406,7 @@ const products = [
         "category": "Sweeteners",
         "main_category": "Grocery",
         "brand": "PureHoney",
-        "product_image": "https://example.com/images/honey.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=5d351c752d216360b6543606b2fcaeab-5745674-images-thumbs&n=13",
         "supplier": {
             "id": "S021",
             "name": "PureHoney Ltd.",
@@ -426,7 +426,7 @@ const products = [
         "category": "Grains",
         "main_category": "Grocery",
         "brand": "LegumeLand",
-        "product_image": "https://example.com/images/lentils.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=0cafdedde3e7bc728ee244a3dfa25ceea7f642d8-9228595-images-thumbs&n=13",
         "supplier": {
             "id": "S022",
             "name": "LegumeLand Inc.",
@@ -446,7 +446,7 @@ const products = [
         "category": "Bakery",
         "main_category": "Grocery",
         "brand": "BreadWorld",
-        "product_image": "https://example.com/images/pita_bread.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e5302658349f39b6d3d4c22f11ed6e48e6ceec1e-9112075-images-thumbs&n=13",
         "supplier": {
             "id": "S023",
             "name": "BreadWorld Ltd.",
@@ -466,7 +466,7 @@ const products = [
         "category": "Vinegars",
         "main_category": "Grocery",
         "brand": "VinegarArt",
-        "product_image": "https://example.com/images/balsamic_vinegar.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=49a41de16cd53a1995ca5e878c489ca259d0f1c6-5539192-images-thumbs&n=13",
         "supplier": {
             "id": "S024",
             "name": "VinegarArt Co.",
@@ -486,7 +486,7 @@ const products = [
         "category": "Sweeteners",
         "main_category": "Grocery",
         "brand": "SweetLife",
-        "product_image": "https://example.com/images/granulated_sugar.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=35f77c1317416e4dfa83f5c2b86c43aa-4439117-images-thumbs&n=13",
         "supplier": {
             "id": "S025",
             "name": "SweetLife Inc.",
@@ -506,7 +506,7 @@ const products = [
         "category": "Beverages",
         "main_category": "Grocery",
         "brand": "TropicalJuice",
-        "product_image": "https://example.com/images/pineapple_juice.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=5757a4b680b3427aa93cb399994df1e7891736ab-5232111-images-thumbs&n=13",
         "supplier": {
             "id": "S026",
             "name": "TropicalJuice Ltd.",
@@ -526,7 +526,7 @@ const products = [
         "category": "Canned Goods",
         "main_category": "Grocery",
         "brand": "BeanWorks",
-        "product_image": "https://example.com/images/black_beans.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=ccd3ae7b760d2e3d321a24b95cffe6f09204fa4a-8497272-images-thumbs&n=13",
         "supplier": {
             "id": "S027",
             "name": "BeanWorks Co.",
@@ -546,7 +546,7 @@ const products = [
         "category": "Dairy Alternatives",
         "main_category": "Grocery",
         "brand": "OatDelight",
-        "product_image": "https://example.com/images/oat_milk.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=7665ed4d733925436c94fb4d755087a52a28eef6-5439913-images-thumbs&n=13",
         "supplier": {
             "id": "S028",
             "name": "OatDelight Inc.",
@@ -566,7 +566,7 @@ const products = [
         "category": "Oils",
         "main_category": "Grocery",
         "brand": "ChefChoice",
-        "product_image": "https://example.com/images/cooking_oil.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=c804706c976f7b35b6155f0902077f8ef5f1696f-12149467-images-thumbs&n=13",
         "supplier": {
             "id": "S029",
             "name": "ChefChoice Ltd.",
@@ -586,7 +586,7 @@ const products = [
         "category": "Condiments",
         "main_category": "Grocery",
         "brand": "FruitEssence",
-        "product_image": "https://example.com/images/apple_sauce.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=668cdb99a57374246e31b4d4b43a7f3adc52648a-7992926-images-thumbs&n=13",
         "supplier": {
             "id": "S030",
             "name": "FruitEssence Co.",
@@ -606,7 +606,7 @@ const products = [
         "category": "Canned Goods",
         "main_category": "Grocery",
         "brand": "TunaTime",
-        "product_image": "https://example.com/images/canned_tuna.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=0c1e27673783ba4d97b1785327ff7500ba63a50e-4752054-images-thumbs&n=13",
         "supplier": {
             "id": "S031",
             "name": "TunaTime Ltd.",
@@ -626,7 +626,7 @@ const products = [
         "category": "Snacks",
         "main_category": "Grocery",
         "brand": "NuttyNuts",
-        "product_image": "https://example.com/images/cashew_nuts.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f54808a5d46b7f3c80bd2537e8d5646345fdd484-9066494-images-thumbs&n=13",
         "supplier": {
             "id": "S032",
             "name": "NuttyNuts Inc.",
@@ -646,7 +646,7 @@ const products = [
         "category": "Sweeteners",
         "main_category": "Grocery",
         "brand": "HoneyPure",
-        "product_image": "https://example.com/images/organic_honey.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=40c32b3a7c79015657044762c50be3e8-5714674-images-thumbs&n=13",
         "supplier": {
             "id": "S033",
             "name": "HoneyPure Ltd.",
@@ -666,7 +666,7 @@ const products = [
         "category": "Noodles",
         "main_category": "Grocery",
         "brand": "NoodleHouse",
-        "product_image": "https://example.com/images/rice_noodles.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=026ee70148ade53fdc136555bf9e0603deb69a33-9858428-images-thumbs&n=13",
         "supplier": {
             "id": "S034",
             "name": "NoodleHouse Co.",
@@ -686,7 +686,7 @@ const products = [
         "category": "Beverages",
         "main_category": "Grocery",
         "brand": "TeaGarden",
-        "product_image": "https://example.com/images/organic_tea.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=db45b2086bcbd3227e20beaa84f70be5-4012262-images-thumbs&n=13",
         "supplier": {
             "id": "S035",
             "name": "TeaGarden Ltd.",
@@ -706,7 +706,7 @@ const products = [
         "category": "Spreads",
         "main_category": "Grocery",
         "brand": "JamDelight",
-        "product_image": "https://example.com/images/peach_jam.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=a914bf339ca061e3f4db834d59db471ec169bebecf43cb43-12501258-images-thumbs&n=13",
         "supplier": {
             "id": "S036",
             "name": "JamDelight Inc.",
@@ -726,7 +726,7 @@ const products = [
         "category": "Grains",
         "main_category": "Grocery",
         "brand": "QuinoaLand",
-        "product_image": "https://example.com/images/quinoa.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=d426411f7a882e51ed4b0db76f56cd5c23db7bca-5268869-images-thumbs&n=13",
         "supplier": {
             "id": "S037",
             "name": "QuinoaLand Co.",
@@ -746,7 +746,7 @@ const products = [
         "category": "Sweeteners",
         "main_category": "Grocery",
         "brand": "MaplePure",
-        "product_image": "https://example.com/images/maple_syrup.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=59b9e26b20960abe059ba3ec247d6ab4fc4972d2-8498443-images-thumbs&n=13",
         "supplier": {
             "id": "S038",
             "name": "MaplePure Ltd.",
@@ -766,7 +766,7 @@ const products = [
         "category": "Frozen Foods",
         "main_category": "Grocery",
         "brand": "VeggieFreeze",
-        "product_image": "https://example.com/images/frozen_vegetables.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=0b47c387dda7776cae96a328a7b8cbad891af5a4-12513061-images-thumbs&n=13",
         "supplier": {
             "id": "S039",
             "name": "VeggieFreeze Inc.",
@@ -786,7 +786,7 @@ const products = [
         "category": "Spreads",
         "main_category": "Grocery",
         "brand": "NuttySpread",
-        "product_image": "https://example.com/images/almond_butter.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=800d38fb2466066013f9c66415e7ea58ef583180-7546740-images-thumbs&n=13",
         "supplier": {
             "id": "S040",
             "name": "NuttySpread Co.",
@@ -806,7 +806,7 @@ const products = [
         "category": "Dining",
         "main_category": "Furniture",
         "brand": "TimberCraft",
-        "product_image": "https://example.com/images/wooden_dining_table.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=11e445b320cfe6677dd43009b7ad8a2f8f7b90f2c3d11f85-13081466-images-thumbs&n=13",
         "supplier": {
             "id": "S001",
             "name": "TimberCraft Furniture",
@@ -826,7 +826,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "Luxura",
-        "product_image": "https://example.com/images/leather_sofa.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b065e9929f31cfde8438c90fb36be24ace0249a7-8211098-images-thumbs&n=13",
         "supplier": {
             "id": "S002",
             "name": "Luxura Living",
@@ -846,7 +846,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "DesignPro",
-        "product_image": "https://example.com/images/modern_coffee_table.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=6b7be789b0b24db780c99a5ad0128883e4728d95-4615753-images-thumbs&n=13",
         "supplier": {
             "id": "S003",
             "name": "DesignPro Furniture",
@@ -866,7 +866,7 @@ const products = [
         "category": "Bedroom",
         "main_category": "Furniture",
         "brand": "SleepWell",
-        "product_image": "https://example.com/images/wooden_bed_frame.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=ab71c287b2a97d88e18624cf34b199267549fde2749ba24c-5876303-images-thumbs&n=13",
         "supplier": {
             "id": "S004",
             "name": "SleepWell Furnishings",
@@ -886,7 +886,7 @@ const products = [
         "category": "Office",
         "main_category": "Furniture",
         "brand": "OfficeMate",
-        "product_image": "https://example.com/images/ergonomic_office_chair.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=d5544cd63bb4e6103004953a3c0fe3edc490440b-12377907-images-thumbs&n=13",
         "supplier": {
             "id": "S005",
             "name": "OfficeMate Inc.",
@@ -906,7 +906,7 @@ const products = [
         "category": "Storage",
         "main_category": "Furniture",
         "brand": "BookSafe",
-        "product_image": "https://example.com/images/bookshelf.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=be5fb6441c06489623ea1087e217e4524c694d81b9c2575c-5233011-images-thumbs&n=13",
         "supplier": {
             "id": "S006",
             "name": "BookSafe Designs",
@@ -926,7 +926,7 @@ const products = [
         "category": "Dining",
         "main_category": "Furniture",
         "brand": "ElegantSeats",
-        "product_image": "https://example.com/images/dining_chair_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2b11a0d0be11d4930b0a5111dd1384d603e9134d-4592723-images-thumbs&n=13",
         "supplier": {
             "id": "S007",
             "name": "ElegantSeats Ltd.",
@@ -946,7 +946,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "DisplayArt",
-        "product_image": "https://example.com/images/glass_display_cabinet.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=9119d9808469cf9e9c146225a6e56800d58102d1-5242562-images-thumbs&n=13",
         "supplier": {
             "id": "S008",
             "name": "DisplayArt Furnishings",
@@ -966,7 +966,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "RusticCharm",
-        "product_image": "https://example.com/images/rustic_side_table.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=a7b763a78c752ed9578331196516c4a0189056b1-7662747-images-thumbs&n=13",
         "supplier": {
             "id": "S009",
             "name": "RusticCharm Inc.",
@@ -986,7 +986,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "ComfortZone",
-        "product_image": "https://example.com/images/recliner_chair.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=5b374b09c24ae6667c49b6f8b32a964edc3a4f7e-10090660-images-thumbs&n=13",
         "supplier": {
             "id": "S010",
             "name": "ComfortZone Furnishings",
@@ -1006,7 +1006,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "ClearView",
-        "product_image": "https://example.com/images/glass_coffee_table.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=9b710a55925b93c12c08154524dc5a9e37bc19bd-12421995-images-thumbs&n=13",
         "supplier": {
             "id": "S011",
             "name": "ClearView Designs",
@@ -1026,7 +1026,7 @@ const products = [
         "category": "Bedroom",
         "main_category": "Furniture",
         "brand": "OakHouse",
-        "product_image": "https://example.com/images/oak_wardrobe.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=896cc4adc3c018a5fa730aea02da2c46db89bafd62d03599-5498962-images-thumbs&n=13",
         "supplier": {
             "id": "S012",
             "name": "OakHouse Ltd.",
@@ -1046,7 +1046,7 @@ const products = [
         "category": "Office",
         "main_category": "Furniture",
         "brand": "ModernWork",
-        "product_image": "https://example.com/images/contemporary_desk.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=3b93c0ec41c42b2ded52d564864bd81a326ce781-10018920-images-thumbs&n=13",
         "supplier": {
             "id": "S013",
             "name": "ModernWork Inc.",
@@ -1066,7 +1066,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "VintageElegance",
-        "product_image": "https://example.com/images/vintage_armchair.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=61998ad3ea8abdbae33dd62376ac4bd06d6c92a8-10932914-images-thumbs&n=13",
         "supplier": {
             "id": "S014",
             "name": "VintageElegance Ltd.",
@@ -1086,7 +1086,7 @@ const products = [
         "category": "Storage",
         "main_category": "Furniture",
         "brand": "ModularHome",
-        "product_image": "https://example.com/images/modular_bookshelf.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=c96d101dbd7151804e5c0c940d57a744ce8f5bd27eb4f7ae-4827877-images-thumbs&n=13",
         "supplier": {
             "id": "S015",
             "name": "ModularHome Designs",
@@ -1106,7 +1106,7 @@ const products = [
         "category": "Bedroom",
         "main_category": "Furniture",
         "brand": "SleepTech",
-        "product_image": "https://example.com/images/adjustable_bed_base.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2fdc3076055218e6db4c015cdfb1f35adf9928ca-12150810-images-thumbs&n=13",
         "supplier": {
             "id": "S016",
             "name": "SleepTech Ltd.",
@@ -1126,7 +1126,7 @@ const products = [
         "category": "Dining",
         "main_category": "Furniture",
         "brand": "BarHeight",
-        "product_image": "https://example.com/images/barstool_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=ad31add62f0ce90b524455af1b48c17971677126-12814900-images-thumbs&n=13",
         "supplier": {
             "id": "S017",
             "name": "BarHeight Furniture",
@@ -1146,7 +1146,7 @@ const products = [
         "category": "Bedroom",
         "main_category": "Furniture",
         "brand": "CompactFurnish",
-        "product_image": "https://example.com/images/compact_nightstand.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f2d4e79c30aff18fce392e849dcd2049f4492888f4a45a74-9149086-images-thumbs&n=13",
         "supplier": {
             "id": "S018",
             "name": "CompactFurnish Co.",
@@ -1166,7 +1166,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "ModularLiving",
-        "product_image": "https://example.com/images/modular_sofa.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=da2d38f805240fa22090254a04a6d059-4479838-images-thumbs&n=13",
         "supplier": {
             "id": "S019",
             "name": "ModularLiving Ltd.",
@@ -1186,7 +1186,7 @@ const products = [
         "category": "Office",
         "main_category": "Furniture",
         "brand": "ComfortPro",
-        "product_image": "https://example.com/images/reclining_office_chair.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=291a523b8513ad7b5cea9f26561ab1d7a0695494-4575600-images-thumbs&n=13",
         "supplier": {
             "id": "S020",
             "name": "ComfortPro Solutions",
@@ -1206,7 +1206,7 @@ const products = [
         "category": "Storage",
         "main_category": "Furniture",
         "brand": "IndustrialDesign",
-        "product_image": "https://example.com/images/industrial_shelf.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2506dab071d32bd70a1e6cfb1beeec556f538bc1-10766871-images-thumbs&n=13",
         "supplier": {
             "id": "S021",
             "name": "IndustrialDesign Inc.",
@@ -1226,7 +1226,7 @@ const products = [
         "category": "Office",
         "main_category": "Furniture",
         "brand": "OfficeFlex",
-        "product_image": "https://example.com/images/corner_desk.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2a00000179f17cfa8f9ea37942d6d2d5be0f-4236746-images-thumbs&n=13",
         "supplier": {
             "id": "S022",
             "name": "OfficeFlex Designs",
@@ -1246,7 +1246,7 @@ const products = [
         "category": "Dining",
         "main_category": "Furniture",
         "brand": "FoldEasy",
-        "product_image": "https://example.com/images/folding_dining_table.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=7e4e9bad7dcc5600e4959223217402213426622a-12385820-images-thumbs&n=13",
         "supplier": {
             "id": "S023",
             "name": "FoldEasy Furniture",
@@ -1266,7 +1266,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "ElegantDesigns",
-        "product_image": "https://example.com/images/elegant_console_table.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2ba371388e7b0f0d2611336fbdbb3bd8571d209c-9850413-images-thumbs&n=13",
         "supplier": {
             "id": "S024",
             "name": "ElegantDesigns Ltd.",
@@ -1286,7 +1286,7 @@ const products = [
         "category": "Bedroom",
         "main_category": "Furniture",
         "brand": "SleepWell",
-        "product_image": "https://example.com/images/twin_bed_frame.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=38fa0bf16a05788be46673a046124722f5720b81-9706270-images-thumbs&n=13",
         "supplier": {
             "id": "S025",
             "name": "SleepWell Designs",
@@ -1306,7 +1306,7 @@ const products = [
         "category": "Storage",
         "main_category": "Furniture",
         "brand": "VintageCabinetry",
-        "product_image": "https://example.com/images/vintage_cabinet.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=6195c7fed493239c9ff473ad5d44f3ba24c15ebbbedadea1-12531500-images-thumbs&n=13",
         "supplier": {
             "id": "S026",
             "name": "VintageCabinetry Ltd.",
@@ -1326,7 +1326,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "Contempo",
-        "product_image": "https://example.com/images/contemporary_armchair.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2a66c43ffc6f3b3da319ab88fa00ca9e38e5a065-12475985-images-thumbs&n=13",
         "supplier": {
             "id": "S027",
             "name": "Contempo Furniture",
@@ -1346,7 +1346,7 @@ const products = [
         "category": "Office",
         "main_category": "Furniture",
         "brand": "WorkFlex",
-        "product_image": "https://example.com/images/multi_purpose_table.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=59889f4a47cbf347e4177d25d4f6b3030b4d6cc8460e4614-11951579-images-thumbs&n=13",
         "supplier": {
             "id": "S028",
             "name": "WorkFlex Solutions",
@@ -1366,7 +1366,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "WoodCraft",
-        "product_image": "https://example.com/images/wooden_side_table.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2afc161655939150ca26371a1bd747c4545d80b0df160b86-12529743-images-thumbs&n=13",
         "supplier": {
             "id": "S029",
             "name": "WoodCraft Ltd.",
@@ -1386,7 +1386,7 @@ const products = [
         "category": "Office",
         "main_category": "Furniture",
         "brand": "WriteEase",
-        "product_image": "https://example.com/images/elegant_writing_desk.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e4b5c33011336d2c594c7113ee150ba7eee17ebea05cc9e8-6220307-images-thumbs&n=13",
         "supplier": {
             "id": "S030",
             "name": "WriteEase Office Supplies",
@@ -1406,7 +1406,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "StyleHome",
-        "product_image": "https://example.com/images/stylish_tv_stand.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=59c494d4454ba2019a2e6bb76a3c8dcccc6e8db5-9214194-images-thumbs&n=13",
         "supplier": {
             "id": "S031",
             "name": "StyleHome Designs",
@@ -1426,7 +1426,7 @@ const products = [
         "category": "Storage",
         "main_category": "Furniture",
         "brand": "WoodenWorks",
-        "product_image": "https://example.com/images/wooden_storage_bench.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=14af0b3fae76e7169bcdb8f1252900747a58e485-12661375-images-thumbs&n=13",
         "supplier": {
             "id": "S032",
             "name": "WoodenWorks Ltd.",
@@ -1446,7 +1446,7 @@ const products = [
         "category": "Bedroom",
         "main_category": "Furniture",
         "brand": "ModernSleep",
-        "product_image": "https://example.com/images/modern_bed_frame.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=4653e3e8f35ae8f410abfcf92099cfa2ede55c92-4280979-images-thumbs&n=13",
         "supplier": {
             "id": "S033",
             "name": "ModernSleep Co.",
@@ -1466,7 +1466,7 @@ const products = [
         "category": "Dining",
         "main_category": "Furniture",
         "brand": "VintageStyle",
-        "product_image": "https://example.com/images/vintage_sideboard.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=904d5b1998e99e494f4eac99a67d53690d77cd33-9242678-images-thumbs&n=13",
         "supplier": {
             "id": "S034",
             "name": "VintageStyle Furniture",
@@ -1486,7 +1486,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "LuxRecline",
-        "product_image": "https://example.com/images/luxurious_recliner.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f480225bda89a6d97587fb06238093fc44a2c0b0-9671619-images-thumbs&n=13",
         "supplier": {
             "id": "S035",
             "name": "LuxRecline Inc.",
@@ -1506,7 +1506,7 @@ const products = [
         "category": "Office",
         "main_category": "Furniture",
         "brand": "CompactOffice",
-        "product_image": "https://example.com/images/compact_office_desk.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=7f16c67382aa0cc85b568fd0c74bbbad5d3c599a-11374488-images-thumbs&n=13",
         "supplier": {
             "id": "S036",
             "name": "CompactOffice Designs",
@@ -1526,7 +1526,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "RetroSeats",
-        "product_image": "https://example.com/images/retro_side_chair.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=7f16c67382aa0cc85b568fd0c74bbbad5d3c599a-11374488-images-thumbs&n=13",
         "supplier": {
             "id": "S037",
             "name": "RetroSeats Co.",
@@ -1546,7 +1546,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "LuxuryLiving",
-        "product_image": "https://example.com/images/luxury_armchair.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f88b54f518693447550ddfe37fc7632f5714b0c5-8210081-images-thumbs&n=13",
         "supplier": {
             "id": "S038",
             "name": "LuxuryLiving Ltd.",
@@ -1566,7 +1566,7 @@ const products = [
         "category": "Living Room",
         "main_category": "Furniture",
         "brand": "ModernView",
-        "product_image": "https://example.com/images/modern_tv_stand.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=cdc3fb87e2c4f78c6b5c46345e10fd73162ba2a51e020f46-12605172-images-thumbs&n=13",
         "supplier": {
             "id": "S039",
             "name": "ModernView Designs",
@@ -1586,7 +1586,7 @@ const products = [
         "category": "Bedroom",
         "main_category": "Furniture",
         "brand": "ElegantRest",
-        "product_image": "https://example.com/images/elegant_bedside_table.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=953e85483237088330771c5c681fed4c45ab5346-9821502-images-thumbs&n=13",
         "supplier": {
             "id": "S040",
             "name": "ElegantRest Furnishings",
@@ -1606,7 +1606,7 @@ const products = [
         "category": "Office",
         "main_category": "Furniture",
         "brand": "IndustrialWork",
-        "product_image": "https://example.com/images/industrial_desk.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f0cc34eb9e2f36666a624057b5ed7834fe441a5bd1d1fbe1-10233206-images-thumbs&n=13",
         "supplier": {
             "id": "S041",
             "name": "IndustrialWork Ltd.",
@@ -1626,7 +1626,7 @@ const products = [
         "category": "Mobile Phones",
         "main_category": "Electronic",
         "brand": "TechNova",
-        "product_image": "https://example.com/images/smartphone_x10.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=146697a615a9968014956fdfe0e445588fc1a44e-8191391-images-thumbs&n=13",
         "supplier": {
             "id": "S001",
             "name": "TechNova Electronics",
@@ -1646,7 +1646,7 @@ const products = [
         "category": "Televisions",
         "main_category": "Electronic",
         "brand": "VisionPro",
-        "product_image": "https://example.com/images/4k_ultra_hd_tv.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e36e9d0eb8df63f103954a46f9804ac2fadb6294-10100414-images-thumbs&n=13",
         "supplier": {
             "id": "S002",
             "name": "VisionPro Ltd.",
@@ -1666,7 +1666,7 @@ const products = [
         "category": "Audio",
         "main_category": "Electronic",
         "brand": "SoundWave",
-        "product_image": "https://example.com/images/bluetooth_headphones.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=d228eb47a69a203560bcb5bf4cc2e85f2cf590d7-10350562-images-thumbs&n=13",
         "supplier": {
             "id": "S003",
             "name": "SoundWave Inc.",
@@ -1686,7 +1686,7 @@ const products = [
         "category": "Wearables",
         "main_category": "Electronic",
         "brand": "WearTech",
-        "product_image": "https://example.com/images/smartwatch_pro.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b1653ea8f75907e7af6fa734d014a6e79a59220a-10471440-images-thumbs&n=13",
         "supplier": {
             "id": "S004",
             "name": "WearTech Ltd.",
@@ -1706,7 +1706,7 @@ const products = [
         "category": "Computers",
         "main_category": "Electronic",
         "brand": "GameTech",
-        "product_image": "https://example.com/images/gaming_laptop_g7.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=17f3ae5a823d19b860057c178643b47633dcb88e-9228969-images-thumbs&n=13",
         "supplier": {
             "id": "S005",
             "name": "GameTech Systems",
@@ -1726,7 +1726,7 @@ const products = [
         "category": "Smart Home",
         "main_category": "Electronic",
         "brand": "HomeLink",
-        "product_image": "https://example.com/images/smart_home_hub.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=73fa0baf6b46fee4cf2e989152bc78abb38126b6-8497134-images-thumbs&n=13",
         "supplier": {
             "id": "S006",
             "name": "HomeLink Solutions",
@@ -1746,7 +1746,7 @@ const products = [
         "category": "Cameras",
         "main_category": "Electronic",
         "brand": "PhotoMax",
-        "product_image": "https://example.com/images/digital_camera_z9.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=3074dd64fb0ff47315da8845dbf6dc6208af9ca9-12569871-images-thumbs&n=13",
         "supplier": {
             "id": "S007",
             "name": "PhotoMax Corp.",
@@ -1766,7 +1766,7 @@ const products = [
         "category": "Audio",
         "main_category": "Electronic",
         "brand": "SoundBlaze",
-        "product_image": "https://example.com/images/portable_speaker.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=101918b07633689a3cb471bc797eeab8-5233576-images-thumbs&n=13",
         "supplier": {
             "id": "S008",
             "name": "SoundBlaze Ltd.",
@@ -1786,7 +1786,7 @@ const products = [
         "category": "Projectors",
         "main_category": "Electronic",
         "brand": "BrightView",
-        "product_image": "https://example.com/images/high_definition_projector.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=1b3b5b6bb76db9a482fb7a7e64741dc1c915676b-4553918-images-thumbs&n=13",
         "supplier": {
             "id": "S009",
             "name": "BrightView Tech",
@@ -1806,7 +1806,7 @@ const products = [
         "category": "Networking",
         "main_category": "Electronic",
         "brand": "NetWave",
-        "product_image": "https://example.com/images/wireless_router_x5.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=1575e25f1d30e510d66bd270006ae5629cfd27d7e7c45a42-12982376-images-thumbs&n=13",
         "supplier": {
             "id": "S010",
             "name": "NetWave Networks",
@@ -1826,7 +1826,7 @@ const products = [
         "category": "Audio",
         "main_category": "Electronic",
         "brand": "QuietSound",
-        "product_image": "https://example.com/images/noise_cancelling_headphones.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=0d7b421d514156995639e1de3673200a0d389750-10413045-images-thumbs&n=13",
         "supplier": {
             "id": "S011",
             "name": "QuietSound Inc.",
@@ -1846,7 +1846,7 @@ const products = [
         "category": "Home Appliances",
         "main_category": "Electronic",
         "brand": "CoolTech",
-        "product_image": "https://example.com/images/smart_refrigerator.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=615b8ff3528d76176f64731e3897c8ccc23a9e6c5d3cfce9-11846204-images-thumbs&n=13",
         "supplier": {
             "id": "S012",
             "name": "CoolTech Appliances",
@@ -1866,7 +1866,7 @@ const products = [
         "category": "Home Appliances",
         "main_category": "Electronic",
         "brand": "QuickBoil",
-        "product_image": "https://example.com/images/electric_kettle.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=90839f576c1efb358e9b9c8c7c4d2811902810d0-5234693-images-thumbs&n=13",
         "supplier": {
             "id": "S013",
             "name": "QuickBoil Ltd.",
@@ -1886,7 +1886,7 @@ const products = [
         "category": "Home Automation",
         "main_category": "Electronic",
         "brand": "SmartTemp",
-        "product_image": "https://example.com/images/digital_thermostat.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=5618605e2ccfd778aac9327e9e3be1807360a8102c760c45-13101691-images-thumbs&n=13",
         "supplier": {
             "id": "S014",
             "name": "SmartTemp Solutions",
@@ -1906,7 +1906,7 @@ const products = [
         "category": "Security",
         "main_category": "Electronic",
         "brand": "SafeGuard",
-        "product_image": "https://example.com/images/home_security_camera.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=ea9bad950caa2a4489f408793f7685467e98c540-5887546-images-thumbs&n=13",
         "supplier": {
             "id": "S015",
             "name": "SafeGuard Systems",
@@ -1926,7 +1926,7 @@ const products = [
         "category": "Lighting",
         "main_category": "Electronic",
         "brand": "BrightHome",
-        "product_image": "https://example.com/images/smart_light_bulbs.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=4bc93853b1091371fece31357f188e062fbe92541ba14eb4-5084109-images-thumbs&n=13",
         "supplier": {
             "id": "S016",
             "name": "BrightHome Ltd.",
@@ -1946,7 +1946,7 @@ const products = [
         "category": "Tools",
         "main_category": "Electronic",
         "brand": "PowerTools",
-        "product_image": "https://example.com/images/cordless_drill.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=685181451499b45c97ffb1306710d90d33c6e4c5-10137108-images-thumbs&n=13",
         "supplier": {
             "id": "S017",
             "name": "PowerTools Inc.",
@@ -1966,7 +1966,7 @@ const products = [
         "category": "Personal Care",
         "main_category": "Electronic",
         "brand": "SmoothShave",
-        "product_image": "https://example.com/images/electric_shaver.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=0a9556fba493dde4936f3812d94753a4ee47f198-8221537-images-thumbs&n=13",
         "supplier": {
             "id": "S018",
             "name": "SmoothShave Ltd.",
@@ -1986,7 +1986,7 @@ const products = [
         "category": "Personal Care",
         "main_category": "Electronic",
         "brand": "BrightSmile",
-        "product_image": "https://example.com/images/electric_toothbrush.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=a1b281a652a7da71e84ed70cdb3fae21bc31a7c0-5146892-images-thumbs&n=13",
         "supplier": {
             "id": "S019",
             "name": "BrightSmile Inc.",
@@ -2006,7 +2006,7 @@ const products = [
         "category": "Home Appliances",
         "main_category": "Electronic",
         "brand": "PureAir",
-        "product_image": "https://example.com/images/air_purifier.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=c67c0f6ff6ca3c225cb7b687ced4b07aa9612bae-9234742-images-thumbs&n=13",
         "supplier": {
             "id": "S020",
             "name": "PureAir Technologies",
@@ -2026,7 +2026,7 @@ const products = [
         "category": "Security",
         "main_category": "Electronic",
         "brand": "SecureHome",
-        "product_image": "https://example.com/images/smart_door_lock.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b74fbb7ee6df251b24014e96f0e91908ba497c1052a30a87-12733951-images-thumbs&n=13",
         "supplier": {
             "id": "S021",
             "name": "SecureHome Ltd.",
@@ -2046,7 +2046,7 @@ const products = [
         "category": "Home Appliances",
         "main_category": "Electronic",
         "brand": "WarmUp",
-        "product_image": "https://example.com/images/electric_blanket.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=296234565fadd491df035472344e356542961ec4-5544858-images-thumbs&n=13",
         "supplier": {
             "id": "S022",
             "name": "WarmUp Solutions",
@@ -2066,7 +2066,7 @@ const products = [
         "category": "Home Decor",
         "main_category": "Electronic",
         "brand": "FrameTech",
-        "product_image": "https://example.com/images/digital_photo_frame.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=69e453cf2395775fd0fbb81b0a258c75a35f612e-5869421-images-thumbs&n=13",
         "supplier": {
             "id": "S023",
             "name": "FrameTech Ltd.",
@@ -2086,7 +2086,7 @@ const products = [
         "category": "Office Equipment",
         "main_category": "Electronic",
         "brand": "PrintMaster",
-        "product_image": "https://example.com/images/high_quality_printer.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=18f6bedcea70c8adecfe82daaabd66e4f77709ce-5532663-images-thumbs&n=13",
         "supplier": {
             "id": "S024",
             "name": "PrintMaster Corp.",
@@ -2106,7 +2106,7 @@ const products = [
         "category": "Home Appliances",
         "main_category": "Electronic",
         "brand": "CoolBreeze",
-        "product_image": "https://example.com/images/smart_air_conditioner.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f34e9f887156e42a9a99387b723550bb83de763d-5239342-images-thumbs&n=13",
         "supplier": {
             "id": "S025",
             "name": "CoolBreeze Ltd.",
@@ -2126,7 +2126,7 @@ const products = [
         "category": "Home Appliances",
         "main_category": "Electronic",
         "brand": "HeatMaster",
-        "product_image": "https://example.com/images/electric_oven.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=c3427cc8090718df3ef3734cb64ad065041c0530-5298475-images-thumbs&n=13",
         "supplier": {
             "id": "S026",
             "name": "HeatMaster Co.",
@@ -2146,7 +2146,7 @@ const products = [
         "category": "Home Automation",
         "main_category": "Electronic",
         "brand": "TempControl",
-        "product_image": "https://example.com/images/smart_thermostat.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=d9148f1f992ce59cfaeb698213fb7448d8780e56-12521952-images-thumbs&n=13",
         "supplier": {
             "id": "S027",
             "name": "TempControl Ltd.",
@@ -2166,7 +2166,7 @@ const products = [
         "category": "Home Appliances",
         "main_category": "Electronic",
         "brand": "QuickCook",
-        "product_image": "https://example.com/images/smart_microwave_oven.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=fe93b165ea3e5033a4ed932d1194fef6b734f8f0-9214194-images-thumbs&n=13",
         "supplier": {
             "id": "S028",
             "name": "QuickCook Inc.",
@@ -2186,7 +2186,7 @@ const products = [
         "category": "Home Appliances",
         "main_category": "Electronic",
         "brand": "WashMaster",
-        "product_image": "https://example.com/images/smart_washing_machine.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=5a1ed40d33e51b1af26ef2d4a579d540b67d8ff53a7d0b65-5280263-images-thumbs&n=13",
         "supplier": {
             "id": "S029",
             "name": "WashMaster Ltd.",
@@ -2206,7 +2206,7 @@ const products = [
         "category": "Home Appliances",
         "main_category": "Electronic",
         "brand": "PureBreeze",
-        "product_image": "https://example.com/images/smart_air_purifier.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b96512e0df37e17899a9a8dc63554b4b9ddf5b6083748144-3989655-images-thumbs&n=13",
         "supplier": {
             "id": "S030",
             "name": "PureBreeze Corp.",
@@ -2226,7 +2226,7 @@ const products = [
         "category": "Home Appliances",
         "main_category": "Electronic",
         "brand": "BrewMaster",
-        "product_image": "https://example.com/images/smart_coffee_maker.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=4f34684946e6ef8593547317c8e6a4174a6864c4-7757653-images-thumbs&n=13",
         "supplier": {
             "id": "S031",
             "name": "BrewMaster Ltd.",
@@ -2246,7 +2246,7 @@ const products = [
         "category": "Audio",
         "main_category": "Electronic",
         "brand": "EchoSound",
-        "product_image": "https://example.com/images/smart_speaker.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=929e2d342051ef622e0ea4221247fcd2faffc10c-4510207-images-thumbs&n=13",
         "supplier": {
             "id": "S032",
             "name": "EchoSound Ltd.",
@@ -2266,7 +2266,7 @@ const products = [
         "category": "Home Automation",
         "main_category": "Electronic",
         "brand": "ShadeControl",
-        "product_image": "https://example.com/images/smart_blinds.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=8308a9a1b6a39c18c3e591c683cd065bd4a62b8d-7754520-images-thumbs&n=13",
         "supplier": {
             "id": "S033",
             "name": "ShadeControl Inc.",
@@ -2286,7 +2286,7 @@ const products = [
         "category": "Home Electronics",
         "main_category": "Electronic",
         "brand": "TimeMaster",
-        "product_image": "https://example.com/images/digital_alarm_clock.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=28125daebdbab282f227b448537a6809c1c186aa-9872761-images-thumbs&n=13",
         "supplier": {
             "id": "S034",
             "name": "TimeMaster Ltd.",
@@ -2306,7 +2306,7 @@ const products = [
         "category": "Home Appliances",
         "main_category": "Electronic",
         "brand": "CleanTech",
-        "product_image": "https://example.com/images/smart_vacuum_cleaner.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=156412ebb83cf2016d8220f7ed0206849da884a2-2769791-images-thumbs&n=13",
         "supplier": {
             "id": "S035",
             "name": "CleanTech Ltd.",
@@ -2326,7 +2326,7 @@ const products = [
         "category": "Home Appliances",
         "main_category": "Electronic",
         "brand": "HeatWave",
-        "product_image": "https://example.com/images/smart_heater.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=09c9ec3eeab843dd4237bfa11a6a7c6cf169d1b0-10915107-images-thumbs&n=13",
         "supplier": {
             "id": "S036",
             "name": "HeatWave Corp.",
@@ -2346,7 +2346,7 @@ const products = [
         "category": "Audio",
         "main_category": "Electronic",
         "brand": "TuneTech",
-        "product_image": "https://example.com/images/digital_music_player.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=15e01eeb5f70827fc2263e93ad259febeb0a763b-10995265-images-thumbs&n=13",
         "supplier": {
             "id": "S037",
             "name": "TuneTech Ltd.",
@@ -2366,7 +2366,7 @@ const products = [
         "category": "Security",
         "main_category": "Electronic",
         "brand": "SafeGuard",
-        "product_image": "https://example.com/images/smart_security_system.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=7ee5d17fab216f2424ba662150116a54104d6225-9863899-images-thumbs&n=13",
         "supplier": {
             "id": "S038",
             "name": "SafeGuard Ltd.",
@@ -2386,7 +2386,7 @@ const products = [
         "category": "Pet Supplies",
         "main_category": "Electronic",
         "brand": "PetTech",
-        "product_image": "https://example.com/images/smart_pet_feeder.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=92c3de1b360fb2a801f60609c327416ba27d3efe647b61f4-11922792-images-thumbs&n=13",
         "supplier": {
             "id": "S039",
             "name": "PetTech Solutions",
@@ -2406,7 +2406,7 @@ const products = [
         "category": "Home Automation",
         "main_category": "Electronic",
         "brand": "ShadeTech",
-        "product_image": "https://example.com/images/smart_window_blinds.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=bd678f6364b513823e43056424c320a47dbe178e6f28fd5c-5481592-images-thumbs&n=13",
         "supplier": {
             "id": "S040",
             "name": "ShadeTech Ltd.",
@@ -2426,7 +2426,7 @@ const products = [
         "category": "Home Automation",
         "main_category": "Electronic",
         "brand": "SmartPower",
-        "product_image": "https://example.com/images/smart_plugs.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=3933def0395c26e0789db48a5d01e288e01e9feb-9842828-images-thumbs&n=13",
         "supplier": {
             "id": "S041",
             "name": "SmartPower Ltd.",
@@ -2446,7 +2446,7 @@ const products = [
         "category": "Outerwear",
         "main_category": "Fashion",
         "brand": "UrbanWear",
-        "product_image": "https://example.com/images/leather_jacket.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=8324879793bbaac56654e2d1051028dea5c4312a-12639726-images-thumbs&n=13",
         "supplier": {
             "id": "S001",
             "name": "UrbanWear Co.",
@@ -2466,7 +2466,7 @@ const products = [
         "category": "Pants",
         "main_category": "Fashion",
         "brand": "DenimPro",
-        "product_image": "https://example.com/images/denim_jeans.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=df44b338134674c952ad26e21293b2bdd1adb885-9198383-images-thumbs&n=13",
         "supplier": {
             "id": "S002",
             "name": "DenimPro Inc.",
@@ -2486,7 +2486,7 @@ const products = [
         "category": "Accessories",
         "main_category": "Fashion",
         "brand": "LuxStyle",
-        "product_image": "https://example.com/images/silk_scarf.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=ef0ae9c4de985518201790fe19501fd91d353f22ecb8fbcd-12473832-images-thumbs&n=13",
         "supplier": {
             "id": "S003",
             "name": "LuxStyle Ltd.",
@@ -2506,7 +2506,7 @@ const products = [
         "category": "Footwear",
         "main_category": "Fashion",
         "brand": "FitTrack",
-        "product_image": "https://example.com/images/running_shoes.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=ec0b88783c04a66f406abce732cc6adf7ca4a490-5331459-images-thumbs&n=13",
         "supplier": {
             "id": "S004",
             "name": "FitTrack Sports",
@@ -2526,7 +2526,7 @@ const products = [
         "category": "Knitwear",
         "main_category": "Fashion",
         "brand": "CozyWear",
-        "product_image": "https://example.com/images/wool_sweater.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=6ea120aa373bef543b76f338301ebb75-4935694-images-thumbs&n=13",
         "supplier": {
             "id": "S005",
             "name": "CozyWear Ltd.",
@@ -2546,7 +2546,7 @@ const products = [
         "category": "Accessories",
         "main_category": "Fashion",
         "brand": "SunShade",
-        "product_image": "https://example.com/images/sunglasses.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=a47aec368926e100295fd77da92670b2e2acebc4-5282589-images-thumbs&n=13",
         "supplier": {
             "id": "S006",
             "name": "SunShade Ltd.",
@@ -2566,7 +2566,7 @@ const products = [
         "category": "Shirts",
         "main_category": "Fashion",
         "brand": "SharpDress",
-        "product_image": "https://example.com/images/button_down_shirt.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=c4d46505c345a0d9be78cd2a2a1b3cc8e4dc1648f9d35e1c-12601053-images-thumbs&n=13",
         "supplier": {
             "id": "S007",
             "name": "SharpDress Co.",
@@ -2586,7 +2586,7 @@ const products = [
         "category": "Pants",
         "main_category": "Fashion",
         "brand": "EliteWear",
-        "product_image": "https://example.com/images/formal_trousers.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=a3187c351e1f2e7d38735cff56a9549cadb470d6-10636835-images-thumbs&n=13",
         "supplier": {
             "id": "S008",
             "name": "EliteWear Ltd.",
@@ -2606,7 +2606,7 @@ const products = [
         "category": "Dresses",
         "main_category": "Fashion",
         "brand": "SunnyStyle",
-        "product_image": "https://example.com/images/summer_dress.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=4f22bb8092acdb017e35d2afc137f613481a3b2b7c394197-2920606-images-thumbs&n=13",
         "supplier": {
             "id": "S009",
             "name": "SunnyStyle Co.",
@@ -2626,7 +2626,7 @@ const products = [
         "category": "Outerwear",
         "main_category": "Fashion",
         "brand": "ClassicWear",
-        "product_image": "https://example.com/images/trench_coat.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=4e2d1681630e4ea87712be8cb7eb8abf252ad0b1-4502909-images-thumbs&n=13",
         "supplier": {
             "id": "S010",
             "name": "ClassicWear Ltd.",
@@ -2646,7 +2646,7 @@ const products = [
         "category": "Accessories",
         "main_category": "Fashion",
         "brand": "BeltCraft",
-        "product_image": "https://example.com/images/leather_belt.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=eb2dcfaa733f9ae8c0b43d91e99f2c997c9103e0-5869856-images-thumbs&n=13",
         "supplier": {
             "id": "S011",
             "name": "BeltCraft Inc.",
@@ -2666,7 +2666,7 @@ const products = [
         "category": "Footwear",
         "main_category": "Fashion",
         "brand": "SnowWalk",
-        "product_image": "https://example.com/images/winter_boots.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=88e495f8c18368c5e413e7ef5add9fdd24c6bc60e0db262e-4080966-images-thumbs&n=13",
         "supplier": {
             "id": "S012",
             "name": "SnowWalk Ltd.",
@@ -2686,7 +2686,7 @@ const products = [
         "category": "T-Shirts",
         "main_category": "Fashion",
         "brand": "CottonFit",
-        "product_image": "https://example.com/images/cotton_tshirt.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=9ebe184fc42d4b43f678722d72745020f9c5cb4c-4471742-images-thumbs&n=13",
         "supplier": {
             "id": "S013",
             "name": "CottonFit Inc.",
@@ -2706,7 +2706,7 @@ const products = [
         "category": "Knitwear",
         "main_category": "Fashion",
         "brand": "CashmereLux",
-        "product_image": "https://example.com/images/cashmere_sweater.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=35816525d92c07dc54a8ce30341d6b3ae73d4d08-10448622-images-thumbs&n=13",
         "supplier": {
             "id": "S014",
             "name": "CashmereLux Ltd.",
@@ -2726,7 +2726,7 @@ const products = [
         "category": "Shorts",
         "main_category": "Fashion",
         "brand": "EasyWear",
-        "product_image": "https://example.com/images/casual_shorts.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=1463328d6e9aa03e5ddcf83e7ac4ecda103c5fe3-3919804-images-thumbs&n=13",
         "supplier": {
             "id": "S015",
             "name": "EasyWear Inc.",
@@ -2746,7 +2746,7 @@ const products = [
         "category": "Accessories",
         "main_category": "Fashion",
         "brand": "ElegantTie",
-        "product_image": "https://example.com/images/bow_tie.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=852120beed6bc09fff21d6e7cafbfda8f35277dc-9182238-images-thumbs&n=13",
         "supplier": {
             "id": "S016",
             "name": "ElegantTie Ltd.",
@@ -2766,7 +2766,7 @@ const products = [
         "category": "Hats",
         "main_category": "Fashion",
         "brand": "SummerShade",
-        "product_image": "https://example.com/images/straw_hat.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=dd7896590a7c51cebce7d84b64a9db80978df331-12480075-images-thumbs&n=13",
         "supplier": {
             "id": "S017",
             "name": "SummerShade Co.",
@@ -2786,7 +2786,7 @@ const products = [
         "category": "Outerwear",
         "main_category": "Fashion",
         "brand": "WarmUp",
-        "product_image": "https://example.com/images/fleece_jacket.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=9056b35c80458cb8ba0b4eafbbfaaa5e65068f88-11512273-images-thumbs&n=13",
         "supplier": {
             "id": "S018",
             "name": "WarmUp Ltd.",
@@ -2806,7 +2806,7 @@ const products = [
         "category": "Hoodies",
         "main_category": "Fashion",
         "brand": "TrendHood",
-        "product_image": "https://example.com/images/graphic_hoodie.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=219a8656cd604bf2345b0cad0c4a961244dc7872-9222921-images-thumbs&n=13",
         "supplier": {
             "id": "S019",
             "name": "TrendHood Ltd.",
@@ -2826,7 +2826,7 @@ const products = [
         "category": "Socks",
         "main_category": "Fashion",
         "brand": "SockStyle",
-        "product_image": "https://example.com/images/patterned_socks.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e92824e3bfc57968ccad643495a443f87319eac9-9070589-images-thumbs&n=13",
         "supplier": {
             "id": "S020",
             "name": "SockStyle Ltd.",
@@ -2846,7 +2846,7 @@ const products = [
         "category": "Skincare",
         "main_category": "Beauty",
         "brand": "GlowNaturals",
-        "product_image": "https://example.com/images/organic_face_cream.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=993b7316253772bdf324cbe55e1d2b38-4745534-images-thumbs&n=13",
         "supplier": {
             "id": "S001",
             "name": "GlowNaturals Ltd.",
@@ -2866,7 +2866,7 @@ const products = [
         "category": "Lip Care",
         "main_category": "Beauty",
         "brand": "SmoothLips",
-        "product_image": "https://example.com/images/moisturizing_lip_balm.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=25e87179a592c802e9ed245196d6aed3bf54dde6-12463602-images-thumbs&n=13",
         "supplier": {
             "id": "S002",
             "name": "SmoothLips Inc.",
@@ -2886,7 +2886,7 @@ const products = [
         "category": "Serum",
         "main_category": "Beauty",
         "brand": "PureSkin",
-        "product_image": "https://example.com/images/vitamin_c_serum.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=8b22e26646c221c793d1e24b9285ce38-4544963-images-thumbs&n=13",
         "supplier": {
             "id": "S003",
             "name": "PureSkin LLC",
@@ -2906,7 +2906,7 @@ const products = [
         "category": "Oils",
         "main_category": "Food",
         "brand": "OliveGold",
-        "product_image": "https://example.com/images/gourmet_olive_oil.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=989af1c974d1eff2d073b59b357f88326475bfca-5230026-images-thumbs&n=13",
         "supplier": {
             "id": "S004",
             "name": "OliveGold Ltd.",
@@ -2926,7 +2926,7 @@ const products = [
         "category": "Beverages",
         "main_category": "Food",
         "brand": "TeaLeaf",
-        "product_image": "https://example.com/images/organic_green_tea.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=d005fdead841ec504cdc10804650f09575145025-12475925-images-thumbs&n=13",
         "supplier": {
             "id": "S005",
             "name": "TeaLeaf Co.",
@@ -2946,7 +2946,7 @@ const products = [
         "category": "Baking Supplies",
         "main_category": "Food",
         "brand": "BakeArt",
-        "product_image": "https://example.com/images/artisan_bread_mix.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=c5637b91823ea7cc0e0377ba8331fcbaeb00517a-9228595-images-thumbs&n=13",
         "supplier": {
             "id": "S006",
             "name": "BakeArt Ltd.",
@@ -2966,7 +2966,7 @@ const products = [
         "category": "Toys",
         "main_category": "Toys",
         "brand": "PuzzlePlay",
-        "product_image": "https://example.com/images/childrens_puzzle.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=684d5b4e81c9995582ad97f33033f3d0f327bf7e-8497208-images-thumbs&n=13",
         "supplier": {
             "id": "S007",
             "name": "PuzzlePlay Inc.",
@@ -2986,7 +2986,7 @@ const products = [
         "category": "Stuffed Animals",
         "main_category": "Toys",
         "brand": "CuddlyToys",
-        "product_image": "https://example.com/images/stuffed_animal_toy.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b99378c55ae68f3867319cd4b48f44fae084f6cc-10876270-images-thumbs&n=13",
         "supplier": {
             "id": "S008",
             "name": "CuddlyToys Ltd.",
@@ -3006,7 +3006,7 @@ const products = [
         "category": "Building Toys",
         "main_category": "Toys",
         "brand": "BuildMaster",
-        "product_image": "https://example.com/images/wooden_building_blocks.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=98bcfb73b07ffb42d86618f4f95f8b93ba9545ea-3560695-images-thumbs&n=13",
         "supplier": {
             "id": "S009",
             "name": "BuildMaster Ltd.",
@@ -3026,7 +3026,7 @@ const products = [
         "category": "Skincare",
         "main_category": "Beauty",
         "brand": "FreshFace",
-        "product_image": "https://example.com/images/face_mask_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=555ad82e1598ac6f4cb69adf9d88817c-3979292-images-thumbs&n=13",
         "supplier": {
             "id": "S010",
             "name": "FreshFace Co.",
@@ -3046,7 +3046,7 @@ const products = [
         "category": "Coffee",
         "main_category": "Food",
         "brand": "BrewMaster",
-        "product_image": "https://example.com/images/gourmet_coffee_beans.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b05a13cf4dbbc3669f055eb1374df7f7d02ff098-11512952-images-thumbs&n=13",
         "supplier": {
             "id": "S011",
             "name": "BrewMaster Ltd.",
@@ -3066,7 +3066,7 @@ const products = [
         "category": "Dolls",
         "main_category": "Toys",
         "brand": "DollHouse",
-        "product_image": "https://example.com/images/baby_doll.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=3dbbd694f7e77abd5e308e35e94eaf8a25bd17bc-10414372-images-thumbs&n=13",
         "supplier": {
             "id": "S012",
             "name": "DollHouse Ltd.",
@@ -3086,7 +3086,7 @@ const products = [
         "category": "Lip Care",
         "main_category": "Beauty",
         "brand": "EcoBeauty",
-        "product_image": "https://example.com/images/organic_lipstick.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=879a21d78ea3a0ff103ae0c80f3c929c22948963-7554427-images-thumbs&n=13",
         "supplier": {
             "id": "S013",
             "name": "EcoBeauty Inc.",
@@ -3106,7 +3106,7 @@ const products = [
         "category": "Beverages",
         "main_category": "Food",
         "brand": "HerbInfuse",
-        "product_image": "https://example.com/images/herbal_tea.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=aa2e2e4f046b010e852dd94a40bd01654e1ad6f6-4958261-images-thumbs&n=13",
         "supplier": {
             "id": "S014",
             "name": "HerbInfuse Ltd.",
@@ -3126,7 +3126,7 @@ const products = [
         "category": "Educational Toys",
         "main_category": "Toys",
         "brand": "LearnPlay",
-        "product_image": "https://example.com/images/educational_toy_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=ac26f6f2a04e452cf9441018e725eee32c355302-9181195-images-thumbs&n=13",
         "supplier": {
             "id": "S015",
             "name": "LearnPlay Ltd.",
@@ -3146,7 +3146,7 @@ const products = [
         "category": "Skincare",
         "main_category": "Beauty",
         "brand": "YouthfulSkin",
-        "product_image": "https://example.com/images/anti_aging_cream.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=dbd7369facd0a6cd2ca362771bb79825e481db92-4568513-images-thumbs&n=13",
         "supplier": {
             "id": "S016",
             "name": "YouthfulSkin Ltd.",
@@ -3166,7 +3166,7 @@ const products = [
         "category": "Pasta",
         "main_category": "Food",
         "brand": "PastaDelight",
-        "product_image": "https://example.com/images/spaghetti_pasta.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=17e34997111a07df8c20ba22dd662780-5481174-images-thumbs&n=13",
         "supplier": {
             "id": "S017",
             "name": "PastaDelight Co.",
@@ -3186,7 +3186,7 @@ const products = [
         "category": "Bath Products",
         "main_category": "Beauty",
         "brand": "LuxBath",
-        "product_image": "https://example.com/images/luxury_bath_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f6a00b05bccb16de8f34c197a93ee50dc9f05609-10734181-images-thumbs&n=13",
         "supplier": {
             "id": "S018",
             "name": "LuxBath Ltd.",
@@ -3206,7 +3206,7 @@ const products = [
         "category": "Railroad Toys",
         "main_category": "Toys",
         "brand": "TinyTracks",
-        "product_image": "https://example.com/images/wooden_train_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=eb1fa49372e1c0b5a6b3e73754e511b9791375f6-9625733-images-thumbs&n=13",
         "supplier": {
             "id": "S019",
             "name": "TinyTracks Ltd.",
@@ -3226,7 +3226,7 @@ const products = [
         "category": "Spreads",
         "main_category": "Food",
         "brand": "JamTime",
-        "product_image": "https://example.com/images/fruit_jam.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=7aec2e0e1793cbf8c365f8689bb78b8b0b640b3d-10878212-images-thumbs&n=13",
         "supplier": {
             "id": "S020",
             "name": "JamTime Ltd.",
@@ -3246,7 +3246,7 @@ const products = [
         "category": "Pain Relief",
         "main_category": "Pharmacy",
         "brand": "HealthCare",
-        "product_image": "https://example.com/images/aspirin_500mg.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b1c00e592ed5db7e98c729c44b10b1a13a603d2a-12728079-images-thumbs&n=13",
         "supplier": {
             "id": "S001",
             "name": "HealthCare Pharmaceuticals Ltd.",
@@ -3266,7 +3266,7 @@ const products = [
         "category": "Vitamins",
         "main_category": "Pharmacy",
         "brand": "NutriBoost",
-        "product_image": "https://example.com/images/vitamin_c_1000mg.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=81b5f0956de6eff973f5cf35a429d12bb7d60d46-3985569-images-thumbs&n=13",
         "supplier": {
             "id": "S002",
             "name": "NutriBoost Inc.",
@@ -3286,7 +3286,7 @@ const products = [
         "category": "Allergy Relief",
         "main_category": "Pharmacy",
         "brand": "AllergyEase",
-        "product_image": "https://example.com/images/allergy_relief_tablets.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=1fa3d9e8e90d4e2a04a40bc764372d5fc39eb5b0-9601108-images-thumbs&n=13",
         "supplier": {
             "id": "S003",
             "name": "AllergyEase Ltd.",
@@ -3306,7 +3306,7 @@ const products = [
         "category": "Cough & Cold",
         "main_category": "Pharmacy",
         "brand": "ClearBreath",
-        "product_image": "https://example.com/images/cough_syrup_200ml.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=16855eee956b4f80616658df403d3588-6906583-images-thumbs&n=13",
         "supplier": {
             "id": "S004",
             "name": "ClearBreath Pharma",
@@ -3326,7 +3326,7 @@ const products = [
         "category": "Digestive Health",
         "main_category": "Pharmacy",
         "brand": "GutHealth",
-        "product_image": "https://example.com/images/probiotic_supplement.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=0ec0166fb1767cc8e119d25ba96d592ea6ac2027-12608381-images-thumbs&n=13",
         "supplier": {
             "id": "S005",
             "name": "GutHealth Inc.",
@@ -3346,7 +3346,7 @@ const products = [
         "category": "First Aid",
         "main_category": "Pharmacy",
         "brand": "MediCare",
-        "product_image": "https://example.com/images/antibiotic_ointment.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=3214e038c5c3e6af625c5e6a4374067e88d4c19f-8177770-images-thumbs&n=13",
         "supplier": {
             "id": "S006",
             "name": "MediCare Pharmaceuticals",
@@ -3366,7 +3366,7 @@ const products = [
         "category": "Cold Relief",
         "main_category": "Pharmacy",
         "brand": "BreatheEasy",
-        "product_image": "https://example.com/images/cold_relief_nasal_spray.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=72e12b180d70bf94ed7763da06b37941d95686c8-12640276-images-thumbs&n=13",
         "supplier": {
             "id": "S007",
             "name": "BreatheEasy Ltd.",
@@ -3386,7 +3386,7 @@ const products = [
         "category": "Pain Relief",
         "main_category": "Pharmacy",
         "brand": "ReliefMax",
-        "product_image": "https://example.com/images/pain_relief_gel.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=fc84479229889bf7ff9459cb6cd296eaa40cacc7-9855166-images-thumbs&n=13",
         "supplier": {
             "id": "S008",
             "name": "ReliefMax Pharmaceuticals",
@@ -3406,7 +3406,7 @@ const products = [
         "category": "Vitamins",
         "main_category": "Pharmacy",
         "brand": "VitaPlus",
-        "product_image": "https://example.com/images/multivitamin_tablets.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=ab03e82e9c507cd00f56a81657affebe2b72f309-4687875-images-thumbs&n=13",
         "supplier": {
             "id": "S009",
             "name": "VitaPlus Inc.",
@@ -3426,7 +3426,7 @@ const products = [
         "category": "Skin Care",
         "main_category": "Pharmacy",
         "brand": "MoisturePlus",
-        "product_image": "https://example.com/images/skin_moisturizer.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=9c8e0b274e83ea893f0df61f00d7ec4f18f5a7f838995a7c-12487154-images-thumbs&n=13",
         "supplier": {
             "id": "S010",
             "name": "MoisturePlus Ltd.",
@@ -3446,7 +3446,7 @@ const products = [
         "category": "Sun Care",
         "main_category": "Pharmacy",
         "brand": "SunGuard",
-        "product_image": "https://example.com/images/sunscreen_spf_50.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=78228ba0750da735003aacff3eb99fbf55f5637b-10952956-images-thumbs&n=13",
         "supplier": {
             "id": "S011",
             "name": "SunGuard Inc.",
@@ -3466,7 +3466,7 @@ const products = [
         "category": "Cold & Flu",
         "main_category": "Pharmacy",
         "brand": "FluAway",
-        "product_image": "https://example.com/images/cold_flu_relief_tablets.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=07845578bba724bb9971b39ae1426b49d97df8aaabb8bbae-12503299-images-thumbs&n=13",
         "supplier": {
             "id": "S012",
             "name": "FluAway Ltd.",
@@ -3486,7 +3486,7 @@ const products = [
         "category": "First Aid",
         "main_category": "Pharmacy",
         "brand": "CleanCare",
-        "product_image": "https://example.com/images/antiseptic_wipes.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f372d053210426ba2d41e56c586241bb0f9f3605-10491983-images-thumbs&n=13",
         "supplier": {
             "id": "S013",
             "name": "CleanCare Ltd.",
@@ -3506,7 +3506,7 @@ const products = [
         "category": "Eye Care",
         "main_category": "Pharmacy",
         "brand": "VisionAid",
-        "product_image": "https://example.com/images/eye_drops_10ml.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=0b8b743e9630b7ca6eb69082a8847bce4dfb644c-9137846-images-thumbs&n=13",
         "supplier": {
             "id": "S014",
             "name": "VisionAid Pharmaceuticals",
@@ -3526,7 +3526,7 @@ const products = [
         "category": "Pain Relief",
         "main_category": "Pharmacy",
         "brand": "JointEase",
-        "product_image": "https://example.com/images/joint_pain_relief_cream.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=6c21247715024b09bbee1a31eeb56eb5ace51c53-5233368-images-thumbs&n=13",
         "supplier": {
             "id": "S015",
             "name": "JointEase Ltd.",
@@ -3546,7 +3546,7 @@ const products = [
         "category": "Pain Relief",
         "main_category": "Pharmacy",
         "brand": "ComfortRelief",
-        "product_image": "https://example.com/images/menstrual_pain_relief_tablets.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e6b62674fb06892729f33173ae00e51014c2c0b4-10071204-images-thumbs&n=13",
         "supplier": {
             "id": "S016",
             "name": "ComfortRelief Inc.",
@@ -3566,7 +3566,7 @@ const products = [
         "category": "Digestive Health",
         "main_category": "Pharmacy",
         "brand": "NauseaRelief",
-        "product_image": "https://example.com/images/anti_nausea_medication.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=9d757341bd2b5eeda604bf00eef5a78a84e43fd5-10369171-images-thumbs&n=13",
         "supplier": {
             "id": "S017",
             "name": "NauseaRelief Ltd.",
@@ -3586,7 +3586,7 @@ const products = [
         "category": "Digestive Health",
         "main_category": "Pharmacy",
         "brand": "HeartEase",
-        "product_image": "https://example.com/images/heartburn_relief_tablets.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=35cd3c600f0a249fc4a87b1a47bd22b50cf3563d-7333143-images-thumbs&n=13",
         "supplier": {
             "id": "S018",
             "name": "HeartEase Inc.",
@@ -3606,7 +3606,7 @@ const products = [
         "category": "Sleep Aids",
         "main_category": "Pharmacy",
         "brand": "SleepWell",
-        "product_image": "https://example.com/images/sleep_aid_tablets.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=864fd11363412bd4262067492a51228176064b60-4815706-images-thumbs&n=13",
         "supplier": {
             "id": "S019",
             "name": "SleepWell Ltd.",
@@ -3626,7 +3626,7 @@ const products = [
         "category": "Ear Care",
         "main_category": "Pharmacy",
         "brand": "EarCare",
-        "product_image": "https://example.com/images/ear_drops_15ml.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=cfdd2bea14240bed0ee84a4a986e2dca81e64943-9294167-images-thumbs&n=13",
         "supplier": {
             "id": "S020",
             "name": "EarCare Pharmaceuticals",
@@ -3646,7 +3646,7 @@ const products = [
         "category": "Digestive Health",
         "main_category": "Pharmacy",
         "brand": "AntacidCo",
-        "product_image": "https://example.com/images/antacid_tablets.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=9179e06efa8a619220742401af45cffc-5249239-images-thumbs&n=13",
         "supplier": {
             "id": "S021",
             "name": "AntacidCo Ltd.",
@@ -3666,7 +3666,7 @@ const products = [
         "category": "Digestive Health",
         "main_category": "Pharmacy",
         "brand": "StopDiarrhea",
-        "product_image": "https://example.com/images/anti_diarrheal_tablets.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=647504c56cfd69b1cc6c74acff79b039ad005e616e5ae950-12937496-images-thumbs&n=13",
         "supplier": {
             "id": "S022",
             "name": "StopDiarrhea Inc.",
@@ -3686,7 +3686,7 @@ const products = [
         "category": "Cold Relief",
         "main_category": "Pharmacy",
         "brand": "Decongest",
-        "product_image": "https://example.com/images/nasal_decongestant_tablets.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=6ef7bf85f7b5f6a5e0810d1bd9590208d3c24705-12569755-images-thumbs&n=13",
         "supplier": {
             "id": "S023",
             "name": "Decongest Ltd.",
@@ -3706,7 +3706,7 @@ const products = [
         "category": "Eye Care",
         "main_category": "Pharmacy",
         "brand": "ReliefEyes",
-        "product_image": "https://example.com/images/eye_relief_drops.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=db383303ebe189390c6b6a6036dcd98f04ea04d6-9236689-images-thumbs&n=13",
         "supplier": {
             "id": "S024",
             "name": "ReliefEyes Inc.",
@@ -3726,7 +3726,7 @@ const products = [
         "category": "First Aid",
         "main_category": "Pharmacy",
         "brand": "SanitizePlus",
-        "product_image": "https://example.com/images/hand_sanitizer_250ml.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=84df512c0469b35abce3b039baf92f40-5668696-images-thumbs&n=13",
         "supplier": {
             "id": "S025",
             "name": "SanitizePlus Ltd.",
@@ -3746,7 +3746,7 @@ const products = [
         "category": "Skin Care",
         "main_category": "Pharmacy",
         "brand": "FungalAway",
-        "product_image": "https://example.com/images/antifungal_cream.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=59bc98e7b0f508c8a3bd8951345eaccbbf94594e-7551636-images-thumbs&n=13",
         "supplier": {
             "id": "S026",
             "name": "FungalAway Ltd.",
@@ -3766,7 +3766,7 @@ const products = [
         "category": "Cough & Cold",
         "main_category": "Pharmacy",
         "brand": "KidCough",
-        "product_image": "https://example.com/images/childrens_cough_syrup.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=eb8a5415b224b06f2fca0b25e20b17afcac12d8b-9104009-images-thumbs&n=13",
         "supplier": {
             "id": "S027",
             "name": "KidCough Ltd.",
@@ -3786,7 +3786,7 @@ const products = [
         "category": "Pain Relief",
         "main_category": "Pharmacy",
         "brand": "FeverAway",
-        "product_image": "https://example.com/images/fever_reducer_tablets.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=a4bb98a170127adecc67b3fe88fc6a8b27402d2f-9040073-images-thumbs&n=13",
         "supplier": {
             "id": "S028",
             "name": "FeverAway Ltd.",
@@ -3806,7 +3806,7 @@ const products = [
         "category": "First Aid",
         "main_category": "Pharmacy",
         "brand": "WoundCare",
-        "product_image": "https://example.com/images/wound_care_ointment.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=5be6f8823aa8409939453ed243f4c0192b796681-10329275-images-thumbs&n=13",
         "supplier": {
             "id": "S029",
             "name": "WoundCare Ltd.",
@@ -3826,7 +3826,7 @@ const products = [
         "category": "Pain Relief",
         "main_category": "Pharmacy",
         "brand": "HeadEase",
-        "product_image": "https://example.com/images/headache_relief_tablets.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=91c3f9a4a60669c7852b8d73b7fe892e1fe2ab50a16da12f-12525650-images-thumbs&n=13",
         "supplier": {
             "id": "S030",
             "name": "HeadEase Inc.",
@@ -3846,7 +3846,7 @@ const products = [
         "category": "Digestive Health",
         "main_category": "Pharmacy",
         "brand": "LaxaEase",
-        "product_image": "https://example.com/images/laxative_tablets.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=27e668e317648ffbbb937fe9cd4732f46c36ceea-4893015-images-thumbs&n=13",
         "supplier": {
             "id": "S031",
             "name": "LaxaEase Ltd.",
@@ -3866,7 +3866,7 @@ const products = [
         "category": "Oral Care",
         "main_category": "Pharmacy",
         "brand": "ToothEase",
-        "product_image": "https://example.com/images/toothache_relief_gel.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=6b2ed38e559c82adcd82aabe70b898e15856ab12-8715693-images-thumbs&n=13",
         "supplier": {
             "id": "S032",
             "name": "ToothEase Inc.",
@@ -3886,7 +3886,7 @@ const products = [
         "category": "Diabetes Care",
         "main_category": "Pharmacy",
         "brand": "DiabetesCheck",
-        "product_image": "https://example.com/images/diabetes_test_strips.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=992f70f15eb01247b0e3e7e46a33686c08ad9b86-5496593-images-thumbs&n=13",
         "supplier": {
             "id": "S033",
             "name": "DiabetesCheck Ltd.",
@@ -3906,7 +3906,7 @@ const products = [
         "category": "Cough & Cold",
         "main_category": "Pharmacy",
         "brand": "CoughRelief",
-        "product_image": "https://example.com/images/cough_drops.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f40f479d38dfd270a03160061585c297c136d3f2-4537101-images-thumbs&n=13",
         "supplier": {
             "id": "S034",
             "name": "CoughRelief Inc.",
@@ -3926,7 +3926,7 @@ const products = [
         "category": "Cough & Cold",
         "main_category": "Pharmacy",
         "brand": "BronchEase",
-        "product_image": "https://example.com/images/bronchitis_relief_syrup.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e48c1019024eb4e0372bba01e492e5a549788f3e-8973599-images-thumbs&n=13",
         "supplier": {
             "id": "S035",
             "name": "BronchEase Ltd.",
@@ -3946,7 +3946,7 @@ const products = [
         "category": "Skin Care",
         "main_category": "Pharmacy",
         "brand": "DermCare",
-        "product_image": "https://example.com/images/dermatitis_cream.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=9df908e510fab8c304fedcb6e2d0de0ed92836631cf3bdbc-4829890-images-thumbs&n=13",
         "supplier": {
             "id": "S036",
             "name": "DermCare Pharmaceuticals",
@@ -3966,7 +3966,7 @@ const products = [
         "category": "Skin Care",
         "main_category": "Pharmacy",
         "brand": "FungalGuard",
-        "product_image": "https://example.com/images/anti_fungal_powder.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=21e0aca74aae306b7730b5c83240cb6cacf8ef2f-8343733-images-thumbs&n=13",
         "supplier": {
             "id": "S037",
             "name": "FungalGuard Ltd.",
@@ -3986,7 +3986,7 @@ const products = [
         "category": "Digestive Health",
         "main_category": "Pharmacy",
         "brand": "MotionAway",
-        "product_image": "https://example.com/images/motion_sickness_tablets.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=0917c2f0a5c1ff6dd4bb250a496a2e06335594a9-11043615-images-thumbs&n=13",
         "supplier": {
             "id": "S038",
             "name": "MotionAway Ltd.",
@@ -4006,7 +4006,7 @@ const products = [
         "category": "Pain Relief",
         "main_category": "Pharmacy",
         "brand": "PainEase",
-        "product_image": "https://example.com/images/pain_relieving_gel.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=ea415858621a96a2c1910f6a7969e31c627035a2-12718991-images-thumbs&n=13",
         "supplier": {
             "id": "S039",
             "name": "PainEase Ltd.",
@@ -4026,7 +4026,7 @@ const products = [
         "category": "Necklaces",
         "main_category": "Jewellery",
         "brand": "Luxor",
-        "product_image": "https://example.com/images/gold_necklace.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=49eb0be71479eb18bab18a49267571ac44b2db1d-4902121-images-thumbs&n=13",
         "supplier": {
             "id": "J001",
             "name": "Luxor Jewels Ltd.",
@@ -4046,7 +4046,7 @@ const products = [
         "category": "Earrings",
         "main_category": "Jewellery",
         "brand": "Glamour",
-        "product_image": "https://example.com/images/diamond_earrings.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=ba07e66ad5caf153ccfec61cec81ff1e50f53a6e-5466267-images-thumbs&n=13",
         "supplier": {
             "id": "J002",
             "name": "Glamour Gems Inc.",
@@ -4066,7 +4066,7 @@ const products = [
         "category": "Bracelets",
         "main_category": "Jewellery",
         "brand": "SilverCraft",
-        "product_image": "https://example.com/images/silver_bracelet.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=3020b810a5e6b1600dc13610e0074218e9e18ad4-5234402-images-thumbs&n=13",
         "supplier": {
             "id": "J003",
             "name": "SilverCraft Ltd.",
@@ -4086,7 +4086,7 @@ const products = [
         "category": "Rings",
         "main_category": "Jewellery",
         "brand": "Elite",
-        "product_image": "https://example.com/images/platinum_ring.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=c891fe33100924aefd93cb432cd68cbaf45f1530-4034399-images-thumbs&n=13",
         "supplier": {
             "id": "J004",
             "name": "Elite Jewels Inc.",
@@ -4106,7 +4106,7 @@ const products = [
         "category": "Pendants",
         "main_category": "Jewellery",
         "brand": "Gemstone",
-        "product_image": "https://example.com/images/emerald_pendant.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=08924c83c6b8c0903877dc513d442c1bec326284-9429884-images-thumbs&n=13",
         "supplier": {
             "id": "J005",
             "name": "Gemstone Creations Ltd.",
@@ -4126,7 +4126,7 @@ const products = [
         "category": "Rings",
         "main_category": "Jewellery",
         "brand": "RubyRich",
-        "product_image": "https://example.com/images/ruby_ring.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=26af78da8be07ebd3125e8849aa5d00b779b4fb7-8975349-images-thumbs&n=13",
         "supplier": {
             "id": "J006",
             "name": "RubyRich Ltd.",
@@ -4146,7 +4146,7 @@ const products = [
         "category": "Necklaces",
         "main_category": "Jewellery",
         "brand": "BlueGem",
-        "product_image": "https://example.com/images/sapphire_necklace.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=5fe14e9113cee854278fb9795fa81d66-5277647-images-thumbs&n=13",
         "supplier": {
             "id": "J007",
             "name": "BlueGem Inc.",
@@ -4166,7 +4166,7 @@ const products = [
         "category": "Cufflinks",
         "main_category": "Jewellery",
         "brand": "ElegantGold",
-        "product_image": "https://example.com/images/gold_cufflinks.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=fc45389bca871d01b1c39021c757fe36f6e7c62598996fc4-13053828-images-thumbs&n=13",
         "supplier": {
             "id": "J008",
             "name": "ElegantGold Ltd.",
@@ -4186,7 +4186,7 @@ const products = [
         "category": "Bracelets",
         "main_category": "Jewellery",
         "brand": "ShineBright",
-        "product_image": "https://example.com/images/diamond_bracelet.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2a0000017a0326abca3a82547e6be4a04064-3643527-images-thumbs&n=13",
         "supplier": {
             "id": "J009",
             "name": "ShineBright Inc.",
@@ -4206,7 +4206,7 @@ const products = [
         "category": "Earrings",
         "main_category": "Jewellery",
         "brand": "PearlGems",
-        "product_image": "https://example.com/images/pearl_earrings.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=226dd9da3877af6bdabf0ad0e493c844485cd9e515a0d97d-12143639-images-thumbs&n=13",
         "supplier": {
             "id": "J010",
             "name": "PearlGems Ltd.",
@@ -4226,7 +4226,7 @@ const products = [
         "category": "Watches",
         "main_category": "Jewellery",
         "brand": "TimeMaster",
-        "product_image": "https://example.com/images/gold_watch.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=34565e100fff170f689a4f00cd8c2b8a6b41113c-10595607-images-thumbs&n=13",
         "supplier": {
             "id": "J011",
             "name": "TimeMaster Ltd.",
@@ -4246,7 +4246,7 @@ const products = [
         "category": "Rings",
         "main_category": "Jewellery",
         "brand": "TanzaniteTreasures",
-        "product_image": "https://example.com/images/tanzanite_ring.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=088ddb13094e72a5f86fdf78f7d813ea909c38c1-3193980-images-thumbs&n=13",
         "supplier": {
             "id": "J012",
             "name": "TanzaniteTreasures Inc.",
@@ -4266,7 +4266,7 @@ const products = [
         "category": "Pendants",
         "main_category": "Jewellery",
         "brand": "TopazDelight",
-        "product_image": "https://example.com/images/topaz_pendant.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2875f816b911fec8980607c9a487cbda53e3ec5f18ff504a-10496841-images-thumbs&n=13",
         "supplier": {
             "id": "J013",
             "name": "TopazDelight Ltd.",
@@ -4286,7 +4286,7 @@ const products = [
         "category": "Earrings",
         "main_category": "Jewellery",
         "brand": "BlueGems",
-        "product_image": "https://example.com/images/sapphire_earrings.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=df4add77c37a41ae868f04351e5cebb6-5494799-images-thumbs&n=13",
         "supplier": {
             "id": "J014",
             "name": "BlueGems Ltd.",
@@ -4306,7 +4306,7 @@ const products = [
         "category": "Necklaces",
         "main_category": "Jewellery",
         "brand": "GoldenThreads",
-        "product_image": "https://example.com/images/gold_chain.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=a1bbf035af57c05be586b7257003df17-5147227-images-thumbs&n=13",
         "supplier": {
             "id": "J015",
             "name": "GoldenThreads Ltd.",
@@ -4326,7 +4326,7 @@ const products = [
         "category": "Rings",
         "main_category": "Jewellery",
         "brand": "AmethystGems",
-        "product_image": "https://example.com/images/amethyst_ring.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f31d19d20ad23ca2199d1e9014f835a5-4600463-images-thumbs&n=13",
         "supplier": {
             "id": "J016",
             "name": "AmethystGems Ltd.",
@@ -4346,7 +4346,7 @@ const products = [
         "category": "Bracelets",
         "main_category": "Jewellery",
         "brand": "GoldenGrace",
-        "product_image": "https://example.com/images/gold_bangle.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=726bd7b71213035350a4bb1ccdf085c4-5896582-images-thumbs&n=13",
         "supplier": {
             "id": "J017",
             "name": "GoldenGrace Inc.",
@@ -4366,7 +4366,7 @@ const products = [
         "category": "Earrings",
         "main_category": "Jewellery",
         "brand": "RubyGems",
-        "product_image": "https://example.com/images/ruby_earrings.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=9ac53552afe91e1be739e585599b9b06046796b26157dfad-12617026-images-thumbs&n=13",
         "supplier": {
             "id": "J018",
             "name": "RubyGems Ltd.",
@@ -4386,7 +4386,7 @@ const products = [
         "category": "Pendants",
         "main_category": "Jewellery",
         "brand": "SilverLuxe",
-        "product_image": "https://example.com/images/silver_pendant.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=800fcd3942b2ed33bc9b46115bf657b26c4c6909-10238674-images-thumbs&n=13",
         "supplier": {
             "id": "J019",
             "name": "SilverLuxe Inc.",
@@ -4406,7 +4406,7 @@ const products = [
         "category": "Brooches",
         "main_category": "Jewellery",
         "brand": "DiamondElite",
-        "product_image": "https://example.com/images/diamond_brooch.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b1c624751fbc49f2bc7b7909b593517f04ab5f45-9215166-images-thumbs&n=13",
         "supplier": {
             "id": "J020",
             "name": "DiamondElite Ltd.",
@@ -4426,7 +4426,7 @@ const products = [
         "category": "Earrings",
         "main_category": "Jewellery",
         "brand": "GoldenGems",
-        "product_image": "https://example.com/images/gold_earrings.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=1afef912206b597f57c0955df65b3985bc4f0d6bb88b8ecc-4328615-images-thumbs&n=13",
         "supplier": {
             "id": "J021",
             "name": "GoldenGems Ltd.",
@@ -4446,7 +4446,7 @@ const products = [
         "category": "Rings",
         "main_category": "Jewellery",
         "brand": "SilverGlam",
-        "product_image": "https://example.com/images/silver_ring.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=066d4c05439fe308f9940bd9921a4668763d5871-5368846-images-thumbs&n=13",
         "supplier": {
             "id": "J022",
             "name": "SilverGlam Ltd.",
@@ -4466,7 +4466,7 @@ const products = [
         "category": "Bracelets",
         "main_category": "Jewellery",
         "brand": "TopazTreasures",
-        "product_image": "https://example.com/images/topaz_bracelet.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=096264d328c51833aeba35ef04dc94bf0a9e5c19-12421984-images-thumbs&n=13",
         "supplier": {
             "id": "J023",
             "name": "TopazTreasures Ltd.",
@@ -4486,7 +4486,7 @@ const products = [
         "category": "Earrings",
         "main_category": "Jewellery",
         "brand": "EmeraldGems",
-        "product_image": "https://example.com/images/emerald_earrings.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=6ab50d48df4c416db30848bb90c994c52510e10f-10332876-images-thumbs&n=13",
         "supplier": {
             "id": "J024",
             "name": "EmeraldGems Inc.",
@@ -4506,7 +4506,7 @@ const products = [
         "category": "Pendants",
         "main_category": "Jewellery",
         "brand": "GoldTreasures",
-        "product_image": "https://example.com/images/gold_pendant.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e0f3bd8c44841d243bd60f41df877391-4402005-images-thumbs&n=13",
         "supplier": {
             "id": "J025",
             "name": "GoldTreasures Ltd.",
@@ -4526,7 +4526,7 @@ const products = [
         "category": "Necklaces",
         "main_category": "Jewellery",
         "brand": "DiamondLux",
-        "product_image": "https://example.com/images/diamond_necklace.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=fcefd110013eab9ef7a0a2279059b22828161a3e-9156331-images-thumbs&n=13",
         "supplier": {
             "id": "J026",
             "name": "DiamondLux Ltd.",
@@ -4546,7 +4546,7 @@ const products = [
         "category": "Earrings",
         "main_category": "Jewellery",
         "brand": "TanzaniteGems",
-        "product_image": "https://example.com/images/tanzanite_earrings.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=3b5088a68e97d01b56e92a0dade8f6eb03e4f8aa-3493926-images-thumbs&n=13",
         "supplier": {
             "id": "J027",
             "name": "TanzaniteGems Ltd.",
@@ -4566,7 +4566,7 @@ const products = [
         "category": "Cufflinks",
         "main_category": "Jewellery",
         "brand": "SilverStyle",
-        "product_image": "https://example.com/images/silver_cufflinks.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2ae0f168a35684dce2804b6fbd4a5c8eaf62405d-5127582-images-thumbs&n=13",
         "supplier": {
             "id": "J028",
             "name": "SilverStyle Ltd.",
@@ -4586,7 +4586,7 @@ const products = [
         "category": "Pendants",
         "main_category": "Jewellery",
         "brand": "PlatinumElite",
-        "product_image": "https://example.com/images/platinum_pendant.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=793626928a4085ac101b14bba20f4a49cf052e8692df47d0-5875611-images-thumbs&n=13",
         "supplier": {
             "id": "J029",
             "name": "PlatinumElite Inc.",
@@ -4606,7 +4606,7 @@ const products = [
         "category": "Necklaces",
         "main_category": "Jewellery",
         "brand": "EmeraldLux",
-        "product_image": "https://example.com/images/emerald_necklace.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=080954129d2c5b59ec4030639d9509d86841c88c-11497947-images-thumbs&n=13",
         "supplier": {
             "id": "J030",
             "name": "EmeraldLux Ltd.",
@@ -4626,7 +4626,7 @@ const products = [
         "category": "Brooches",
         "main_category": "Jewellery",
         "brand": "GoldGems",
-        "product_image": "https://example.com/images/gold_brooch.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=19412dd38e476e7fe1abcacc55eb1e0d37634109-11490366-images-thumbs&n=13",
         "supplier": {
             "id": "J031",
             "name": "GoldGems Ltd.",
@@ -4646,7 +4646,7 @@ const products = [
         "category": "Rings",
         "main_category": "Jewellery",
         "brand": "PlatinumGems",
-        "product_image": "https://example.com/images/platinum_ring.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2a0000017a19bca4ee9b51b7cb7c9a34cbd9-4571855-images-thumbs&n=13",
         "supplier": {
             "id": "J032",
             "name": "PlatinumGems Ltd.",
@@ -4666,7 +4666,7 @@ const products = [
         "category": "Earrings",
         "main_category": "Jewellery",
         "brand": "TopazElegance",
-        "product_image": "https://example.com/images/topaz_earrings.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=300415edc70cb836b49fa607b8ba38e9e726dd83d1e7a576-5452983-images-thumbs&n=13",
         "supplier": {
             "id": "J033",
             "name": "TopazElegance Inc.",
@@ -4686,7 +4686,7 @@ const products = [
         "category": "Pendants",
         "main_category": "Jewellery",
         "brand": "RubyLux",
-        "product_image": "https://example.com/images/ruby_pendant.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=cea93c844421a2cd3a885b6315f846d2cd9714e1-12752977-images-thumbs&n=13",
         "supplier": {
             "id": "J034",
             "name": "RubyLux Ltd.",
@@ -4706,7 +4706,7 @@ const products = [
         "category": "Necklaces",
         "main_category": "Jewellery",
         "brand": "SilverChic",
-        "product_image": "https://example.com/images/silver_necklace.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=56e8b67d09dfe7efec5c4cac781899d78815cffa-3833297-images-thumbs&n=13",
         "supplier": {
             "id": "J035",
             "name": "SilverChic Ltd.",
@@ -4726,7 +4726,7 @@ const products = [
         "category": "Pendants",
         "main_category": "Jewellery",
         "brand": "AmethystLux",
-        "product_image": "https://example.com/images/amethyst_pendant.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=6a6970b16764b09c3ad8ecd8c431a43bbee08d9e-8307637-images-thumbs&n=13",
         "supplier": {
             "id": "J036",
             "name": "AmethystLux Ltd.",
@@ -4746,7 +4746,7 @@ const products = [
         "category": "Cufflinks",
         "main_category": "Jewellery",
         "brand": "DiamondElegance",
-        "product_image": "https://example.com/images/diamond_cufflinks.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=968af483ec3e3d512e6054757e835c4e9646f19a-13720467-images-thumbs&n=13",
         "supplier": {
             "id": "J037",
             "name": "DiamondElegance Ltd.",
@@ -4766,7 +4766,7 @@ const products = [
         "category": "Brooches",
         "main_category": "Jewellery",
         "brand": "GoldElite",
-        "product_image": "https://example.com/images/gold_brooch.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f1c509d0b3c9ea698b68db35e720a210ed96d223-8496968-images-thumbs&n=13",
         "supplier": {
             "id": "J038",
             "name": "GoldElite Ltd.",
@@ -4786,7 +4786,7 @@ const products = [
         "category": "Cufflinks",
         "main_category": "Jewellery",
         "brand": "PlatinumLuxe",
-        "product_image": "https://example.com/images/platinum_cufflinks.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=19de3c94672e58a97e73818d882195ae8adf681a-4593205-images-thumbs&n=13",
         "supplier": {
             "id": "J039",
             "name": "PlatinumLuxe Ltd.",
@@ -4806,7 +4806,7 @@ const products = [
         "category": "T-Shirts",
         "main_category": "Kids wear",
         "brand": "TinyTrends",
-        "product_image": "https://example.com/images/cotton_tshirt.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e926b9ea5ccb5fb28cc89460fb1baa343496a56db4f26c0d-12982376-images-thumbs&n=13",
         "supplier": {
             "id": "K001",
             "name": "TinyTrends Ltd.",
@@ -4826,7 +4826,7 @@ const products = [
         "category": "Shorts",
         "main_category": "Kids wear",
         "brand": "LittleDenim",
-        "product_image": "https://example.com/images/denim_shorts.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=04ab50f8a0ef37549633bafecfb82d10b35aefccf561f76c-4219240-images-thumbs&n=13",
         "supplier": {
             "id": "K002",
             "name": "LittleDenim Co.",
@@ -4846,7 +4846,7 @@ const products = [
         "category": "Skirts",
         "main_category": "Kids wear",
         "brand": "PlaidKidz",
-        "product_image": "https://example.com/images/plaid_skirt.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=1a22d2d1fc57b31c81225de3aa23e567c9e99772-10680870-images-thumbs&n=13",
         "supplier": {
             "id": "K003",
             "name": "PlaidKidz Ltd.",
@@ -4866,7 +4866,7 @@ const products = [
         "category": "Jackets",
         "main_category": "Kids wear",
         "brand": "SnowBuddies",
-        "product_image": "https://example.com/images/winter_jacket.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=8731de49c36f63495fadf770ae9312503fca0280-12371701-images-thumbs&n=13",
         "supplier": {
             "id": "K004",
             "name": "SnowBuddies Ltd.",
@@ -4886,7 +4886,7 @@ const products = [
         "category": "Hoodies",
         "main_category": "Kids wear",
         "brand": "FunWear",
-        "product_image": "https://example.com/images/graphic_hoodie.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=878e6d414780588c583dc45a569d6a4b0e0e979f-12529777-images-thumbs&n=13",
         "supplier": {
             "id": "K005",
             "name": "FunWear Co.",
@@ -4906,7 +4906,7 @@ const products = [
         "category": "Dresses",
         "main_category": "Kids wear",
         "brand": "DressyKids",
-        "product_image": "https://example.com/images/cotton_dress.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=af54d72f12e5a22f3993c8c490c29383-5288018-images-thumbs&n=13",
         "supplier": {
             "id": "K006",
             "name": "DressyKids Ltd.",
@@ -4926,7 +4926,7 @@ const products = [
         "category": "Shirts",
         "main_category": "Kids wear",
         "brand": "PoloKidz",
-        "product_image": "https://example.com/images/polo_shirt.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=9087f16ddebfe9896622665f2187fdbed99339cc-10266870-images-thumbs&n=13",
         "supplier": {
             "id": "K007",
             "name": "PoloKidz Co.",
@@ -4946,7 +4946,7 @@ const products = [
         "category": "Skirts",
         "main_category": "Kids wear",
         "brand": "TulleTwist",
-        "product_image": "https://example.com/images/tulle_skirt.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=99928956d1e567e0c81106844d5eb3b1-5282568-images-thumbs&n=13",
         "supplier": {
             "id": "K008",
             "name": "TulleTwist Ltd.",
@@ -4966,7 +4966,7 @@ const products = [
         "category": "Footwear",
         "main_category": "Kids wear",
         "brand": "Boots4Kids",
-        "product_image": "https://example.com/images/snow_boots.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=8f359a1f297db0a237f1ac08036b86f2132446b2-8276455-images-thumbs&n=13",
         "supplier": {
             "id": "K009",
             "name": "Boots4Kids Inc.",
@@ -4986,7 +4986,7 @@ const products = [
         "category": "Rompers",
         "main_category": "Kids wear",
         "brand": "PlayRomp",
-        "product_image": "https://example.com/images/playful_romper.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=4135c0deca0f09d0126a94d9c37a6bbcef15b3e2-10932673-images-thumbs&n=13",
         "supplier": {
             "id": "K010",
             "name": "PlayRomp Ltd.",
@@ -5006,7 +5006,7 @@ const products = [
         "category": "Jackets",
         "main_category": "Kids wear",
         "brand": "DenimDreams",
-        "product_image": "https://example.com/images/denim_jacket.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2a6471caac129bdabe9177551124ad88ffecdd63-10555283-images-thumbs&n=13",
         "supplier": {
             "id": "K011",
             "name": "DenimDreams Ltd.",
@@ -5026,7 +5026,7 @@ const products = [
         "category": "Coats",
         "main_category": "Kids wear",
         "brand": "RainyDay",
-        "product_image": "https://example.com/images/raincoat.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e895ef4df29f0af97df8e53492730801d8119d10-12548095-images-thumbs&n=13",
         "supplier": {
             "id": "K012",
             "name": "RainyDay Co.",
@@ -5046,7 +5046,7 @@ const products = [
         "category": "Sweaters",
         "main_category": "Kids wear",
         "brand": "WarmSnuggles",
-        "product_image": "https://example.com/images/sweater_vest.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=23a12180ffe369d9ac3595b4dc6721512cd52435-9859478-images-thumbs&n=13",
         "supplier": {
             "id": "K013",
             "name": "WarmSnuggles Ltd.",
@@ -5066,7 +5066,7 @@ const products = [
         "category": "T-Shirts",
         "main_category": "Kids wear",
         "brand": "GraphicKidz",
-        "product_image": "https://example.com/images/graphic_tshirt.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=624070eab556db8b3869198e815e2b12e3b3fa04-4705461-images-thumbs&n=13",
         "supplier": {
             "id": "K014",
             "name": "GraphicKidz Ltd.",
@@ -5086,7 +5086,7 @@ const products = [
         "category": "Jackets",
         "main_category": "Kids wear",
         "brand": "FleeceFrenzy",
-        "product_image": "https://example.com/images/fleece_jacket.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=9056b35c80458cb8ba0b4eafbbfaaa5e65068f88-11512273-images-thumbs&n=13",
         "supplier": {
             "id": "K015",
             "name": "FleeceFrenzy Ltd.",
@@ -5106,7 +5106,7 @@ const products = [
         "category": "Pants",
         "main_category": "Kids wear",
         "brand": "ChinoCharm",
-        "product_image": "https://example.com/images/chino_pants.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=bba0aa45b39d3fff6ebdd3f1f44b0b3ff0499a2c-10638736-images-thumbs&n=13",
         "supplier": {
             "id": "K016",
             "name": "ChinoCharm Ltd.",
@@ -5126,7 +5126,7 @@ const products = [
         "category": "Activewear",
         "main_category": "Kids wear",
         "brand": "ActiveKidz",
-        "product_image": "https://example.com/images/activewear_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2d5b6ef1ac374df48d449d665d103b4bbbe675e1-5338563-images-thumbs&n=13",
         "supplier": {
             "id": "K017",
             "name": "ActiveKidz Ltd.",
@@ -5146,7 +5146,7 @@ const products = [
         "category": "Leggings",
         "main_category": "Kids wear",
         "brand": "WarmLegs",
-        "product_image": "https://example.com/images/warm_leggings.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=16e660be2f11974432b1f8e2f21470e80f46f936a7f77b0a-12323132-images-thumbs&n=13",
         "supplier": {
             "id": "K018",
             "name": "WarmLegs Ltd.",
@@ -5166,7 +5166,7 @@ const products = [
         "category": "Hats",
         "main_category": "Kids wear",
         "brand": "SunshineWear",
-        "product_image": "https://example.com/images/sun_hat.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=56b7af64bdf0ed6d06cbc9719f21603e58cf2f73-13052262-images-thumbs&n=13",
         "supplier": {
             "id": "K019",
             "name": "SunshineWear Ltd.",
@@ -5186,7 +5186,7 @@ const products = [
         "category": "Footwear",
         "main_category": "Kids wear",
         "brand": "RainySteps",
-        "product_image": "https://example.com/images/rain_boots.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=29273070e9e84fcfab63a395138eeff6ce4db34a-10639796-images-thumbs&n=13",
         "supplier": {
             "id": "K020",
             "name": "RainySteps Ltd.",
@@ -5206,7 +5206,7 @@ const products = [
         "category": "Dresses",
         "main_category": "Kids wear",
         "brand": "SunnyDress",
-        "product_image": "https://example.com/images/summer_dress.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=1d1f0fc1aa2c80ed9670450b6658478b69a81aad-8373849-images-thumbs&n=13",
         "supplier": {
             "id": "K021",
             "name": "SunnyDress Ltd.",
@@ -5226,7 +5226,7 @@ const products = [
         "category": "Pants",
         "main_category": "Kids wear",
         "brand": "FleeceFashion",
-        "product_image": "https://example.com/images/fleece_pants.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e1150369a3e3daa47471c6f77aafed05574f5e4a-12413751-images-thumbs&n=13",
         "supplier": {
             "id": "K022",
             "name": "FleeceFashion Ltd.",
@@ -5246,7 +5246,7 @@ const products = [
         "category": "Tracksuits",
         "main_category": "Kids wear",
         "brand": "SportyKids",
-        "product_image": "https://example.com/images/sporty_tracksuit.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=8a684685d33140eba47c5b12cd333dbdc6a621c4-4230375-images-thumbs&n=13",
         "supplier": {
             "id": "K023",
             "name": "SportyKids Ltd.",
@@ -5266,7 +5266,7 @@ const products = [
         "category": "Overalls",
         "main_category": "Kids wear",
         "brand": "DenimKids",
-        "product_image": "https://example.com/images/denim_overalls.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=4ae9859adf2df151d661c97b3e5ff8b7a9a2598a-12508610-images-thumbs&n=13",
         "supplier": {
             "id": "K024",
             "name": "DenimKids Ltd.",
@@ -5286,7 +5286,7 @@ const products = [
         "category": "Socks",
         "main_category": "Kids wear",
         "brand": "CozySocks",
-        "product_image": "https://example.com/images/cotton_socks.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=14e0f90de04c6963a76c0b2b53752b10a293f99f-8331156-images-thumbs&n=13",
         "supplier": {
             "id": "K025",
             "name": "CozySocks Co.",
@@ -5306,7 +5306,7 @@ const products = [
         "category": "Pajamas",
         "main_category": "Kids wear",
         "brand": "SleepyKidz",
-        "product_image": "https://example.com/images/printed_pajamas.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=a7b8b1b58ba9f186595b80bbe945ae8e7ed94504d496c775-11049547-images-thumbs&n=13",
         "supplier": {
             "id": "K026",
             "name": "SleepyKidz Ltd.",
@@ -5326,7 +5326,7 @@ const products = [
         "category": "Leggings",
         "main_category": "Kids wear",
         "brand": "DressyLegs",
-        "product_image": "https://example.com/images/dressy_leggings.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e39f9b6fb777945b17fba89a7e907b27-5647550-images-thumbs&n=13",
         "supplier": {
             "id": "K027",
             "name": "DressyLegs Ltd.",
@@ -5346,7 +5346,7 @@ const products = [
         "category": "Dresses",
         "main_category": "Kids wear",
         "brand": "RuffleWear",
-        "product_image": "https://example.com/images/ruffled_dress.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=7a97d25d6d75a33306426ecd9e2f8d4e5a9cca2b-4499710-images-thumbs&n=13",
         "supplier": {
             "id": "K028",
             "name": "RuffleWear Ltd.",
@@ -5366,7 +5366,7 @@ const products = [
         "category": "Shorts",
         "main_category": "Kids wear",
         "brand": "SunnyShorts",
-        "product_image": "https://example.com/images/summer_shorts.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=874666ad0d963c1ad9ef65b8e8031fc002b21eca-5734463-images-thumbs&n=13",
         "supplier": {
             "id": "K029",
             "name": "SunnyShorts Co.",
@@ -5386,7 +5386,7 @@ const products = [
         "category": "Sweaters",
         "main_category": "Kids wear",
         "brand": "CozyWear",
-        "product_image": "https://example.com/images/cozy_sweater.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b6e4c50658dca5443bcf5e44b493df87-5869570-images-thumbs&n=13",
         "supplier": {
             "id": "K030",
             "name": "CozyWear Ltd.",
@@ -5406,7 +5406,7 @@ const products = [
         "category": "Hats",
         "main_category": "Kids wear",
         "brand": "WarmHats",
-        "product_image": "https://example.com/images/warm_hat.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e0e4868f8ad9e97ce305ab8da78b122d2b4bb9f9-6950445-images-thumbs&n=13",
         "supplier": {
             "id": "K031",
             "name": "WarmHats Ltd.",
@@ -5426,7 +5426,7 @@ const products = [
         "category": "Shorts",
         "main_category": "Kids wear",
         "brand": "DressShorts",
-        "product_image": "https://example.com/images/dress_shorts.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b36d5cfa0cc15f6737a0a7f8721b209fde765825-4232390-images-thumbs&n=13",
         "supplier": {
             "id": "K032",
             "name": "DressShorts Ltd.",
@@ -5446,7 +5446,7 @@ const products = [
         "category": "Vests",
         "main_category": "Kids wear",
         "brand": "PufferPro",
-        "product_image": "https://example.com/images/puffer_vest.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b1cc892886957b4a39d16fc0b0f70e69ed214945-5858066-images-thumbs&n=13",
         "supplier": {
             "id": "K033",
             "name": "PufferPro Ltd.",
@@ -5466,7 +5466,7 @@ const products = [
         "category": "Rompers",
         "main_category": "Kids wear",
         "brand": "FloralKidz",
-        "product_image": "https://example.com/images/floral_romper.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2a0000017a096cb1acb5f67eeef1b486ed41-4575484-images-thumbs&n=13",
         "supplier": {
             "id": "K034",
             "name": "FloralKidz Ltd.",
@@ -5486,7 +5486,7 @@ const products = [
         "category": "Gloves",
         "main_category": "Kids wear",
         "brand": "WarmFingers",
-        "product_image": "https://example.com/images/warm_gloves.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=bb2591737a3eff51c92bee82c1fe8e50755f169c-12569903-images-thumbs&n=13",
         "supplier": {
             "id": "K035",
             "name": "WarmFingers Ltd.",
@@ -5506,7 +5506,7 @@ const products = [
         "category": "Shirts",
         "main_category": "Kids wear",
         "brand": "ButtonDownKidz",
-        "product_image": "https://example.com/images/button_down_shirt.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=fe0810f9ae4c1366956dcfc4c9c09d07ff3f0715-10332876-images-thumbs&n=13",
         "supplier": {
             "id": "K036",
             "name": "ButtonDownKidz Ltd.",
@@ -5526,7 +5526,7 @@ const products = [
         "category": "Hats",
         "main_category": "Kids wear",
         "brand": "SummerShade",
-        "product_image": "https://example.com/images/summer_hat.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b6943bcb76a1348335d927e3c7e069ddc346cd08-3735052-images-thumbs&n=13",
         "supplier": {
             "id": "K037",
             "name": "SummerShade Ltd.",
@@ -5546,7 +5546,7 @@ const products = [
         "category": "Shirts",
         "main_category": "Kids wear",
         "brand": "PlaidKids",
-        "product_image": "https://example.com/images/plaid_shirt.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e571584d7b628b9ac7b2bdc990cc9cf27cea5c8a-10996732-images-thumbs&n=13",
         "supplier": {
             "id": "K038",
             "name": "PlaidKids Ltd.",
@@ -5566,7 +5566,7 @@ const products = [
         "category": "Dresses",
         "main_category": "Kids wear",
         "brand": "SweaterWear",
-        "product_image": "https://example.com/images/sweater_dress.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=968591a5748c3d2e0340098fb1926d503e0a91ef-11032733-images-thumbs&n=13",
         "supplier": {
             "id": "K039",
             "name": "SweaterWear Ltd.",
@@ -5586,7 +5586,7 @@ const products = [
         "category": "Socks",
         "main_category": "Kids wear",
         "brand": "PlaySocks",
-        "product_image": "https://example.com/images/playful_socks.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=7da4a2ad2c43090bba9c99db499c4145f9ca7a1d5324715e-10235791-images-thumbs&n=13",
         "supplier": {
             "id": "K040",
             "name": "PlaySocks Ltd.",
@@ -5606,7 +5606,7 @@ const products = [
         "category": "Pants",
         "main_category": "Kids wear",
         "brand": "CozyFit",
-        "product_image": "https://example.com/images/cozy_pants.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=95de4f037f93c76da78a7b38e1d81646de90225a-5480005-images-thumbs&n=13",
         "supplier": {
             "id": "K041",
             "name": "CozyFit Ltd.",
@@ -5626,7 +5626,7 @@ const products = [
         "category": "Jackets",
         "main_category": "Kids wear",
         "brand": "BrightWear",
-        "product_image": "https://example.com/images/bright_jacket.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=3977e615792552f9ba2c678b0112dc2fb7eb9948-10803837-images-thumbs&n=13",
         "supplier": {
             "id": "K042",
             "name": "BrightWear Ltd.",
@@ -5646,7 +5646,7 @@ const products = [
         "category": "Dresses",
         "main_category": "Kids wear",
         "brand": "FloralWear",
-        "product_image": "https://example.com/images/floral_dress.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=47abb8b9335fb5ce99b4ccb70474d87db7470968-9149794-images-thumbs&n=13",
         "supplier": {
             "id": "K043",
             "name": "FloralWear Ltd.",
@@ -5666,7 +5666,7 @@ const products = [
         "category": "Vests",
         "main_category": "Kids wear",
         "brand": "ThermalWear",
-        "product_image": "https://example.com/images/thermal_vest.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=0646bf9d67144c82088da94c98162f2f429307e6-4113845-images-thumbs&n=13",
         "supplier": {
             "id": "K044",
             "name": "ThermalWear Ltd.",
@@ -5686,7 +5686,7 @@ const products = [
         "category": "Shirts",
         "main_category": "Kids wear",
         "brand": "PoloKidz",
-        "product_image": "https://example.com/images/polo_shirt.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=9087f16ddebfe9896622665f2187fdbed99339cc-10266870-images-thumbs&n=13",
         "supplier": {
             "id": "K045",
             "name": "PoloKidz Ltd.",
@@ -5706,7 +5706,7 @@ const products = [
         "category": "Pans",
         "main_category": "Cookware",
         "brand": "CookMaster",
-        "product_image": "https://example.com/images/non_stick_frying_pan.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=6dcc65e0ada614685f7d0b0188440178eb1e500b-12398098-images-thumbs&n=13",
         "supplier": {
             "id": "S001",
             "name": "CookMaster Ltd.",
@@ -5726,7 +5726,7 @@ const products = [
         "category": "Saucepans",
         "main_category": "Cookware",
         "brand": "SteelCook",
-        "product_image": "https://example.com/images/stainless_steel_saucepan.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=cf55c8db531b08700115b8013d41308c5fa8650b-12384307-images-thumbs&n=13",
         "supplier": {
             "id": "S002",
             "name": "SteelCook Ltd.",
@@ -5746,7 +5746,7 @@ const products = [
         "category": "Dutch Ovens",
         "main_category": "Cookware",
         "brand": "IronChef",
-        "product_image": "https://example.com/images/cast_iron_dutch_oven.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=d67a727954e74b90dbd13bd3262ea1b8c989d480-12365999-images-thumbs&n=13",
         "supplier": {
             "id": "S003",
             "name": "IronChef Ltd.",
@@ -5766,7 +5766,7 @@ const products = [
         "category": "Cookware Sets",
         "main_category": "Cookware",
         "brand": "CeramiCook",
-        "product_image": "https://example.com/images/ceramic_cookware_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=6d04eeaa242870e1b5719a3e0757bb8c0a1c6aef-10104341-images-thumbs&n=13",
         "supplier": {
             "id": "S004",
             "name": "CeramiCook Ltd.",
@@ -5786,7 +5786,7 @@ const products = [
         "category": "Stock Pots",
         "main_category": "Cookware",
         "brand": "AluCook",
-        "product_image": "https://example.com/images/aluminum_stock_pot.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=028e1d90eeceeda76ca595324c0919b414a1eceecfcc9158-12517331-images-thumbs&n=13",
         "supplier": {
             "id": "S005",
             "name": "AluCook Ltd.",
@@ -5806,7 +5806,7 @@ const products = [
         "category": "Skillets",
         "main_category": "Cookware",
         "brand": "CopperCook",
-        "product_image": "https://example.com/images/copper_skillet.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=739306b6628ddff249cf19831c897f822ae8bcbb-10143227-images-thumbs&n=13",
         "supplier": {
             "id": "S006",
             "name": "CopperCook Ltd.",
@@ -5826,7 +5826,7 @@ const products = [
         "category": "Baking Dishes",
         "main_category": "Cookware",
         "brand": "GlassCook",
-        "product_image": "https://example.com/images/glass_baking_dish.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e585a97613ab76704e1031f512d10a0bd6609f05-5326406-images-thumbs&n=13",
         "supplier": {
             "id": "S007",
             "name": "GlassCook Ltd.",
@@ -5846,7 +5846,7 @@ const products = [
         "category": "Pans",
         "main_category": "Cookware",
         "brand": "EnamelCook",
-        "product_image": "https://example.com/images/enamelled_cast_iron_pan.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=1f16248e82fdbbbb2b1c0e88c4cb9d7f8a3f537d-11869273-images-thumbs&n=13",
         "supplier": {
             "id": "S008",
             "name": "EnamelCook Ltd.",
@@ -5866,7 +5866,7 @@ const products = [
         "category": "Cookware Sets",
         "main_category": "Cookware",
         "brand": "InductoCook",
-        "product_image": "https://example.com/images/induction_cookware_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=8991d4dc370b5bf3b3914070c589d2bafb4d469e-9888116-images-thumbs&n=13",
         "supplier": {
             "id": "S009",
             "name": "InductoCook Ltd.",
@@ -5886,7 +5886,7 @@ const products = [
         "category": "Stock Pots",
         "main_category": "Cookware",
         "brand": "SteelStock",
-        "product_image": "https://example.com/images/stainless_steel_stock_pot.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=07364eca82478df412fdef3e0d9a73576404a56f-4782879-images-thumbs&n=13",
         "supplier": {
             "id": "S010",
             "name": "SteelStock Ltd.",
@@ -5906,7 +5906,7 @@ const products = [
         "category": "Grill Pans",
         "main_category": "Cookware",
         "brand": "TeflonGrill",
-        "product_image": "https://example.com/images/teflon_grill_pan.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=be7a1403f5261353e8ae71c598e0fd20792034e8-10698057-images-thumbs&n=13",
         "supplier": {
             "id": "S011",
             "name": "TeflonGrill Ltd.",
@@ -5926,7 +5926,7 @@ const products = [
         "category": "Steamers",
         "main_category": "Cookware",
         "brand": "BambooCook",
-        "product_image": "https://example.com/images/bamboo_steamer.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=acc674137bba2cc99e854594488e037c64e0b2c7-8497159-images-thumbs&n=13",
         "supplier": {
             "id": "S012",
             "name": "BambooCook Ltd.",
@@ -5946,7 +5946,7 @@ const products = [
         "category": "Double Boilers",
         "main_category": "Cookware",
         "brand": "BoilMaster",
-        "product_image": "https://example.com/images/double_boiler.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=c59dfb8044c666987beedf0f7dc0f0e3-4326270-images-thumbs&n=13",
         "supplier": {
             "id": "S013",
             "name": "BoilMaster Ltd.",
@@ -5966,7 +5966,7 @@ const products = [
         "category": "Skillets",
         "main_category": "Cookware",
         "brand": "IronSkillet",
-        "product_image": "https://example.com/images/cast_iron_skillet.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=29f8298c2920475b2d1d7e1d64c6b4ba61b91b11-7777855-images-thumbs&n=13",
         "supplier": {
             "id": "S014",
             "name": "IronSkillet Ltd.",
@@ -5986,7 +5986,7 @@ const products = [
         "category": "Saucepans",
         "main_category": "Cookware",
         "brand": "CopperSauce",
-        "product_image": "https://example.com/images/copper_saucepan.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=c2920917da565339c1cfab777bd53ae714dd2a5f-9222271-images-thumbs&n=13",
         "supplier": {
             "id": "S015",
             "name": "CopperSauce Ltd.",
@@ -6006,7 +6006,7 @@ const products = [
         "category": "Cookware Sets",
         "main_category": "Cookware",
         "brand": "HardCook",
-        "product_image": "https://example.com/images/hard_anodized_cookware_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=7141db4a41da8a59e4ffe7dadf066b51958cdb50-12831326-images-thumbs&n=13",
         "supplier": {
             "id": "S016",
             "name": "HardCook Ltd.",
@@ -6026,7 +6026,7 @@ const products = [
         "category": "Pans",
         "main_category": "Cookware",
         "brand": "GraniteCook",
-        "product_image": "https://example.com/images/granite_frying_pan.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f906dec3328ec5090e791409fcd23712039e4aa6-9863327-images-thumbs&n=13",
         "supplier": {
             "id": "S017",
             "name": "GraniteCook Ltd.",
@@ -6046,7 +6046,7 @@ const products = [
         "category": "Woks",
         "main_category": "Cookware",
         "brand": "WokMaster",
-        "product_image": "https://example.com/images/non_stick_wok.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=8c3f6228655dfbe3fdf947923e034b0f5435599c-5281441-images-thumbs&n=13",
         "supplier": {
             "id": "S018",
             "name": "WokMaster Ltd.",
@@ -6066,7 +6066,7 @@ const products = [
         "category": "Roasting Pans",
         "main_category": "Cookware",
         "brand": "RoastSteel",
-        "product_image": "https://example.com/images/stainless_steel_roasting_pan.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=41d77987ac8310284d299490866368f5412b6aa4-10869844-images-thumbs&n=13",
         "supplier": {
             "id": "S019",
             "name": "RoastSteel Ltd.",
@@ -6086,7 +6086,7 @@ const products = [
         "category": "Multi-Cookers",
         "main_category": "Cookware",
         "brand": "MultiCook",
-        "product_image": "https://example.com/images/multi_cooker.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=eed0b7f4ce3217873a287f2129dab46f-2362775-images-thumbs&n=13",
         "supplier": {
             "id": "S020",
             "name": "MultiCook Ltd.",
@@ -6106,7 +6106,7 @@ const products = [
         "category": "Baking Mats",
         "main_category": "Cookware",
         "brand": "SiliconeBake",
-        "product_image": "https://example.com/images/silicone_baking_mat.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=50bbd0b3554b5f73a584439003f8d7194c907499-10933751-images-thumbs&n=13",
         "supplier": {
             "id": "S021",
             "name": "SiliconeBake Ltd.",
@@ -6126,7 +6126,7 @@ const products = [
         "category": "Skillets",
         "main_category": "Cookware",
         "brand": "SteelSkillet",
-        "product_image": "https://example.com/images/stainless_steel_skillet.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=95aff61d80fa40f4976d45330a015fb019eb7508-9813974-images-thumbs&n=13",
         "supplier": {
             "id": "S022",
             "name": "SteelSkillet Ltd.",
@@ -6146,7 +6146,7 @@ const products = [
         "category": "Pressure Cookers",
         "main_category": "Cookware",
         "brand": "PressureCook",
-        "product_image": "https://example.com/images/pressure_cooker.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=ab48e078ebf774a17771fb40508e44b1-2463541-images-thumbs&n=13",
         "supplier": {
             "id": "S023",
             "name": "PressureCook Ltd.",
@@ -6166,7 +6166,7 @@ const products = [
         "category": "Baking Dishes",
         "main_category": "Cookware",
         "brand": "CeramicBake",
-        "product_image": "https://example.com/images/ceramic_baking_dish.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=8472c89284a0e75681d33015d64fea9afb055b68-9624812-images-thumbs&n=13",
         "supplier": {
             "id": "S024",
             "name": "CeramicBake Ltd.",
@@ -6186,7 +6186,7 @@ const products = [
         "category": "Kitchen Accessories",
         "main_category": "Cookware",
         "brand": "CookMitts",
-        "product_image": "https://example.com/images/oven_mitts.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=351bb330390721de8d6cc53340d73699916e7fa5-10877992-images-thumbs&n=13",
         "supplier": {
             "id": "S025",
             "name": "CookMitts Ltd.",
@@ -6206,7 +6206,7 @@ const products = [
         "category": "Kitchen Organizers",
         "main_category": "Cookware",
         "brand": "LidOrganizer",
-        "product_image": "https://example.com/images/lid_organizer.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f46d4391883e34a37301300bbc244b2411298a0d-5236641-images-thumbs&n=13",
         "supplier": {
             "id": "S026",
             "name": "LidOrganizer Ltd.",
@@ -6226,7 +6226,7 @@ const products = [
         "category": "Utensils",
         "main_category": "Cookware",
         "brand": "BambooUtensil",
-        "product_image": "https://example.com/images/bamboo_utensil_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=3cf510c6cec72e44c172d28ce0b1b974efab52ac-11003961-images-thumbs&n=13",
         "supplier": {
             "id": "S027",
             "name": "BambooUtensil Ltd.",
@@ -6246,7 +6246,7 @@ const products = [
         "category": "Colanders",
         "main_category": "Cookware",
         "brand": "SteelColander",
-        "product_image": "https://example.com/images/stainless_steel_colander.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=4d0357c0078c36585dfa522139a0e277e7f1d273-5489370-images-thumbs&n=13",
         "supplier": {
             "id": "S028",
             "name": "SteelColander Ltd.",
@@ -6266,7 +6266,7 @@ const products = [
         "category": "Stock Pots",
         "main_category": "Cookware",
         "brand": "CopperStock",
-        "product_image": "https://example.com/images/copper_stock_pot.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=160ebad34cf08617219a252424280f3c3e628ec9-5233487-images-thumbs&n=13",
         "supplier": {
             "id": "S029",
             "name": "CopperStock Ltd.",
@@ -6286,7 +6286,7 @@ const products = [
         "category": "Mixing Bowls",
         "main_category": "Cookware",
         "brand": "GlassMix",
-        "product_image": "https://example.com/images/glass_mixing_bowl_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=a682797a95ad1164086885bb9b11168516326076-12714815-images-thumbs&n=13",
         "supplier": {
             "id": "S030",
             "name": "GlassMix Ltd.",
@@ -6306,7 +6306,7 @@ const products = [
         "category": "Griddles",
         "main_category": "Cookware",
         "brand": "SteelGriddle",
-        "product_image": "https://example.com/images/stainless_steel_griddle.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2a00000179fc23aef3af959a75f7b0687139-4469558-images-thumbs&n=13",
         "supplier": {
             "id": "S031",
             "name": "SteelGriddle Ltd.",
@@ -6326,7 +6326,7 @@ const products = [
         "category": "Utensils",
         "main_category": "Cookware",
         "brand": "SiliconeUtensil",
-        "product_image": "https://example.com/images/silicone_cooking_utensils.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=78c8714087e3106a8a163871c4f2dc0c2d5c1235-12935885-images-thumbs&n=13",
         "supplier": {
             "id": "S032",
             "name": "SiliconeUtensil Ltd.",
@@ -6346,7 +6346,7 @@ const products = [
         "category": "Baking Pans",
         "main_category": "Cookware",
         "brand": "BakeMaster",
-        "product_image": "https://example.com/images/baking_pan_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=5f08dade2bd15a93b00183643ecfd863763b2354-12480039-images-thumbs&n=13",
         "supplier": {
             "id": "S033",
             "name": "BakeMaster Ltd.",
@@ -6366,7 +6366,7 @@ const products = [
         "category": "Electric Kettles",
         "main_category": "Cookware",
         "brand": "KettleCook",
-        "product_image": "https://example.com/images/electric_kettle.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=bfeb20229fd251df9804a321290012c50a3368b8-7012067-images-thumbs&n=13",
         "supplier": {
             "id": "S034",
             "name": "KettleCook Ltd.",
@@ -6386,7 +6386,7 @@ const products = [
         "category": "Pasta Pots",
         "main_category": "Cookware",
         "brand": "PastaCook",
-        "product_image": "https://example.com/images/stainless_steel_pasta_pot.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=5798972f098bd3cb45b9b39a1aa7578186ecf4aa-8497455-images-thumbs&n=13",
         "supplier": {
             "id": "S035",
             "name": "PastaCook Ltd.",
@@ -6406,7 +6406,7 @@ const products = [
         "category": "Baking Molds",
         "main_category": "Cookware",
         "brand": "SiliconeBake",
-        "product_image": "https://example.com/images/silicone_baking_molds.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=fb827a5a2cccb46fafc7d3083510cc680aea057b-12715024-images-thumbs&n=13",
         "supplier": {
             "id": "S036",
             "name": "SiliconeBake Ltd.",
@@ -6426,7 +6426,7 @@ const products = [
         "category": "Baking Sheets",
         "main_category": "Cookware",
         "brand": "BakeSheet",
-        "product_image": "https://example.com/images/non_stick_baking_sheet.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=a517426dd3e3f8794b456315100ce2b74bebc3b6-12569755-images-thumbs&n=13",
         "supplier": {
             "id": "S037",
             "name": "BakeSheet Ltd.",
@@ -6446,7 +6446,7 @@ const products = [
         "category": "Skillet Sets",
         "main_category": "Cookware",
         "brand": "CastIronSet",
-        "product_image": "https://example.com/images/cast_iron_skillet_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=1ccf2c8e80a70603973dbd5cabfd689955b808fe-11499518-images-thumbs&n=13",
         "supplier": {
             "id": "S038",
             "name": "CastIronSet Ltd.",
@@ -6466,7 +6466,7 @@ const products = [
         "category": "Pans",
         "main_category": "Cookware",
         "brand": "AluFry",
-        "product_image": "https://example.com/images/aluminum_frying_pan.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=be3e1b97ab83aa7dcc98b2c48bddb4970fd09ea8-10465776-images-thumbs&n=13",
         "supplier": {
             "id": "S039",
             "name": "AluFry Ltd.",
@@ -6486,7 +6486,7 @@ const products = [
         "category": "Cookware Sets",
         "main_category": "Cookware",
         "brand": "GraniteCook",
-        "product_image": "https://example.com/images/granite_cookware_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=3d4a995c9d55303bed27affc9240f91a92264522-12149948-images-thumbs&n=13",
         "supplier": {
             "id": "S040",
             "name": "GraniteCook Ltd.",
@@ -6506,7 +6506,7 @@ const products = [
         "category": "Cutting Boards",
         "main_category": "Kitchen",
         "brand": "WoodCut",
-        "product_image": "https://example.com/images/wooden_cutting_board.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=6756453f756f0a299ef570daa3867139daa1a35a-7188894-images-thumbs&n=13",
         "supplier": {
             "id": "S041",
             "name": "WoodCut Ltd.",
@@ -6526,7 +6526,7 @@ const products = [
         "category": "Pitchers",
         "main_category": "Kitchen",
         "brand": "GlassPitch",
-        "product_image": "https://example.com/images/glass_pitcher.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=28332f173c2c4b66643700b6458310d8b468c70d205091b4-4809878-images-thumbs&n=13",
         "supplier": {
             "id": "S042",
             "name": "GlassPitch Ltd.",
@@ -6546,7 +6546,7 @@ const products = [
         "category": "Knife Sets",
         "main_category": "Kitchen",
         "brand": "CeramicKnife",
-        "product_image": "https://example.com/images/ceramic_knife_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=577a219e92e26a0e5db6e8e4fc269a30993a22e82065b9e6-4889316-images-thumbs&n=13",
         "supplier": {
             "id": "S043",
             "name": "CeramicKnife Ltd.",
@@ -6566,7 +6566,7 @@ const products = [
         "category": "Canisters",
         "main_category": "Kitchen",
         "brand": "SteelCanister",
-        "product_image": "https://example.com/images/stainless_steel_canister_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=5d0704a1963f8adfb8947cc7c46e727f-4836671-images-thumbs&n=13",
         "supplier": {
             "id": "S044",
             "name": "SteelCanister Ltd.",
@@ -6586,7 +6586,7 @@ const products = [
         "category": "Cutting Boards",
         "main_category": "Kitchen",
         "brand": "ReversibleCut",
-        "product_image": "https://example.com/images/reversible_cutting_board.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=1e79ed8b10d644a33bf59a04abc384923f56f774-12371092-images-thumbs&n=13",
         "supplier": {
             "id": "S045",
             "name": "ReversibleCut Ltd.",
@@ -6606,7 +6606,7 @@ const products = [
         "category": "Grinders",
         "main_category": "Kitchen",
         "brand": "GrindMaster",
-        "product_image": "https://example.com/images/electric_grinder.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=568373f64b1a92c6005786279cea7991-5679824-images-thumbs&n=13",
         "supplier": {
             "id": "S046",
             "name": "GrindMaster Ltd.",
@@ -6626,7 +6626,7 @@ const products = [
         "category": "Peelers",
         "main_category": "Kitchen",
         "brand": "PeelMaster",
-        "product_image": "https://example.com/images/vegetable_peeler.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=dd25eefdcd3b6880e29a12ce1da774d5aaf52c75-5542956-images-thumbs&n=13",
         "supplier": {
             "id": "S047",
             "name": "PeelMaster Ltd.",
@@ -6646,7 +6646,7 @@ const products = [
         "category": "Wine Accessories",
         "main_category": "Kitchen",
         "brand": "WineOpener",
-        "product_image": "https://example.com/images/wine_opener.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=1c36e6744285c61613185cff02628d824e5932b1-8356639-images-thumbs&n=13",
         "supplier": {
             "id": "S048",
             "name": "WineOpener Ltd.",
@@ -6666,7 +6666,7 @@ const products = [
         "category": "Graters",
         "main_category": "Kitchen",
         "brand": "CheeseGrate",
-        "product_image": "https://example.com/images/cheese_grater.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=e42f0a39c5f013a9c0e0272838993d1ce35ce483-7012254-images-thumbs&n=13",
         "supplier": {
             "id": "S049",
             "name": "CheeseGrate Ltd.",
@@ -6686,7 +6686,7 @@ const products = [
         "category": "Pizza Accessories",
         "main_category": "Kitchen",
         "brand": "PizzaCut",
-        "product_image": "https://example.com/images/pizza_cutter.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=3d0f707a518be70e75b17d598e8005ac111f7da3-4709556-images-thumbs&n=13",
         "supplier": {
             "id": "S050",
             "name": "PizzaCut Ltd.",
@@ -6706,7 +6706,7 @@ const products = [
         "category": "Pens",
         "main_category": "Stationary",
         "brand": "QuickWrite",
-        "product_image": "https://example.com/images/ballpoint_pen.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=540c856a7413bf6fcf8c0cbf4b5aa4d3a4254163-11042380-images-thumbs&n=13",
         "supplier": {
             "id": "P001",
             "name": "QuickWrite Ltd.",
@@ -6726,7 +6726,7 @@ const products = [
         "category": "Notebooks",
         "main_category": "Stationary",
         "brand": "NoteMaster",
-        "product_image": "https://example.com/images/notebook.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=5f0f33e081e2c434fbbd87dfe747e74c8e016c45-12399224-images-thumbs&n=13",
         "supplier": {
             "id": "P002",
             "name": "NoteMaster Ltd.",
@@ -6746,7 +6746,7 @@ const products = [
         "category": "Office Supplies",
         "main_category": "Stationary",
         "brand": "StaplePro",
-        "product_image": "https://example.com/images/stapler.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=20ddad4d73f7f60ccc6c05fca69cd6d347ab0e9c-7946262-images-thumbs&n=13",
         "supplier": {
             "id": "P003",
             "name": "StaplePro Ltd.",
@@ -6766,7 +6766,7 @@ const products = [
         "category": "Highlighters",
         "main_category": "Stationary",
         "brand": "BrightMark",
-        "product_image": "https://example.com/images/highlighter_set.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=ae63ae43f33995d6fb7b944ab0567059df587cb9-9148232-images-thumbs&n=13",
         "supplier": {
             "id": "P004",
             "name": "BrightMark Ltd.",
@@ -6786,7 +6786,7 @@ const products = [
         "category": "Clips",
         "main_category": "Stationary",
         "brand": "ClipMaster",
-        "product_image": "https://example.com/images/paper_clips.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=946eddaa7246f3e7357de4c7c532995cfd4ad984-9882341-images-thumbs&n=13",
         "supplier": {
             "id": "P005",
             "name": "ClipMaster Ltd.",
@@ -6806,7 +6806,7 @@ const products = [
         "category": "Erasers",
         "main_category": "Stationary",
         "brand": "EraseIt",
-        "product_image": "https://example.com/images/eraser.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=4652499d2e0a891b5b0a16b76fd1bbe81d11498a-9844612-images-thumbs&n=13",
         "supplier": {
             "id": "P006",
             "name": "EraseIt Ltd.",
@@ -6826,7 +6826,7 @@ const products = [
         "category": "Desk Accessories",
         "main_category": "Stationary",
         "brand": "DeskMate",
-        "product_image": "https://example.com/images/desk_organizer.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=aa5037f48c1dddd8c5bfd5abcfe179617af4a6b9-8240946-images-thumbs&n=13",
         "supplier": {
             "id": "P007",
             "name": "DeskMate Ltd.",
@@ -6846,7 +6846,7 @@ const products = [
         "category": "Notes",
         "main_category": "Stationary",
         "brand": "StickIt",
-        "product_image": "https://example.com/images/sticky_notes.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=c00bd1dfa0971fe6e2e47a6c7d3c03c352fde39f-9198382-images-thumbs&n=13",
         "supplier": {
             "id": "P008",
             "name": "StickIt Ltd.",
@@ -6866,7 +6866,7 @@ const products = [
         "category": "Binders",
         "main_category": "Stationary",
         "brand": "BindMaster",
-        "product_image": "https://example.com/images/binder.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=264a61ed7fcf1b5ebc6956eedee367755e52dd93-8497448-images-thumbs&n=13",
         "supplier": {
             "id": "P009",
             "name": "BindMaster Ltd.",
@@ -6886,7 +6886,7 @@ const products = [
         "category": "Calculators",
         "main_category": "Stationary",
         "brand": "CalcPro",
-        "product_image": "https://example.com/images/calculator.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=8d40dcd806656b7dbc706727b97b7b67e77c201a-3614495-images-thumbs&n=13",
         "supplier": {
             "id": "P010",
             "name": "CalcPro Ltd.",
@@ -6906,7 +6906,7 @@ const products = [
         "category": "Rulers",
         "main_category": "Stationary",
         "brand": "MeasureIt",
-        "product_image": "https://example.com/images/ruler.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=19a9d205017dbb8c9bdd156ed2f127f585d526b4-10197150-images-thumbs&n=13",
         "supplier": {
             "id": "P011",
             "name": "MeasureIt Ltd.",
@@ -6926,7 +6926,7 @@ const products = [
         "category": "Cutters",
         "main_category": "Stationary",
         "brand": "SharpCut",
-        "product_image": "https://example.com/images/paper_cutter.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=7c64a165b50d19d4650697ef07af95a263d21715-12474042-images-thumbs&n=13",
         "supplier": {
             "id": "P012",
             "name": "SharpCut Ltd.",
@@ -6946,7 +6946,7 @@ const products = [
         "category": "Markers",
         "main_category": "Stationary",
         "brand": "WhiteMark",
-        "product_image": "https://example.com/images/whiteboard_marker.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=bfb12a65ffe29a5cee61fe049344335b237daf60db9e4c8d-12445046-images-thumbs&n=13",
         "supplier": {
             "id": "P013",
             "name": "WhiteMark Ltd.",
@@ -6966,7 +6966,7 @@ const products = [
         "category": "Adhesives",
         "main_category": "Stationary",
         "brand": "StickGlue",
-        "product_image": "https://example.com/images/glue_stick.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=8c0b4d33066e4626f87ed308bf4e9fe11fe04380-12714516-images-thumbs&n=13",
         "supplier": {
             "id": "P014",
             "name": "StickGlue Ltd.",
@@ -6986,7 +6986,7 @@ const products = [
         "category": "Tabs",
         "main_category": "Stationary",
         "brand": "TabMaster",
-        "product_image": "https://example.com/images/index_tabs.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=f374141fd71bb743a43012376424d8a1356ad6d6-13009973-images-thumbs&n=13",
         "supplier": {
             "id": "P015",
             "name": "TabMaster Ltd.",
@@ -7006,7 +7006,7 @@ const products = [
         "category": "Calendars",
         "main_category": "Stationary",
         "brand": "TimeMaster",
-        "product_image": "https://example.com/images/desk_calendar.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=fa3830f51e988e269bbcc86c20e5b29bf17b6c2a-5384017-images-thumbs&n=13",
         "supplier": {
             "id": "P016",
             "name": "TimeMaster Ltd.",
@@ -7026,7 +7026,7 @@ const products = [
         "category": "Lighting",
         "main_category": "Stationary",
         "brand": "BrightDesk",
-        "product_image": "https://example.com/images/desk_lamp.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=36fc6aa986bd8035b68da28ff8a02c06d728bd41-5880151-images-thumbs&n=13",
         "supplier": {
             "id": "P017",
             "name": "BrightDesk Ltd.",
@@ -7046,7 +7046,7 @@ const products = [
         "category": "Bands",
         "main_category": "Stationary",
         "brand": "ElasticPro",
-        "product_image": "https://example.com/images/rubber_bands.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=1a6f8be059bf097e2206b4c99476a96161c2702b15ec969a-5232029-images-thumbs&n=13",
         "supplier": {
             "id": "P018",
             "name": "ElasticPro Ltd.",
@@ -7066,7 +7066,7 @@ const products = [
         "category": "Shredders",
         "main_category": "Stationary",
         "brand": "ShredMaster",
-        "product_image": "https://example.com/images/paper_shredder.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=315bfc0b2b041df7242055e376525831bb739494-12423479-images-thumbs&n=13",
         "supplier": {
             "id": "P019",
             "name": "ShredMaster Ltd.",
@@ -7086,7 +7086,7 @@ const products = [
         "category": "Markers",
         "main_category": "Stationary",
         "brand": "MarkPro",
-        "product_image": "https://example.com/images/marker_pen.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=093109a1025512aa7b2c36d20351df7cbde9aa6e-10122654-images-thumbs&n=13",
         "supplier": {
             "id": "P020",
             "name": "MarkPro Ltd.",
@@ -7106,7 +7106,7 @@ const products = [
         "category": "Notepads",
         "main_category": "Stationary",
         "brand": "NotePad",
-        "product_image": "https://example.com/images/paper_pad.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=ddaae2048af43cd52d6b1fbe4cdeeefdd01e4e4d-12612889-images-thumbs&n=13",
         "supplier": {
             "id": "P021",
             "name": "NotePad Ltd.",
@@ -7126,7 +7126,7 @@ const products = [
         "category": "Clipboards",
         "main_category": "Stationary",
         "brand": "ClipBoardPro",
-        "product_image": "https://example.com/images/clipboard.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=54d080864bf795cbb5cfc34647bfd654021c7390-9849756-images-thumbs&n=13",
         "supplier": {
             "id": "P022",
             "name": "ClipBoardPro Ltd.",
@@ -7146,7 +7146,7 @@ const products = [
         "category": "Indexing",
         "main_category": "Stationary",
         "brand": "IndexPro",
-        "product_image": "https://example.com/images/index_cards.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b0c080ef17749955bc8d467f9270121269f3c550-9044992-images-thumbs&n=13",
         "supplier": {
             "id": "P023",
             "name": "IndexPro Ltd.",
@@ -7166,7 +7166,7 @@ const products = [
         "category": "Correction Supplies",
         "main_category": "Stationary",
         "brand": "FixTape",
-        "product_image": "https://example.com/images/correction_tape.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=54ca2ae97c8f91f3836ffe5c8b9a9aaddde5e2da-9044040-images-thumbs&n=13",
         "supplier": {
             "id": "P024",
             "name": "FixTape Ltd.",
@@ -7186,7 +7186,7 @@ const products = [
         "category": "Envelopes",
         "main_category": "Stationary",
         "brand": "EnvPack",
-        "product_image": "https://example.com/images/envelope_pack.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=41173601c8b92053dd9fb90e14ee619dec4334d5ac676a64-4507747-images-thumbs&n=13",
         "supplier": {
             "id": "P025",
             "name": "EnvPack Ltd.",
@@ -7206,7 +7206,7 @@ const products = [
         "category": "Office Tools",
         "main_category": "Stationary",
         "brand": "OpenMaster",
-        "product_image": "https://example.com/images/letter_opener.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=0d3aba78849686370df063570460fb3dbd602855-10932914-images-thumbs&n=13",
         "supplier": {
             "id": "P026",
             "name": "OpenMaster Ltd.",
@@ -7226,7 +7226,7 @@ const products = [
         "category": "Sticky Notes",
         "main_category": "Stationary",
         "brand": "PostIt",
-        "product_image": "https://example.com/images/postit_notes.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=386520eb4f416f10292f20f4fc7a0084da6eda34-7754910-images-thumbs&n=13",
         "supplier": {
             "id": "P027",
             "name": "PostIt Ltd.",
@@ -7246,7 +7246,7 @@ const products = [
         "category": "Dispenser",
         "main_category": "Stationary",
         "brand": "ClipDispenser",
-        "product_image": "https://example.com/images/paper_clips_dispenser.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=cb3d70d2f54dd12fbe63237f403a6dcf7966f075-8350343-images-thumbs&n=13",
         "supplier": {
             "id": "P028",
             "name": "ClipDispenser Ltd.",
@@ -7266,7 +7266,7 @@ const products = [
         "category": "Binding",
         "main_category": "Stationary",
         "brand": "BindPro",
-        "product_image": "https://example.com/images/binding_machine.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=7b64089561e5b07cf41edc364f11e0f80951aa00a976bbdf-11370034-images-thumbs&n=13",
         "supplier": {
             "id": "P029",
             "name": "BindPro Ltd.",
@@ -7286,7 +7286,7 @@ const products = [
         "category": "Clipboards",
         "main_category": "Stationary",
         "brand": "ClipStore",
-        "product_image": "https://example.com/images/clipboard_storage.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=20054127a526b77d9383f184211f49442f3059d9-4969143-images-thumbs&n=13",
         "supplier": {
             "id": "P030",
             "name": "ClipStore Ltd.",
@@ -7306,7 +7306,7 @@ const products = [
         "category": "Dividers",
         "main_category": "Stationary",
         "brand": "IndexIt",
-        "product_image": "https://example.com/images/index_divider.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=1cf8495954ca89b3adc723cb7536e298a07b5fcf-4079652-images-thumbs&n=13",
         "supplier": {
             "id": "P031",
             "name": "IndexIt Ltd.",
@@ -7326,7 +7326,7 @@ const products = [
         "category": "Cutting Tools",
         "main_category": "Stationary",
         "brand": "SharpCut",
-        "product_image": "https://example.com/images/scissors.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=2e6e42c16f5fb486a7bb6d2ee8b2f75671c3216841d37045-12527828-images-thumbs&n=13",
         "supplier": {
             "id": "P032",
             "name": "SharpCut Ltd.",
@@ -7346,7 +7346,7 @@ const products = [
         "category": "Hole Punchers",
         "main_category": "Stationary",
         "brand": "PunchPro",
-        "product_image": "https://example.com/images/puncher.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=88fc2584cf94d45e2d58fde48a1aa0c38245f53a-7998976-images-thumbs&n=13",
         "supplier": {
             "id": "P033",
             "name": "PunchPro Ltd.",
@@ -7366,7 +7366,7 @@ const products = [
         "category": "Planners",
         "main_category": "Stationary",
         "brand": "PlanMaster",
-        "product_image": "https://example.com/images/calendar_planner.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b2ba3e813c6ad94968a62ee42e2ec6b6ae1e057f-4390197-images-thumbs&n=13",
         "supplier": {
             "id": "P034",
             "name": "PlanMaster Ltd.",
@@ -7386,7 +7386,7 @@ const products = [
         "category": "Pins",
         "main_category": "Stationary",
         "brand": "PinMaster",
-        "product_image": "https://example.com/images/push_pins.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=3519e54ceb049084195b3cb836a6769dbc6da5b9-4809558-images-thumbs&n=13",
         "supplier": {
             "id": "P035",
             "name": "PinMaster Ltd.",
@@ -7406,7 +7406,7 @@ const products = [
         "category": "Holders",
         "main_category": "Stationary",
         "brand": "DocHolder",
-        "product_image": "https://example.com/images/document_holder.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=b648fac1cf492e2d41f83b6bf7f8fe931553789b-10744014-images-thumbs&n=13",
         "supplier": {
             "id": "P036",
             "name": "DocHolder Ltd.",
@@ -7426,7 +7426,7 @@ const products = [
         "category": "Clips",
         "main_category": "Stationary",
         "brand": "BindClip",
-        "product_image": "https://example.com/images/binder_clips.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=ed8fffe64b71340f9bb976f5105dffbbff090655-5452446-images-thumbs&n=13",
         "supplier": {
             "id": "P037",
             "name": "BindClip Ltd.",
@@ -7446,7 +7446,7 @@ const products = [
         "category": "Boards",
         "main_category": "Stationary",
         "brand": "TackMaster",
-        "product_image": "https://example.com/images/tack_boards.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=af50f0e6339de9c722b66d791961e707ba74dcb7-4987702-images-thumbs&n=13",
         "supplier": {
             "id": "P038",
             "name": "TackMaster Ltd.",
@@ -7466,7 +7466,7 @@ const products = [
         "category": "Correction Supplies",
         "main_category": "Stationary",
         "brand": "FixFluid",
-        "product_image": "https://example.com/images/correction_fluid.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=4014493654dd9d9281c208345743d1e503e82ed8-8497038-images-thumbs&n=13",
         "supplier": {
             "id": "P039",
             "name": "FixFluid Ltd.",
@@ -7486,7 +7486,7 @@ const products = [
         "category": "Adhesives",
         "main_category": "Stationary",
         "brand": "ScotchPro",
-        "product_image": "https://example.com/images/scotch_tape.jpg",
+        "product_image": "https://avatars.mds.yandex.net/i?id=70800a57d0b7df4c158a355101257bfcef3b6574-5666463-images-thumbs&n=13",
         "supplier": {
             "id": "P040",
             "name": "ScotchPro Ltd.",
@@ -7503,8 +7503,6 @@ const products = [
 ]
 
 module.exports = products;
-
-
 
 
 
