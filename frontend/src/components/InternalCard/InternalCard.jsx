@@ -2,13 +2,54 @@ import { useLocation } from "react-router-dom";
 import "./InternalCard.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import io from "socket.io-client"
+
+
+
 
 export default function InternalCard() {
   const [data, setData] = useState([]);
   const [stockData, setStockData] = useState([]);
+  const [notifications, setNotifications] = useState([]); 
   const query = new URLSearchParams(useLocation().search);
   const category = query.get("category");
 
+ 
+  useEffect(() => {
+    // Initialize socket connection
+    const socket = io('http://localhost:8080', { transports: ['websocket'] });
+
+    socket.on('connect', () => {
+      console.log('Connected to server');
+    });
+
+    socket.on('disconnect', () => {
+      console.log('Disconnected from server');
+    });
+
+    socket.on('reconnect_attempt', () => {
+      console.log('Attempting to reconnect...');
+    });
+
+    socket.on('reconnect', () => {
+      console.log('Reconnected to server');
+    });
+
+    socket.on('reconnect_error', (error) => {
+      console.error('Reconnection error:', error);
+    });
+
+    socket.on('lowstock', (message) => {
+      console.log('Low Stock Alert:', message);
+      setNotifications((prevNotifications) => [...prevNotifications, message]); 
+     
+    });
+
+    // Cleanup on unmount
+    return () => {
+      socket.disconnect();
+    };
+  }, []);
   // Fetch product data based on category
   useEffect(() => {
     if (category) {
@@ -50,16 +91,25 @@ export default function InternalCard() {
   useEffect(() => {
     console.log(stockData);
   }, [stockData]);
+  useEffect(() => {
+    console.log(notifications);
+  }, [notifications]);
 
 
-
-  const stockDecrementer = (productId)=>{
-    axios.post("http:http://localhost:8080/stockDecrementer",{productId:productId,quantity:1}).then((res)=>{
-        console.log(res);
-    }).catch((err)=>{
-        console.log(err);
-    })
-  }
+  const stockDecrementer = (productId) => {
+    if (productId) {
+      axios.post("http://localhost:8080/stockDecrementer", { productId: productId, quantity: 1 })
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => {
+          console.log("Error while sending stock decrement request:", err.response ? err.response.data : err.message);
+        });
+    } else {
+      console.log("Product ID missing");
+    }
+  };
+  
   return (
     <>
       <div>
