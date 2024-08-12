@@ -27,11 +27,11 @@ const ProductSchema = new Schema({
     },
     supplierId: {
         type: Schema.Types.ObjectId,
-        ref: 'SellerModel'
+        ref: 'Seller'
     },
     stockDescription: [{
         type: Schema.Types.ObjectId,
-        ref: 'StockModel'
+        ref: 'Stock'
     }]
 });
 
