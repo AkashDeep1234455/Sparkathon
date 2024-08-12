@@ -2,64 +2,99 @@ import { useLocation } from "react-router-dom";
 import "./InternalCard.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Button from '@mui/material/Button';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 export default function InternalCard() {
   const [data, setData] = useState([]);
   const [stockData, setStockData] = useState([]);
+  const [counts, setCounts] = useState({}); // Manage count per item
+  const [load, setLoad] = useState(false); // Use load for loading state
   const query = new URLSearchParams(useLocation().search);
   const category = query.get("category");
 
   // Fetch product data based on category
   useEffect(() => {
     if (category) {
-      axios
-        .post("http://localhost:8080/itemData", { data: category })
+      axios.post("http://localhost:8080/itemData", { data: category })
         .then((res) => {
-          const productData = res.data.productData || []; // Fallback to empty array if undefined
+          const productData = res.data.productData || [];
           setData(productData);
+          // Initialize counts for each product
+          const initialCounts = {};
+          productData.forEach((product) => {
+            initialCounts[product.productId] = 0;
+          });
+          setCounts(initialCounts);
         })
         .catch((err) => {
-          console.log("There is an error:", err);
+          console.error("Error fetching item data:", err);
         });
     }
   }, [category]);
 
   // Fetch stock data based on product data
   useEffect(() => {
-    // Only proceed if there is product data
     if (data.length > 0) {
-      data.forEach((element) => {
+      setLoad(true);
+      Promise.all(data.map(element => {
         const productId = element.productId;
-        axios
-          .post("http://localhost:8080/stockData", { data: productId })
-          .then((res) => {
-            const stock = res.data.stockData;
-            setStockData((prevStockData) => [...prevStockData, stock]); // Append to existing stock data
-          })
-          .catch((err) => {
-            console.log("There is an error in stock ", err);
-          });
-      });
+        return axios.post("http://localhost:8080/stockData", { data: productId });
+      }))
+        .then((responses) => {
+          const stocks = responses.map(res => res.data.stockData);
+          setStockData(stocks);
+        })
+        .catch((err) => {
+          console.error("Error fetching stock data:", err);
+        })
+        .finally(() => setLoad(false)); // Set loading state to false after completion
     }
   }, [data]);
 
-  useEffect(() => {
-    console.log(data);
-  }, [setData]);
+  const stockDecrementer = (productId, count) => {
+    setLoad(true);
 
-  useEffect(() => {
-    console.log(stockData);
-  }, [stockData]);
+    axios.post("http://localhost:8080/stockDecrementer", { productId, quantity: count })
+      .then(() => {
+        // Refetch stock data after decrementing
+        if (category) {
+          axios.post("http://localhost:8080/itemData", { data: category })
+            .then((res) => {
+              const productData = res.data.productData || [];
+              setData(productData);
+              // Fetch updated stock data
+              Promise.all(productData.map(element => {
+                const productId = element.productId;
+                return axios.post("http://localhost:8080/stockData", { data: productId });
+              }))
+                .then((responses) => {
+                  const updatedStockData = responses.map(res => res.data.stockData);
+                  setStockData(updatedStockData);
+                  setCounts(0)
+                })
+                .catch((err) => {
+                  console.error("Error fetching updated stock data:", err);
+                });
+            })
+            .catch((err) => {
+              console.error("Error refetching item data:", err);
+            });
+        }
+      })
+      .catch((err) => {
+        console.error("Error decrementing stock:", err);
+      })
+      .finally(() => setLoad(false)); // Set loading state to false after completion
+  };
 
+  const changeCount = (productId, isInc) => {
+    setCounts(prevCounts => {
+      const newCount = isInc ? (prevCounts[productId] || 0) + 1 : Math.max((prevCounts[productId] || 0) - 1, 0);
+      return { ...prevCounts, [productId]: newCount };
+    });
+  };
 
-
-  const stockDecrementer = (productId)=>{
-    axios.post("http:http://localhost:8080/stockDecrementer",{productId:productId,quantity:1}).then((res)=>{
-        console.log(res);
-    }).catch((err)=>{
-        console.log(err);
-    })
-  }
   return (
     <>
       <div>
@@ -68,22 +103,31 @@ export default function InternalCard() {
           const matchingStock = stockData.find(
             (sD) => sD[0]._id === d.stockDescription[0]
           );
+          const count = counts[d.productId] || 0; // Get the count for this specific product
           return matchingStock ? (
             <div className="InternalCard_parent" key={matchingStock[0]._id}>
               <div className="InternalCard_img">
-                <img src={d.image} alt={d.productName} />
+                <img src={d.image} alt={d.productName} loading="lazy"/>
               </div>
 
               <div className="InternalCard_mid">
-                <h3 className="InternalCard_name">{d.productName}</h3>
+                <h2 className="InternalCard_name">{d.productName}</h2>
                 {matchingStock[0].expiryDate ? (
                   <span>Expiry Date : {matchingStock[0].expiryDate}</span>
                 ) : null}
                 <span>ProductId : {matchingStock[0].productId}</span>
-                <button className="InternalCard_button">New Stock</button>
-                <button className="decrementer" onClick={()=>{
-                    stockDecrementer(matchingStock[0].productId);
-                }}>-</button>
+
+                <div className="stockDecrement">
+
+                  <Button   variant="outlined" size="small"  className="decrementer" onClick={() => changeCount(d.productId, false)}>-</Button>
+                  <p>{count}</p>
+                  <Button  variant="outlined" size="small" className="incrementer" onClick={() => changeCount(d.productId, true)}>+</Button>
+                  <Button style={{backgroundColor:"#0FA4AF"}} variant="contained" size="small" className="InternalCard_button" onClick={() => stockDecrementer(matchingStock[0].productId, count)}> <AddShoppingCartIcon/></Button>
+
+                </div>
+
+                <Button style={{backgroundColor:"#0FA4AF"}} variant="contained" size="small" className="InternalCard_button">New Stock</Button>
+
               </div>
 
               <div className="InternalCard_TotalItems">
