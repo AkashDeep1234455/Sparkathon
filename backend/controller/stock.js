@@ -3,13 +3,13 @@ const { StockModel } = require("../models/StockModel");
 const { ProductModel } = require("../models/ProductModel");
 const mailSender = require("../utils/nodeMailer");
 
-exports.stockDecrementer = async (req, res) => {
+exports.stockDecrementer = async (req, res,io) => {
   try {
     // fetch productId from req body
     const { productId, quantity } = req.body;
 
     // validate productId and quantity
-    if (!productId || !quantity || quantity <= 0) {
+    if (!productId || !quantity || quantity < 0) {
       return res.status(400).json({
         success: false,
         error: "Invalid request",
@@ -37,19 +37,18 @@ exports.stockDecrementer = async (req, res) => {
       });
     }
 
+    // // check if stock quantity is enough
+    // if (stockData[0].stockQuantity < quantity) {
+    //   return res.status(400).json({
+    //     success: false,
+    //     error: "Not enough stock available",
+    //     message: "Not enough stock available!!",
+    //   });
+    // }
+
     const {supplierId, stockDescription} = ProductData;
     // console.log("supplierId", supplierId);
     // console.log("stockDescription", stockDescription);
-
-
-    // check if stock quantity is enough
-    if (stockDescription[0].stockQuantity < quantity) {
-      return res.status(400).json({
-        success: false,
-        error: "Not enough stock available",
-        message: "Not enough stock available!!",
-      });
-    }
 
     // update stock quantity
     const stockData = await StockModel.findOne({productId: stockDescription[0].productId});
@@ -71,9 +70,20 @@ exports.stockDecrementer = async (req, res) => {
     //   await StockModel.findByIdAndDelete(productId);
     }
 
+
     // check if stock quantity is less than or equal to minStock
     if (stockData.stockQuantity <= stockData.minStock) {
       // send alert to admin for low stock
+       // Emit a low-stock event to connected clients
+       io.emit('lowstock', {
+        productId: stockData[0].productId,
+        stockQuantity: stockData[0].stockQuantity,
+        message: `Stock for product ID ${stockData[0].productId} is low!`,
+      });
+
+      // Send any other notifications you need (e.g., email to supplier, push notification to admin)
+      console.log('Stock quantity is less than or equal to', stockData[0].minStock);
+      // send email notification to supplier
       console.log('stock quantity is less than or equal to', stockData.minStock);
 
       // send email notification 
