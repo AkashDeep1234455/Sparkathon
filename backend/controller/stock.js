@@ -1,5 +1,7 @@
+const { outOfStock } = require("../email/template/outOfStock");
 const { StockModel } = require("../models/StockModel");
 const { ProductModel } = require("../models/ProductModel");
+const mailSender = require("../utils/nodeMailer");
 
 exports.stockDecrementer = async (req, res) => {
   try {
@@ -16,12 +18,18 @@ exports.stockDecrementer = async (req, res) => {
     }
 
     // find stock with productId
-    const stockData = await StockModel.find({
+    const ProductData = await ProductModel.findOne({
       productId: productId,
+    }).populate('supplierId')
+    .populate({
+      path: 'stockDescription',
+      options: { sort: { expiryDate: 1 } } // 1 for ascending, -1 for descending
     });
 
+    console.log("ProductData", ProductData);
+
     // check if stock exists
-    if (!stockData) {
+    if (!ProductData || ProductData.length === 0) {
       return res.status(404).json({
         success: false,
         error: "Stock not found for the given productId",
@@ -29,8 +37,13 @@ exports.stockDecrementer = async (req, res) => {
       });
     }
 
+    const {supplierId, stockDescription} = ProductData;
+    // console.log("supplierId", supplierId);
+    // console.log("stockDescription", stockDescription);
+
+
     // check if stock quantity is enough
-    if (stockData[0].stockQuantity < quantity) {
+    if (stockDescription[0].stockQuantity < quantity) {
       return res.status(400).json({
         success: false,
         error: "Not enough stock available",
@@ -39,26 +52,47 @@ exports.stockDecrementer = async (req, res) => {
     }
 
     // update stock quantity
-    stockData[0].stockQuantity -= quantity;
-    await stockData[0].save();
-    res.json({
-      success: true,
-      message: "Stock decremented successfully",
-      updatedStockQuantity: stockData[0].stockQuantity,
-    });
+    const stockData = await StockModel.findOne({productId: stockDescription[0].productId});
+    // check stock data
+    if (!stockData || stockData===0) {
+      return res.status(404).json({
+        success: false,
+        error: "Stock not found for the given productId",
+        message: "Stock not found!!",
+      });
+    }
+    stockData.stockQuantity += quantity;
+    await stockData.save();
+    console.log("stockData", stockData);
+    
     // check if stock quantity is less than or equal to 0
-    if (stockData[0].stockQuantity <= 0) {
+    if (stockData.stockQuantity <= 0) {
       // delete product if stock quantity is less than or equal to 0
     //   await StockModel.findByIdAndDelete(productId);
     }
 
     // check if stock quantity is less than or equal to minStock
-    if (stockData[0].stockQuantity <= stockData[0].minStock) {
+    if (stockData.stockQuantity <= stockData.minStock) {
       // send alert to admin for low stock
-      console.log('stock quantity is less than or equal to', stockData[0].minStock);
-      // send email notification to supplier
+      console.log('stock quantity is less than or equal to', stockData.minStock);
+
+      // send email notification 
+      const email = "akashdeep19735@gmail.com";
+      const title = "Walmart - product out of stock"
+      const body = outOfStock(supplierId.phoneNumber, ProductData.productName, stockData.minStock);
+
+      const info = await mailSender(email, title, body);
+
+      console.log(info);
       // send push notification to admin
     }
+
+    // send success response
+    res.json({
+      success: true,
+      message: "Stock decremented successfully",
+      updatedStockQuantity: stockDescription.stockQuantity,
+    })
   } catch (error) {
     console.error(error);
     return res.status(500).json({
