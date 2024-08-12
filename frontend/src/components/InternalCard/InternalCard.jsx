@@ -71,7 +71,7 @@ export default function InternalCard() {
           return matchingStock ? (
             <div className="InternalCard_parent" key={matchingStock[0]._id}>
               <div className="InternalCard_img">
-                <img src={d.image} alt={d.productName} />
+                <img src={d.image} alt={d.productName}/>
               </div>
 
               <div className="InternalCard_mid">
