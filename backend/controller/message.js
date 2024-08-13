@@ -4,7 +4,7 @@ exports.saveMessage = async (req, res) => {
     try{
 
         // fetch the message details from the req body
-        const notifications = req.body;
+        const {notifications} = req.body;
 
         // iterate through the notifications
         for(let notification of notifications){

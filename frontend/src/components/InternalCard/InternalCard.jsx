@@ -43,20 +43,21 @@ export default function InternalCard() {
 
     socket.on("lowstock", (message) => {
       console.log("Low Stock Alert:", message);
-      setNotifications((prevNotifications) => [...prevNotifications, message]);
-      setTimeout(() => {
-        console.log("sending message saving request");
+      setNotifications((prevNotifications) => {
+        const updatedNotifications = [...prevNotifications, message];
+        // Save message after updating state
         axios
           .post("http://localhost:8080/saveMessage", {
-            notifications: notifications,
+            notifications: updatedNotifications,
           })
           .then(() => {
-            console.log("message saved successfully");
+            console.log("Message saved successfully");
           })
           .catch((err) => {
-            console.log(err);
+            console.error("Error saving message:", err);
           });
-      }, 3000);
+        return updatedNotifications;
+      });
     });
 
     // Cleanup on unmount
@@ -168,8 +169,8 @@ export default function InternalCard() {
 
 
   useEffect(()=>{
-    axios.get("http://localhost:8080/getMessages").then(()=>{
-      console.log(req.body);
+    axios.get("http://localhost:8080/getMessages").then((res)=>{
+      setdisplayNotifications(res.data.data);
     }).catch((err)=>{
       console.log(err);
     })

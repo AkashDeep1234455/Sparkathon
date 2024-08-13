@@ -76,7 +76,7 @@ exports.stockDecrementer = async (req, res,io) => {
     if (stockData.stockQuantity <= stockData.minStock) {
       // send alert to admin for low stock
        // Emit a low-stock event to connected clients
-       io.emit('lowstock', {
+      io.emit('lowstock', {
         messageId:uuid.v4(),
         productId: stockData.productId,
         stockQuantity: stockData.stockQuantity,
@@ -84,10 +84,7 @@ exports.stockDecrementer = async (req, res,io) => {
         message: `Stock for product ID ${stockData.productId} is low!`,
       });
 
-      // Send any other notifications you need (e.g., email to supplier, push notification to admin)
-      console.log('Stock quantity is less than or equal to', stockData.minStock);
-      // send email notification to supplier
-      console.log('stock quantity is less than or equal to', stockData.minStock);
+   
 
       // send email notification 
       const email = "akashdeep19735@gmail.com";
@@ -96,7 +93,6 @@ exports.stockDecrementer = async (req, res,io) => {
 
       const info = await mailSender(email, title, body);
 
-      console.log(info);
       // send push notification to admin
     }
 
