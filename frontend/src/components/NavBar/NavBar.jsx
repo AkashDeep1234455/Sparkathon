@@ -1,6 +1,16 @@
 import { Link } from "react-router-dom";
 import "./navBar.css";
+import NotificationPanel from "../NotiPanel/NotificationPanel.jsx";
+import { useState } from "react";
+
 function NavBar() {
+    const [opacity, setOpacity] = useState(0);
+
+    let changeNoti = ()=>{
+        if(opacity === 0) setOpacity(1);
+        else setOpacity(0);
+    }
+
     return ( 
         <div>
         <div className="navBar">
@@ -16,12 +26,15 @@ function NavBar() {
                         <button className="newStock-button">New Stock</button>
                     </Link>
                 </div>
-                <div className="navBar-notificaton">
+                <div className="navBar-notificaton" onClick={changeNoti}>
                 <i className="fa-regular fa-bell"></i>
                 </div>
             </div>
         </div>
         <div className="navbar-spacer"></div>
+
+        <NotificationPanel opacity = {opacity}/>
+
         </div>
      );
 }

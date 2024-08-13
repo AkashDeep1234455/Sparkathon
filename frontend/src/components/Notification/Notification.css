@@ -1,0 +1,8 @@
+.Notification{
+    width: 95%;
+    height: 150px;
+    border-radius: 4px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 1rem;
+}
