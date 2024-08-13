@@ -93,19 +93,14 @@ export default function InternalCard() {
 
   const stockDecrementer = (productId, count) => {
     setLoad(true);
-
-  useEffect(() => {
-    console.log(stockData);
-  }, [stockData]);
-  useEffect(() => {
-    console.log(notifications);
-  }, [notifications]);
+    if(!productId) console.log("product id missing");
     axios.post("http://localhost:8080/stockDecrementer", { productId, quantity: count })
       .then(() => {
         // Refetch stock data after decrementing
         if (category) {
           axios.post("http://localhost:8080/itemData", { data: category })
             .then((res) => {
+              console.log(res.data);
               const productData = res.data.productData || [];
               setData(productData);
               // Fetch updated stock data
@@ -140,20 +135,6 @@ export default function InternalCard() {
     });
   };
 
-
-  const stockDecrementer = (productId) => {
-    if (productId) {
-      axios.post("http://localhost:8080/stockDecrementer", { productId: productId, quantity: 1 })
-        .then((res) => {
-          console.log(res);
-        })
-        .catch((err) => {
-          console.log("Error while sending stock decrement request:", err.response ? err.response.data : err.message);
-        });
-    } else {
-      console.log("Product ID missing");
-    }
-  };
   return (
     <>
       <div>

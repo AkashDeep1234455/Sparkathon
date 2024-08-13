@@ -60,7 +60,7 @@ exports.stockDecrementer = async (req, res,io) => {
         message: "Stock not found!!",
       });
     }
-    stockData.stockQuantity += quantity;
+    stockData.stockQuantity -= quantity;
     await stockData.save();
     console.log("stockData", stockData);
     
@@ -76,13 +76,13 @@ exports.stockDecrementer = async (req, res,io) => {
       // send alert to admin for low stock
        // Emit a low-stock event to connected clients
        io.emit('lowstock', {
-        productId: stockData[0].productId,
-        stockQuantity: stockData[0].stockQuantity,
-        message: `Stock for product ID ${stockData[0].productId} is low!`,
+        productId: stockData.productId,
+        stockQuantity: stockData.stockQuantity,
+        message: `Stock for product ID ${stockData.productId} is low!`,
       });
 
       // Send any other notifications you need (e.g., email to supplier, push notification to admin)
-      console.log('Stock quantity is less than or equal to', stockData[0].minStock);
+      console.log('Stock quantity is less than or equal to', stockData.minStock);
       // send email notification to supplier
       console.log('stock quantity is less than or equal to', stockData.minStock);
 
