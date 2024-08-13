@@ -2,6 +2,7 @@ const { outOfStock } = require("../email/template/outOfStock");
 const { StockModel } = require("../models/StockModel");
 const { ProductModel } = require("../models/ProductModel");
 const mailSender = require("../utils/nodeMailer");
+const uuid = require("uuid");
 
 exports.stockDecrementer = async (req, res,io) => {
   try {
@@ -76,8 +77,10 @@ exports.stockDecrementer = async (req, res,io) => {
       // send alert to admin for low stock
        // Emit a low-stock event to connected clients
        io.emit('lowstock', {
+        messageId:uuid.v4(),
         productId: stockData.productId,
         stockQuantity: stockData.stockQuantity,
+        criticalStock:stockData.minStock,
         message: `Stock for product ID ${stockData.productId} is low!`,
       });
 

@@ -52,6 +52,10 @@ export default function InternalCard() {
       socket.disconnect();
     };
   }, []);
+
+  useEffect(()=>{
+    console.log(notifications);
+  },[notifications])
   // Fetch product data based on category
   useEffect(() => {
     if (category) {
