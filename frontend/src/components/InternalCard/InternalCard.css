@@ -71,6 +71,15 @@
     border-radius: 1.5rem;
 }
 
+.form-linkButton{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.form-linkButton button{
+    width: 20rem;
+}
+
 
 @media (max-width : 600px){
     .InternalCard_parent{

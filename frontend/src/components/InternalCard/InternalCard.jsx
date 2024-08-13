@@ -1,50 +1,62 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import "./InternalCard.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import io from "socket.io-client"
+import io from "socket.io-client";
 
-import Button from '@mui/material/Button';
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import Button from "@mui/material/Button";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 export default function InternalCard() {
   const [data, setData] = useState([]);
   const [stockData, setStockData] = useState([]);
-  const [notifications, setNotifications] = useState([]); 
+  const [notifications, setNotifications] = useState([]);
+  const [displayNotifications,setdisplayNotifications] = useState([]);
   const [counts, setCounts] = useState({}); // Manage count per item
   const [load, setLoad] = useState(false); // Use load for loading state
   const query = new URLSearchParams(useLocation().search);
   const category = query.get("category");
 
- 
   useEffect(() => {
     // Initialize socket connection
-    const socket = io('http://localhost:8080', { transports: ['websocket'] });
+    const socket = io("http://localhost:8080", { transports: ["websocket"] });
 
-    socket.on('connect', () => {
-      console.log('Connected to server');
+    socket.on("connect", () => {
+      console.log("Connected to server");
     });
 
-    socket.on('disconnect', () => {
-      console.log('Disconnected from server');
+    socket.on("disconnect", () => {
+      console.log("Disconnected from server");
     });
 
-    socket.on('reconnect_attempt', () => {
-      console.log('Attempting to reconnect...');
+    socket.on("reconnect_attempt", () => {
+      console.log("Attempting to reconnect...");
     });
 
-    socket.on('reconnect', () => {
-      console.log('Reconnected to server');
+    socket.on("reconnect", () => {
+      console.log("Reconnected to server");
     });
 
-    socket.on('reconnect_error', (error) => {
-      console.error('Reconnection error:', error);
+    socket.on("reconnect_error", (error) => {
+      console.error("Reconnection error:", error);
     });
 
-    socket.on('lowstock', (message) => {
-      console.log('Low Stock Alert:', message);
-      setNotifications((prevNotifications) => [...prevNotifications, message]); 
-     
+    socket.on("lowstock", (message) => {
+      console.log("Low Stock Alert:", message);
+      setNotifications((prevNotifications) => [...prevNotifications, message]);
+      setTimeout(() => {
+        console.log("sending message saving request");
+        axios
+          .post("http://localhost:8080/saveMessage", {
+            notifications: notifications,
+          })
+          .then(() => {
+            console.log("message saved successfully");
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      }, 3000);
     });
 
     // Cleanup on unmount
@@ -53,13 +65,11 @@ export default function InternalCard() {
     };
   }, []);
 
-  useEffect(()=>{
-    console.log(notifications);
-  },[notifications])
   // Fetch product data based on category
   useEffect(() => {
     if (category) {
-      axios.post("http://localhost:8080/itemData", { data: category })
+      axios
+        .post("http://localhost:8080/itemData", { data: category })
         .then((res) => {
           const productData = res.data.productData || [];
           setData(productData);
@@ -80,12 +90,16 @@ export default function InternalCard() {
   useEffect(() => {
     if (data.length > 0) {
       setLoad(true);
-      Promise.all(data.map(element => {
-        const productId = element.productId;
-        return axios.post("http://localhost:8080/stockData", { data: productId });
-      }))
+      Promise.all(
+        data.map((element) => {
+          const productId = element.productId;
+          return axios.post("http://localhost:8080/stockData", {
+            data: productId,
+          });
+        })
+      )
         .then((responses) => {
-          const stocks = responses.map(res => res.data.stockData);
+          const stocks = responses.map((res) => res.data.stockData);
           setStockData(stocks);
         })
         .catch((err) => {
@@ -97,25 +111,36 @@ export default function InternalCard() {
 
   const stockDecrementer = (productId, count) => {
     setLoad(true);
-    if(!productId) console.log("product id missing");
-    axios.post("http://localhost:8080/stockDecrementer", { productId, quantity: count })
+    if (!productId) console.log("product id missing");
+    axios
+      .post("http://localhost:8080/stockDecrementer", {
+        productId,
+        quantity: count,
+      })
       .then(() => {
         // Refetch stock data after decrementing
         if (category) {
-          axios.post("http://localhost:8080/itemData", { data: category })
+          axios
+            .post("http://localhost:8080/itemData", { data: category })
             .then((res) => {
               console.log(res.data);
               const productData = res.data.productData || [];
               setData(productData);
               // Fetch updated stock data
-              Promise.all(productData.map(element => {
-                const productId = element.productId;
-                return axios.post("http://localhost:8080/stockData", { data: productId });
-              }))
+              Promise.all(
+                productData.map((element) => {
+                  const productId = element.productId;
+                  return axios.post("http://localhost:8080/stockData", {
+                    data: productId,
+                  });
+                })
+              )
                 .then((responses) => {
-                  const updatedStockData = responses.map(res => res.data.stockData);
+                  const updatedStockData = responses.map(
+                    (res) => res.data.stockData
+                  );
                   setStockData(updatedStockData);
-                  setCounts(0)
+                  setCounts(0);
                 })
                 .catch((err) => {
                   console.error("Error fetching updated stock data:", err);
@@ -133,11 +158,22 @@ export default function InternalCard() {
   };
 
   const changeCount = (productId, isInc) => {
-    setCounts(prevCounts => {
-      const newCount = isInc ? (prevCounts[productId] || 0) + 1 : Math.max((prevCounts[productId] || 0) - 1, 0);
+    setCounts((prevCounts) => {
+      const newCount = isInc
+        ? (prevCounts[productId] || 0) + 1
+        : Math.max((prevCounts[productId] || 0) - 1, 0);
       return { ...prevCounts, [productId]: newCount };
     });
   };
+
+
+  useEffect(()=>{
+    axios.get("http://localhost:8080/getMessages").then(()=>{
+      console.log(req.body);
+    }).catch((err)=>{
+      console.log(err);
+    })
+  },[])
 
   return (
     <>
@@ -151,7 +187,7 @@ export default function InternalCard() {
           return matchingStock ? (
             <div className="InternalCard_parent" key={matchingStock[0]._id}>
               <div className="InternalCard_img">
-                <img src={d.image} alt={d.productName} loading="lazy"/>
+                <img src={d.image} alt={d.productName} loading="lazy" />
               </div>
 
               <div className="InternalCard_mid">
@@ -162,16 +198,47 @@ export default function InternalCard() {
                 <span>ProductId : {matchingStock[0].productId}</span>
 
                 <div className="stockDecrement">
-
-                  <Button   variant="outlined" size="small"  className="decrementer" onClick={() => changeCount(d.productId, false)}>-</Button>
+                  <Button
+                    variant="outlined"
+                    size="small"
+                    className="decrementer"
+                    onClick={() => changeCount(d.productId, false)}
+                  >
+                    -
+                  </Button>
                   <p>{count}</p>
-                  <Button  variant="outlined" size="small" className="incrementer" onClick={() => changeCount(d.productId, true)}>+</Button>
-                  <Button style={{backgroundColor:"#0FA4AF"}} variant="contained" size="small" className="InternalCard_button" onClick={() => stockDecrementer(matchingStock[0].productId, count)}> <AddShoppingCartIcon/></Button>
-
+                  <Button
+                    variant="outlined"
+                    size="small"
+                    className="incrementer"
+                    onClick={() => changeCount(d.productId, true)}
+                  >
+                    +
+                  </Button>
+                  <Button
+                    style={{ backgroundColor: "#0FA4AF" }}
+                    variant="contained"
+                    size="small"
+                    className="InternalCard_button"
+                    onClick={() =>
+                      stockDecrementer(matchingStock[0].productId, count)
+                    }
+                  >
+                    {" "}
+                    <AddShoppingCartIcon />
+                  </Button>
                 </div>
 
-                <Button style={{backgroundColor:"#0FA4AF"}} variant="contained" size="small" className="InternalCard_button">New Stock</Button>
-
+                <Link to="/form" className="form-linkButton">
+                  <Button
+                    style={{ backgroundColor: "#0FA4AF" }}
+                    variant="contained"
+                    size="small"
+                    className="InternalCard_button"
+                  >
+                    New Stock
+                  </Button>
+                </Link>
               </div>
 
               <div className="InternalCard_TotalItems">
