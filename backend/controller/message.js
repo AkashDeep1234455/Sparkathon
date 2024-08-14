@@ -72,10 +72,11 @@ exports.getMessages = async (req, res) => {
         const messages = await MessageModel.find({});
 
         // validate the messages
-        if(!messages || !messages.length){
-            return res.status(404).json({
-                success: false,
-                message: "No messages found"
+        if (messages.length === 0) {
+            return res.status(200).json({
+                success: true,
+                message: "No messages found",
+                data: [] // Send an empty array if no messages are found
             });
         }
         
@@ -95,3 +96,40 @@ exports.getMessages = async (req, res) => {
         });
     }
 }
+
+exports.deleteMessage = async (req, res) => {
+    try {
+        const { messageId } = req.body; // Corrected typo from "mesageId" to "messageId"
+
+        // Validate the messageId
+        if (!messageId) {
+            return res.status(400).json({
+                success: false,
+                message: "Message ID is required",
+            });
+        }
+
+        // Find and delete the message
+        const deleteResult = await MessageModel.findOneAndDelete({ messageId });
+
+        if (!deleteResult) {
+            return res.status(404).json({
+                success: false,
+                message: "Message not found",
+            });
+        }
+
+        // If the message was deleted successfully
+        res.status(200).json({
+            success: true,
+            message: "Message deleted successfully",
+        });
+
+    } catch (error) {
+        console.error("Error deleting message:", error);
+        res.status(500).json({
+            success: false,
+            message: "Internal server error while deleting message",
+        });
+    }
+};

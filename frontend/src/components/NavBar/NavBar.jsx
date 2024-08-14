@@ -12,7 +12,9 @@ function NavBar() {
         const fetchNotifications = () => {
             axios.get("http://localhost:8080/getMessages")
                 .then((res) => {
-                    setNotificationCount(res.data.data.length); // Update the notification count
+                    if(res.data.data.length>0){
+                    setNotificationCount(res.data.data.length);
+                    } // Update the notification count
                 })
                 .catch((err) => {
                     console.log(err);
