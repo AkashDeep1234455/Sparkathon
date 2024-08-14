@@ -11,7 +11,6 @@ export default function InternalCard() {
   const [data, setData] = useState([]);
   const [stockData, setStockData] = useState([]);
   const [notifications, setNotifications] = useState([]);
-  const [displayNotifications,setdisplayNotifications] = useState([]);
   const [counts, setCounts] = useState({}); // Manage count per item
   const [load, setLoad] = useState(false); // Use load for loading state
   const query = new URLSearchParams(useLocation().search);
@@ -167,14 +166,6 @@ export default function InternalCard() {
     });
   };
 
-
-  useEffect(()=>{
-    axios.get("http://localhost:8080/getMessages").then((res)=>{
-      setdisplayNotifications(res.data.data);
-    }).catch((err)=>{
-      console.log(err);
-    })
-  },[])
 
   return (
     <>
