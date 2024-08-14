@@ -3,7 +3,6 @@ import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 
 
 export default function Notification({element}){
-    console.log(element);
     return (
         <div className="Notification">
             <p><b>ProductId</b>: {element.productId}</p>

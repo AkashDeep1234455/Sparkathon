@@ -50,15 +50,18 @@
 .search-container .search-btn .fas{
     color: #5cbdbb;
 }
-.navBar-notificaton{
+.navBar-notification{
     background-color: white;
-    width: 30px;
+    width: 50px;
+    border-radius: 1rem;
     height: 30px;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.navBar-notification:hover{
+    cursor: pointer;
 }
 .navBar-notiNewStock{
     display: flex;

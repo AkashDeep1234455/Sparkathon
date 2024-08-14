@@ -1,50 +1,63 @@
 const { MessageModel } = require('../models/MessageModel');
 
 exports.saveMessage = async (req, res) => {
-    try{
+    try {
+        // Fetch the message details from the req body
+        const { notifications } = req.body;
 
-        // fetch the message details from the req body
-        const {notifications} = req.body;
+        // Validate if notifications is an array
+        if (!Array.isArray(notifications) || notifications.length === 0) {
+            return res.status(400).json({
+                success: false,
+                message: "No notifications provided"
+            });
+        }
 
-        // iterate through the notifications
-        for(let notification of notifications){
-            // destructure the notification object
+        // Process each notification
+        const results = [];
+        for (let notification of notifications) {
+            // Destructure the notification object
             const { message, messageId, criticalStock, productId, stockQuantity } = notification;
             
-            // validate the notification object
-            if(!message ||!messageId ||!criticalStock ||!productId ||!stockQuantity){
-                return res.status(400).json({
+            // Validate the notification object
+            if (!message || !messageId || !criticalStock || !productId || !stockQuantity) {
+                results.push({
                     success: false,
+                    messageId,
                     message: "Missing required fields in the notification object"
                 });
+                continue;
             }
 
-            // check if the message is already in the database
-            const existingMessage = await MessageModel.findOne({messageId});
-            
-            // if the message is not already in the database, create a new entry
-            if(!existingMessage){
+            // Check if the message is already in the database
+            const existingMessage = await MessageModel.findOne({ messageId });
+
+            if (!existingMessage) {
+                // Create a new entry
                 const savedMessage = await MessageModel.create({ message, messageId, criticalStock, productId, stockQuantity });
-                // if the message is not already in the database, send response
-                res.status(201).json({
+                results.push({
                     success: true,
+                    messageId,
                     message: "Message saved successfully",
                     data: savedMessage
                 });
-            }
-            else {
-                // if the message is already in the database, send response
-                res.status(200).json({
+            } else {
+                results.push({
                     success: true,
+                    messageId,
                     message: "Message already in the database",
                     data: existingMessage
                 });
             }
         }
 
-
-    }
-    catch(error){
+        // Send a single response with results
+        res.status(200).json({
+            success: true,
+            message: "Notifications processed successfully",
+            data: results
+        });
+    } catch (error) {
         console.error(error);
         res.status(500).json({
             success: false,
