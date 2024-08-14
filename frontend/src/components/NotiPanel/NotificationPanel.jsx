@@ -22,7 +22,9 @@ export default function NotificationPanel({ opacity }) {
     return (
         <div className="noti" style={styles}>
             {displayNotifications.map((element, index) => (
-                <Notification key={index} element={element} />
+                <div>
+                    <Notification key={index} element={element} />
+                </div>
             ))}
         </div>
     );
