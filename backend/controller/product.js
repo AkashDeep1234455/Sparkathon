@@ -102,14 +102,14 @@ exports.stockData = async (req,res)=>{
 
 
 
-
+// get product by its name
 exports.getProduct = async (req, res) => {
   try {
     // fatch product name
-    const {productName} = req.body;
+    const {query} = req.body;
 
     // validate product name
-    if (!productName) {
+    if (!query) {
       return res.status(400).json(
         {
           success: false,
@@ -122,9 +122,13 @@ exports.getProduct = async (req, res) => {
     // populate method is used to fetch related data from another collection
     // populate("supplierId", "sellerName email phoneNumber") - fetches seller details
     // populate("stockDescription", "stockQuantity expiryDate minStock") - fetches stock details
-    const product = await ProductModel.find({productName:productName})
-     .populate("supplierId", "sellerName email phoneNumber")
-     .populate("stockDescription", "stockQuantity expiryDate minStock");
+  
+    const product = await ProductModel.find({
+      $or: [
+        {productName: new RegExp(query, 'i')},
+        { productId: query}
+      ]
+    }).populate("supplierId").populate("stockDescription");
 
     //  validate product
     if (!product) {
@@ -140,7 +144,7 @@ exports.getProduct = async (req, res) => {
     res.status(200).json(
       {
         success: true,
-        product: product[0],
+        product: product,
       }
     )
   }
