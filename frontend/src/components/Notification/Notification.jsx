@@ -1,7 +1,6 @@
 import './Notification.css'
 
 export default function Notification({element}){
-    console.log(element);
     return (
         <div className="Notification">
             <p>ProductId: {element.productId}</p>
