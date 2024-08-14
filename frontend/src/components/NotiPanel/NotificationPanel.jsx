@@ -12,7 +12,9 @@ export default function NotificationPanel({ opacity }) {
         const fetchNotifications = () => {
             axios.get("http://localhost:8080/getMessages")
                 .then((res) => {
+                    if(res.data.data.length>0){
                     setDisplayNotifications(res.data.data);
+                    }
                 })
                 .catch((err) => {
                     console.log(err);
@@ -33,8 +35,10 @@ export default function NotificationPanel({ opacity }) {
     return (
         <div className="noti" style={styles}>
             {displayNotifications.map((element, index) => (
-                <Notification key={index} element={element} />
-            ))}
+            <div key={index}> {/* Add key here */}
+                <Notification element={element} />
+            </div>
+        ))}
         </div>
     );
 }

@@ -1,18 +1,19 @@
 .noti{
     position: fixed;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 5px;
     width: 25%;
     height: calc(100vh - 6rem); /* Adjust height to fill remaining space */
     top: 5.5rem;
     transition: all 0.3s linear;
-    background-color: white;
+    background-color: #0fa4af;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
     z-index: 1000;
     overflow-y:auto;
 }

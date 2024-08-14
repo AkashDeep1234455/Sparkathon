@@ -1,8 +1,23 @@
 .Notification{
     width: 95%;
-    height: 150px;
+    height: 140px;
     border-radius: 4px;
-    border: 1px solid black;
+    border: 1px solid #8CBAE8;
     border-radius: 4px;
-    padding: 1rem;
+    padding: 0.5rem;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    position: relative;
+}
+
+.deleteNoti{
+    position: absolute;
+    right: 0;
+    top: 0.2rem;
+}
+.deleteNoti:hover{
+    cursor: pointer;
 }
