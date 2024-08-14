@@ -27,9 +27,10 @@ export default function Form(){
     }
 
     let handleSubmit = (event) => {
+        console.log(formData);
+
         event.preventDefault();
 
-        // addNewComment(formData);   to add 
         
         setFormData({
             productName : "",
