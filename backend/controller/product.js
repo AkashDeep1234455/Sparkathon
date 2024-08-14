@@ -105,56 +105,44 @@ exports.stockData = async (req,res)=>{
 // get product by its name
 exports.getProduct = async (req, res) => {
   try {
-    // fatch product name
-    const {query} = req.body;
+    // Fetch product name from query parameters
+    const { query } = req.query; // Use req.query to get query parameters
+    console.log(query);
 
-    // validate product name
+    // Validate product name
     if (!query) {
-      return res.status(400).json(
-        {
-          success: false,
-          message: "Product name is required",
-        }
-      )
+      return res.status(400).json({
+        success: false,
+        message: "Product name is required",
+      });
     }
 
-    // fetch product details by product name and populate supplier and stock details
-    // populate method is used to fetch related data from another collection
-    // populate("supplierId", "sellerName email phoneNumber") - fetches seller details
-    // populate("stockDescription", "stockQuantity expiryDate minStock") - fetches stock details
-  
+    // Fetch product details by product name and populate supplier and stock details
     const product = await ProductModel.find({
       $or: [
-        {productName: new RegExp(query, 'i')},
-        { productId: query}
+        { productName: new RegExp(query, 'i') },
+        { productId: query }
       ]
     }).populate("supplierId").populate("stockDescription");
 
-    //  validate product
-    if (!product) {
-      return res.status(404).json(
-        {
-          success: false,
-          message: "Product not found",
-        }
-      )
+    // Validate product
+    if (product.length === 0) { // Use length check for array
+      return res.status(404).json({
+        success: false,
+        message: "Product not found",
+      });
     }
 
-    // send success
-    res.status(200).json(
-      {
-        success: true,
-        product: product,
-      }
-    )
-  }
-  catch (error) {
+    // Send success response
+    res.status(200).json({
+      success: true,
+      product: product,
+    });
+  } catch (error) {
     console.error("Error fetching product data:", error);
-    res.status(500).json(
-      {
-        success: false,
-        message: "Error fetching product data",
-      }
-    )
+    res.status(500).json({
+      success: false,
+      message: "Error fetching product data",
+    });
   }
-}
+};
