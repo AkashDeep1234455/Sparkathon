@@ -6,12 +6,14 @@ import Home from './LandingPage/Home.jsx';
 import Form from './components/FormEntry/Form.jsx'
 import Footer from './components/Footer/Footer.jsx';
 import Filter from './components/Filter/filter.jsx';
+import SearchResultComp from './components/SearchResult.jsx/SearchResultComp.jsx';
 
 import "./style.css";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 
 const router = createBrowserRouter([
   {
@@ -25,14 +27,17 @@ const router = createBrowserRouter([
       {
         path:"/internal",
         element: <div style={{display:"flex", flexWrap:"wrap", gap: "2rem", justifyContent:"center"}}><Filter/><InternalCard/></div>
-
       },
       {
         path:"/form",
         element:<div className='main-container'><Form/><Footer/></div>
+      },
+      {
+        path:"/search",
+        element:<SearchResultComp/>
       }
     ]
-  },
+  }
 ])
 
 
