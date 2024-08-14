@@ -158,3 +158,59 @@ exports.getProduct = async (req, res) => {
     )
   }
 }
+
+// get product sorted by ite expiry date
+exports.getProductSorted = async (req, res) => {
+  try{
+    // fetch product details sorted by expiry date
+    const products = await ProductModel.find(
+      {}
+    ).populate("supplierId").populate("stockDescription");
+
+    // sort products by expiry date
+    // products.sort((a, b) => new Date(b.stockDescription.expiryDate) - new Date(a.stockDescription.expiryDate));
+
+    // Sort the stockDescription array within each product
+    products.forEach(product => {
+      if (product.stockDescription && product.stockDescription.length > 0) {
+          product.stockDescription.sort((a, b) => new Date(a.expiryDate) - new Date(b.expiryDate));
+      }
+  });
+
+  // Sort the products based on the earliest expiry date in the stockDescription array
+  products.sort((a, b) => {
+      const aEarliestExpiry = a.stockDescription.length > 0 ? new Date(a.stockDescription[0].expiryDate) : Infinity;
+      const bEarliestExpiry = b.stockDescription.length > 0 ? new Date(b.stockDescription[0].expiryDate) : Infinity;
+      return aEarliestExpiry - bEarliestExpiry;
+  });
+
+
+  // validate the product
+  if (!products) {
+    return res.status(404).json(
+      {
+        success: false,
+        message: "Product not found",
+      }
+    )
+  }
+
+  // send response
+  res.status(200).json(
+    {
+      success: true,
+      products: products,
+    }
+  )
+  }
+  
+  catch (error) {
+    console.error("Error fetching product data:", error);
+    res.status(500).json(
+      {
+        success: false,
+        message: "Error fetching sorted product data ",
+      }
+    )
+  }
+}
