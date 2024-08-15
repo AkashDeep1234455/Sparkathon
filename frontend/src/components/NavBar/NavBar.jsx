@@ -70,7 +70,7 @@ function NavBar({setSearchData}) {
         };
       }, []);
 
-      cron.schedule("51 16 * * *",expiryChecker,{
+      cron.schedule("00 17 * * *",expiryChecker,{
         timezone:"Asia/Kolkata"
       } )
 
