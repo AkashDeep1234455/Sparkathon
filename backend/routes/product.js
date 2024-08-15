@@ -1,6 +1,6 @@
 
-const {dataEntry,itemData,stockData, getProduct, getProductSorted} = require("../controller/product");
-const { saveMessage, getMessages ,deleteMessage} = require("../controller/message");
+const {dataEntry,itemData,stockData, getProduct} = require("../controller/product");
+const { saveMessage, getMessages ,deleteMessage, checkExpiryDate} = require("../controller/message");
 
 const { stockDecrementer } = require("../controller/stock");
 const router = require('express').Router();
@@ -14,7 +14,8 @@ const createRouterWithIO = (io) => {
     router .get("/getMessages", getMessages);
     router.get("/getProduct", getProduct);
     router.delete("/deleteMessage",deleteMessage);
-    router.get("/getProductSorted", getProductSorted);
+    router.get("/checkExpiryDate", checkExpiryDate);
+    
   
     return router;
   };
