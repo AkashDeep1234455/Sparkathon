@@ -48,34 +48,23 @@ export default function SearchResultComp() {
     }, []);
 
     const stockDecrementer = (productId, count) => {
-        setLoad(true);
         if (!productId) console.log("product id missing");
         axios.post("http://localhost:8080/stockDecrementer", {
             productId,
             quantity: count,
         })
         .then(() => {
-            // If category exists, update product and stock data
-            if (category) {
-                axios.post("http://localhost:8080/itemData", { data: category })
-                    .then((res) => {
-                        const productData = res.data.productData || [];
-                        // Initialize counts for each product
-                        const initialCounts = {};
-                        productData.forEach((product) => {
-                            initialCounts[product.productId] = 0;
-                        });
-                        setCounts(initialCounts);
-                    })
-                    .catch((err) => {
-                        console.error("Error refetching item data:", err);
-                    });
-            }
+            searchData.forEach(element => {
+                if(element.productId===productId){
+                    element.stockDescription[0].stockQuantity -= count;
+                    setLoad(!load);
+                }
+            });
+            
         })
         .catch((err) => {
             console.error("Error decrementing stock:", err);
-        })
-        .finally(() => setLoad(false)); // Set loading state to false after completion
+        }) // Set loading state to false after completion
     };
 
     const changeCount = (productId, isInc) => {
