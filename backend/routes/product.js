@@ -14,7 +14,7 @@ const createRouterWithIO = (io) => {
     router .get("/getMessages", getMessages);
     router.get("/getProduct", getProduct);
     router.delete("/deleteMessage",deleteMessage);
-    router.get("/getProductSorted", getProductSorted);
+    
   
     return router;
   };

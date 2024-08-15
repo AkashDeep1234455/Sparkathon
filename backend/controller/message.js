@@ -1,4 +1,6 @@
+const { expiredProduct } = require('../email/template/expiredProduct');
 const { MessageModel } = require('../models/MessageModel');
+const { ProductModel } = require('../models/ProductModel');
 
 exports.saveMessage = async (req, res) => {
     try {
@@ -132,4 +134,37 @@ exports.deleteMessage = async (req, res) => {
             message: "Internal server error while deleting message",
         });
     }
+};
+
+// check the exiry date of the product 
+// Schedule a job to run daily at 9 AM
+exports.checkExpiryDate = async (req, res) => {
+  try {
+    // Calculate the date range (today + 10 days)
+    const today = new Date();
+    const next10Days = new Date();
+    next10Days.setDate(today.getDate() + 10);
+
+    // Find products with expiryDate within the next 10 days
+    const expiringProducts = await ProductModel.find({
+      'stockDescription.expiryDate': {
+        $gte: today,
+        $lte: next10Days,
+      }
+    }).populate('supplierId').pupulate("stockDescription"); // Populate supplier details if needed
+
+    // Handle the expiring products list (e.g., log, send an alert, etc.)
+    if (expiringProducts.length > 0) {
+      console.log('Products expiring in the next 10 days:', expiringProducts);
+      const email = "akashdeep19735@gmail.com";
+      const title = "Walmart - Products about to be expired"
+      const body = expiredProduct(expiringProducts);
+      const info = await mailSender(email, title, body);
+      console.log("email info: ", info);
+    } else {
+      console.log('No products expiring in the next 10 days.');
+    }
+  } catch (error) {
+    console.error('Error checking for expiring products:', error);
+  }
 };
