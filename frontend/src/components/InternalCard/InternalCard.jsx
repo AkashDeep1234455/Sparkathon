@@ -5,6 +5,7 @@ import axios from "axios";
 
 
 import Button from "@mui/material/Button";
+import Filter from '../Filter/filter.jsx';
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 export default function InternalCard() {
@@ -118,6 +119,10 @@ export default function InternalCard() {
   };
 
 
+  let styles = {opacity:'1'};
+  let isStyle = false;
+
+
   return (
     <>
       <div>
@@ -126,6 +131,8 @@ export default function InternalCard() {
           const matchingStock = stockData.find(
             (sD) => sD[0]._id === d.stockDescription[0]
           );
+
+
           const count = counts[d.productId] || 0; // Get the count for this specific product
           return matchingStock ? (
             <div className="InternalCard_parent" key={matchingStock[0]._id}>
@@ -137,7 +144,9 @@ export default function InternalCard() {
                 <h2 className="InternalCard_name">{d.productName}</h2>
                 {matchingStock[0].expiryDate ? (
                   <span>Expiry Date : {matchingStock[0].expiryDate}</span>
-                ) : null}
+                ): null}
+                {matchingStock[0].expiryDate ? 
+                  isStyle = true: isStyle = false}
                 <span>ProductId : {matchingStock[0].productId}</span>
 
                 <div className="stockDecrement">
@@ -191,6 +200,8 @@ export default function InternalCard() {
             </div>
           ) : null;
         })}
+
+        {isStyle === true ? <Filter opacity = {1}/> : <Filter opacity = {0}/>}
       </div>
     </>
   );
