@@ -76,6 +76,12 @@ export default function SearchResultComp() {
         });
     };
 
+    const convertToIST = (dateString) => {
+        const utcDate = new Date(dateString);
+        const options = { timeZone: 'Asia/Kolkata', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+        return utcDate.toLocaleString('en-IN', options);
+    };
+
     return (
         <div className="searchCards">
             {searchData.map((d) => {
@@ -89,7 +95,7 @@ export default function SearchResultComp() {
                         <div className="InternalCard_mid">
                             <h2 className="InternalCard_name">{d.productName}</h2>
                             {d.stockDescription[0].expiryDate ? (
-                                <span>Expiry Date : {d.stockDescription[0].expiryDate}</span>
+                                <span>Expiry Date : {convertToIST(d.stockDescription[0].expiryDate)}</span>
                             ) : null}
                             <span>ProductId : {d.productId}</span>
 

@@ -54,8 +54,8 @@ export default function InternalCard() {
 
           // Sort the stock data based on expiry date or any other filter
           const sortedStockData = stocks.sort((a, b) => {
-            const dateA = new Date(a[0].expiryDate);
-            const dateB = new Date(b[0].expiryDate);
+            const dateA = a[0].expiryDate;
+            const dateB = b[0].expiryDate;
             return dateA - dateB;
           });
           setSortedData(sortedStockData);
@@ -100,8 +100,8 @@ export default function InternalCard() {
 
                   // Sort the updated stock data after decrementing
                   const sortedStockData = updatedStockData.sort((a, b) => {
-                    const dateA = new Date(a[0].expiryDate);
-                    const dateB = new Date(b[0].expiryDate);
+                    const dateA = a[0].expiryDate;
+                    const dateB = b[0].expiryDate;
                     return dateA - dateB;
                   });
 
@@ -133,6 +133,13 @@ export default function InternalCard() {
     });
   };
 
+  const convertToIST = (dateString) => {
+    const utcDate = new Date(dateString);
+    const options = { timeZone: 'Asia/Kolkata', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+    return utcDate.toLocaleString('en-IN', options);
+  };
+  
+
   return (
     <>
       <div>
@@ -149,7 +156,9 @@ export default function InternalCard() {
               <div className="InternalCard_mid">
                 <h2 className="InternalCard_name">{d.productName}</h2>
                 {sD[0].expiryDate ? (
-                  <span>Expiry Date : {sD[0].expiryDate}</span>
+                  <span>Expiry Date :
+                    {convertToIST(sD[0].expiryDate)}
+                  </span>
                 ): null}
                 <span>ProductId : {sD[0].productId}</span>
 
