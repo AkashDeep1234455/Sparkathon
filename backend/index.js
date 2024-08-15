@@ -3,6 +3,7 @@ if (process.env.NODE_ENV != "production") {
 }
 
 const express = require("express");
+const cron = require("node-cron");
 const app = express();
 const bodyParser = require("body-parser");
 
@@ -11,6 +12,7 @@ const http = require("http");
 const { Server } = require("socket.io");
 const server = http.createServer(app);
 const io = new Server(server);
+const axios = require('axios');
 
 app.use(bodyParser.json()); // For parsing application/json
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -34,6 +36,20 @@ const corsConfig = {
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
+function expiryChecker() {
+  console.log("running")
+  axios.get("http://localhost:8080/checkExpiryDate")
+    .then((res) => {
+      console.log("check");
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+}
+
+cron.schedule("0 9 * * *", expiryChecker, {
+  timezone: "Asia/Kolkata"
+});
 
 app.use(cors());
 app.use(express.json());

@@ -4,7 +4,8 @@ import NotificationPanel from "../NotiPanel/NotificationPanel.jsx";
 import { useState, useEffect } from "react";
 import io from "socket.io-client";
 import axios from 'axios';
-import cron from "node-cron";
+
+
 
 function NavBar({setSearchData}) {
     const [opacity, setOpacity] = useState(0);
@@ -13,13 +14,6 @@ function NavBar({setSearchData}) {
     const [searchInput,setsearchInput] = useState("");
     const navigate = useNavigate();
 
-    function expiryChecker(){
-      axios.get("http://localhost:8080/checkExpiryDate").then((res)=>{
-        console.log(res);
-      }).catch((err)=>{
-        console.log(err)
-      })
-    }
 
     useEffect(() => {
         // Initialize socket connection
@@ -70,9 +64,6 @@ function NavBar({setSearchData}) {
         };
       }, []);
 
-      cron.schedule("00 17 * * *",expiryChecker,{
-        timezone:"Asia/Kolkata"
-      } )
 
     
 
