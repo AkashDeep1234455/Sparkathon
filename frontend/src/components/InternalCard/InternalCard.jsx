@@ -3,9 +3,7 @@ import "./InternalCard.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-
 import Button from "@mui/material/Button";
-import Filter from '../Filter/filter.jsx';
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 export default function InternalCard() {
@@ -13,10 +11,10 @@ export default function InternalCard() {
   const [stockData, setStockData] = useState([]);
   const [counts, setCounts] = useState({}); // Manage count per item
   const [load, setLoad] = useState(false); // Use load for loading state
+  const [sortedData, setSortedData] = useState([]); // Manage sorted data
   const query = new URLSearchParams(useLocation().search);
   const category = query.get("category");
 
-  
   // Fetch product data based on category
   useEffect(() => {
     if (category) {
@@ -53,6 +51,14 @@ export default function InternalCard() {
         .then((responses) => {
           const stocks = responses.map((res) => res.data.stockData);
           setStockData(stocks);
+
+          // Sort the stock data based on expiry date or any other filter
+          const sortedStockData = stocks.sort((a, b) => {
+            const dateA = new Date(a[0].expiryDate);
+            const dateB = new Date(b[0].expiryDate);
+            return dateA - dateB;
+          });
+          setSortedData(sortedStockData);
         })
         .catch((err) => {
           console.error("Error fetching stock data:", err);
@@ -91,7 +97,16 @@ export default function InternalCard() {
                   const updatedStockData = responses.map(
                     (res) => res.data.stockData
                   );
+
+                  // Sort the updated stock data after decrementing
+                  const sortedStockData = updatedStockData.sort((a, b) => {
+                    const dateA = new Date(a[0].expiryDate);
+                    const dateB = new Date(b[0].expiryDate);
+                    return dateA - dateB;
+                  });
+
                   setStockData(updatedStockData);
+                  setSortedData(sortedStockData);
                   setCounts(0);
                 })
                 .catch((err) => {
@@ -118,36 +133,25 @@ export default function InternalCard() {
     });
   };
 
-
-  let styles = {opacity:'1'};
-  let isStyle = false;
-
-
   return (
     <>
       <div>
-      {data.map((d) => {
-          // Find matching stock data
-          const matchingStock = stockData.find(
-            (sD) => sD[0]._id === d.stockDescription[0]
-          );
-
+        {sortedData.map((sD, index) => {
+          const d = data[index]; // Assuming sortedData aligns with original data order
 
           const count = counts[d.productId] || 0; // Get the count for this specific product
-          return matchingStock ? (
-            <div className="InternalCard_parent" key={matchingStock[0]._id}>
+          return sD ? (
+            <div className="InternalCard_parent" key={sD[0]._id}>
               <div className="InternalCard_img">
                 <img src={d.image} alt={d.productName} loading="lazy" />
               </div>
 
               <div className="InternalCard_mid">
                 <h2 className="InternalCard_name">{d.productName}</h2>
-                {matchingStock[0].expiryDate ? (
-                  <span>Expiry Date : {matchingStock[0].expiryDate}</span>
+                {sD[0].expiryDate ? (
+                  <span>Expiry Date : {sD[0].expiryDate}</span>
                 ): null}
-                {matchingStock[0].expiryDate ? 
-                  isStyle = true: isStyle = false}
-                <span>ProductId : {matchingStock[0].productId}</span>
+                <span>ProductId : {sD[0].productId}</span>
 
                 <div className="stockDecrement">
                   <Button
@@ -173,7 +177,7 @@ export default function InternalCard() {
                     size="small"
                     className="InternalCard_button"
                     onClick={() =>
-                      stockDecrementer(matchingStock[0].productId, count)
+                      stockDecrementer(sD[0].productId, count)
                     }
                   >
                     {" "}
@@ -195,13 +199,11 @@ export default function InternalCard() {
 
               <div className="InternalCard_TotalItems">
                 <p>Total No. Of Items</p>
-                <h2>{matchingStock[0].stockQuantity}</h2>
+                <h2>{sD[0].stockQuantity}</h2>
               </div>
             </div>
           ) : null;
         })}
-
-        {isStyle === true ? <Filter opacity = {1}/> : <Filter opacity = {0}/>}
       </div>
     </>
   );
