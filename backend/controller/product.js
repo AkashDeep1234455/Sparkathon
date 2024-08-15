@@ -202,5 +202,5 @@ exports.getProductSorted = async (req, res) => {
     )
   }
 }
-};
+;
 

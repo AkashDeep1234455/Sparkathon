@@ -16,54 +16,54 @@ export default function InternalCard() {
   const query = new URLSearchParams(useLocation().search);
   const category = query.get("category");
 
-  useEffect(() => {
-    // Initialize socket connection
-    const socket = io("http://localhost:8080", { transports: ["websocket"] });
+  // useEffect(() => {
+  //   // Initialize socket connection
+  //   const socket = io("http://localhost:8080", { transports: ["websocket"] });
 
-    socket.on("connect", () => {
-      console.log("Connected to server");
-    });
+  //   socket.on("connect", () => {
+  //     console.log("Connected to server");
+  //   });
 
-    socket.on("disconnect", () => {
-      console.log("Disconnected from server");
-    });
+  //   socket.on("disconnect", () => {
+  //     console.log("Disconnected from server");
+  //   });
 
-    socket.on("reconnect_attempt", () => {
-      console.log("Attempting to reconnect...");
-    });
+  //   socket.on("reconnect_attempt", () => {
+  //     console.log("Attempting to reconnect...");
+  //   });
 
-    socket.on("reconnect", () => {
-      console.log("Reconnected to server");
-    });
+  //   socket.on("reconnect", () => {
+  //     console.log("Reconnected to server");
+  //   });
 
-    socket.on("reconnect_error", (error) => {
-      console.error("Reconnection error:", error);
-    });
+  //   socket.on("reconnect_error", (error) => {
+  //     console.error("Reconnection error:", error);
+  //   });
 
-    socket.on("lowstock", (message) => {
-      console.log("Low Stock Alert:", message);
-      setNotifications((prevNotifications) => {
-        const updatedNotifications = [...prevNotifications, message];
-        // Save message after updating state
-        axios
-          .post("http://localhost:8080/saveMessage", {
-            notifications: updatedNotifications,
-          })
-          .then(() => {
-            console.log("Message saved successfully");
-          })
-          .catch((err) => {
-            console.error("Error saving message:", err);
-          });
-        return updatedNotifications;
-      });
-    });
+  //   socket.on("lowstock", (message) => {
+  //     console.log("Low Stock Alert:", message);
+  //     setNotifications((prevNotifications) => {
+  //       const updatedNotifications = [...prevNotifications, message];
+  //       // Save message after updating state
+  //       axios
+  //         .post("http://localhost:8080/saveMessage", {
+  //           notifications: updatedNotifications,
+  //         })
+  //         .then(() => {
+  //           console.log("Message saved successfully");
+  //         })
+  //         .catch((err) => {
+  //           console.error("Error saving message:", err);
+  //         });
+  //       return updatedNotifications;
+  //     });
+  //   });
 
-    // Cleanup on unmount
-    return () => {
-      socket.disconnect();
-    };
-  }, []);
+  //   // Cleanup on unmount
+  //   return () => {
+  //     socket.disconnect();
+  //   };
+  // }, []);
 
   // Fetch product data based on category
   useEffect(() => {
