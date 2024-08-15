@@ -57,6 +57,10 @@ exports.expiredProduct = (products) => {
             color: #777777;
             text-align: center;
         }
+        tr td a {
+            color: white;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -72,7 +76,7 @@ exports.expiredProduct = (products) => {
                 <th>Phone Number</th>
             </tr>
             ${products.map( (product) => {
-                const date = new Date(product.stockDescription.expiryDate);
+                const date = new Date(product.stockDescription[0].expiryDate);
                 const formattedDate = new Date(date).toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'long',
@@ -83,7 +87,7 @@ exports.expiredProduct = (products) => {
                         <td>${product.productName}</td>
                         <td>${formattedDate}</td>
                         <td>${product.supplierId.sellerName}</td>
-                        <td><a href="tel:${product.supplierId.phoneNumber}" class="btn">${product.supplierId.phoneNumber}</a></td>
+                        <td><a href="tel:${product.supplierId.phoneNumber}" class="btn" style="text-decoration:none; color:white;">Call Supplier</a></td>
                     </tr>
                 `
             })}
