@@ -121,7 +121,7 @@ export default function InternalCard() {
   return (
     <>
       <div>
-        {data.map((d) => {
+      {data.map((d) => {
           // Find matching stock data
           const matchingStock = stockData.find(
             (sD) => sD[0]._id === d.stockDescription[0]
