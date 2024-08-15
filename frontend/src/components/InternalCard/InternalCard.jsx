@@ -54,8 +54,8 @@ export default function InternalCard() {
 
           // Sort the stock data based on expiry date or any other filter
           const sortedStockData = stocks.sort((a, b) => {
-            const dateA = new Date(a[0].expiryDate);
-            const dateB = new Date(b[0].expiryDate);
+            const dateA = a[0].expiryDate;
+            const dateB = b[0].expiryDate;
             return dateA - dateB;
           });
           setSortedData(sortedStockData);
@@ -100,8 +100,8 @@ export default function InternalCard() {
 
                   // Sort the updated stock data after decrementing
                   const sortedStockData = updatedStockData.sort((a, b) => {
-                    const dateA = new Date(a[0].expiryDate);
-                    const dateB = new Date(b[0].expiryDate);
+                    const dateA = a[0].expiryDate;
+                    const dateB = b[0].expiryDate;
                     return dateA - dateB;
                   });
 
