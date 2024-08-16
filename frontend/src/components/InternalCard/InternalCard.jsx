@@ -157,7 +157,7 @@ export default function InternalCard() {
                 <h2 className="InternalCard_name">{d.productName}</h2>
                 {sD[0].expiryDate ? (
                   <span>Expiry Date :
-                    {convertToIST(sD[0].expiryDate)}
+                    {convertToIST(sD[0].expiryDate).slice(0, -11)}
                   </span>
                 ): null}
                 <span>ProductId : {sD[0].productId}</span>

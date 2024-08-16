@@ -95,7 +95,7 @@ export default function SearchResultComp() {
                         <div className="InternalCard_mid">
                             <h2 className="InternalCard_name">{d.productName}</h2>
                             {d.stockDescription[0].expiryDate ? (
-                                <span>Expiry Date : {convertToIST(d.stockDescription[0].expiryDate)}</span>
+                                <span>Expiry Date : {convertToIST(d.stockDescription[0].expiryDate).slice(0, -11)}</span>
                             ) : null}
                             <span>ProductId : {d.productId}</span>
 

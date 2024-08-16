@@ -98,7 +98,6 @@ function NavBar({setSearchData}) {
                 console.log(res.data.product);
             setSearchData(res.data.product);
             navigate("/search"); 
-            setsearchInput("");
             })
             .catch((err) => {
                 console.log(err);
