@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import "./navBar.css";
+import "./navbar.css";
 import NotificationPanel from "../NotiPanel/NotificationPanel.jsx";
 import { useState, useEffect } from "react";
 import io from "socket.io-client";
