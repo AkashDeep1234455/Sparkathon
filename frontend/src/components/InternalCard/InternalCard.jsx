@@ -19,7 +19,7 @@ export default function InternalCard() {
   useEffect(() => {
     if (category) {
       axios
-        .post("http://localhost:8080/itemData", { data: category })
+        .post("https://sparkathon-j762.onrender.com/itemData", { data: category })
         .then((res) => {
           const productData = res.data.productData || [];
           setData(productData);
@@ -43,7 +43,7 @@ export default function InternalCard() {
       Promise.all(
         data.map((element) => {
           const productId = element.productId;
-          return axios.post("http://localhost:8080/stockData", {
+          return axios.post("https://sparkathon-j762.onrender.com/stockData", {
             data: productId,
           });
         })
@@ -71,7 +71,7 @@ export default function InternalCard() {
     setLoad(true);
     if (!productId) console.log("product id missing");
     axios
-      .post("http://localhost:8080/stockDecrementer", {
+      .post("https://sparkathon-j762.onrender.com/stockDecrementer", {
         productId,
         quantity: count,
       })
@@ -79,7 +79,7 @@ export default function InternalCard() {
         // Refetch stock data after decrementing
         if (category) {
           axios
-            .post("http://localhost:8080/itemData", { data: category })
+            .post("https://sparkathon-j762.onrender.com/itemData", { data: category })
             .then((res) => {
               console.log(res.data);
               const productData = res.data.productData || [];
@@ -88,7 +88,7 @@ export default function InternalCard() {
               Promise.all(
                 productData.map((element) => {
                   const productId = element.productId;
-                  return axios.post("http://localhost:8080/stockData", {
+                  return axios.post("https://sparkathon-j762.onrender.com/stockData", {
                     data: productId,
                   });
                 })

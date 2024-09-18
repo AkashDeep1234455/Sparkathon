@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default function Notification({ element}) {
     const notificationDeleteHandler = () => {
-        axios.delete("http://localhost:8080/deleteMessage", {
+        axios.delete("https://sparkathon-j762.onrender.com/deleteMessage", {
             data: { messageId: element.messageId }
         })
         .then((res) => {
