@@ -17,7 +17,7 @@ export default function SearchResultComp() {
 
     // Socket connection and notifications
     useEffect(() => {
-        const socket = io("http://localhost:8080", { transports: ["websocket"] });
+        const socket = io("https://sparkathon-j762.onrender.com", { transports: ["websocket"] });
 
         socket.on("connect", () => {
             console.log("Connected to server");
@@ -31,7 +31,7 @@ export default function SearchResultComp() {
             console.log("Low Stock Alert:", message);
             setNotifications((prevNotifications) => {
                 const updatedNotifications = [...prevNotifications, message];
-                axios.post("http://localhost:8080/saveMessage", { notifications: updatedNotifications })
+                axios.post("https://sparkathon-j762.onrender.com/saveMessage", { notifications: updatedNotifications })
                     .then(() => {
                         console.log("Message saved successfully");
                     })
@@ -49,7 +49,7 @@ export default function SearchResultComp() {
 
     const stockDecrementer = (productId, count) => {
         if (!productId) console.log("product id missing");
-        axios.post("http://localhost:8080/stockDecrementer", {
+        axios.post("https://sparkathon-j762.onrender.com/stockDecrementer", {
             productId,
             quantity: count,
         })

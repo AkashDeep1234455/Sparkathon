@@ -17,7 +17,7 @@ function NavBar({setSearchData}) {
 
     useEffect(() => {
         // Initialize socket connection
-        const socket = io("http://localhost:8080", { transports: ["websocket"] });
+        const socket = io("https://sparkathon-j762.onrender.com", { transports: ["websocket"] });
     
         socket.on("connect", () => {
           console.log("Connected to server");
@@ -45,7 +45,7 @@ function NavBar({setSearchData}) {
             const updatedNotifications = [...prevNotifications, message];
             // Save message after updating state
             axios
-              .post("http://localhost:8080/saveMessage", {
+              .post("https://sparkathon-j762.onrender.com/saveMessage", {
                 notifications: updatedNotifications,
               })
               .then(() => {
@@ -69,7 +69,7 @@ function NavBar({setSearchData}) {
 
     useEffect(() => {
         const fetchNotifications = () => {
-            axios.get("http://localhost:8080/getMessages")
+            axios.get("https://sparkathon-j762.onrender.com/getMessages")
                 .then((res) => {
                     if(res.data.data.length>0){
                     setNotificationCount(res.data.data.length);
@@ -93,7 +93,7 @@ function NavBar({setSearchData}) {
 
     const searchSubmitHandler = (event) => {
         event.preventDefault();
-        axios.get("http://localhost:8080/getProduct", { params: { query: searchInput } })
+        axios.get("https://sparkathon-j762.onrender.com/getProduct", { params: { query: searchInput } })
             .then((res) => {
                 console.log(res.data.product);
             setSearchData(res.data.product);

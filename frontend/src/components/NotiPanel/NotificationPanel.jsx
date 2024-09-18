@@ -10,7 +10,7 @@ export default function NotificationPanel({ opacity }) {
     useEffect(() => {
         // Fetch existing messages on component mount
         const fetchNotifications = () => {
-            axios.get("http://localhost:8080/getMessages")
+            axios.get("https://sparkathon-j762.onrender.com/getMessages")
                 .then((res) => {
                     if(res.data.data.length>0){
                     setDisplayNotifications(res.data.data);
